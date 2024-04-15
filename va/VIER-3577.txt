@@ -1,0 +1,22 @@
+VIER-3577 Establish a process to alert on expiring certificates within our trust stores
+
+Most of the VA has been bitten enough times by expiring certificates
+to stay on top of it but nevertheless we keep finding new and
+interesting ways to get hurt by an expiring certificate.
+
+Currently we have no visibility into the expiry of our trusted
+certificates.  This task is to establish script that can be installed
+to our various hosts and be configured to inspect a target trust store
+for expiring certificates.
+
+If a trusted certificate is within 30 days of expiring.. a
+notification should be raised to two places
+
+o Sent to the OM distro
+
+o Sent to a log file (Note, this log file should be configured for
+ingestion by splunk in a follow up ticket to this upon
+completion. Alerting should be migrated to splunk and path 1 should be
+deprecated at that time
+
+Installation tickets can be created and added to this parent epic as required
