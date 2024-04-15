@@ -1,3 +1,3 @@
 # source this file, don't execute it
-. ~/bin/java.sh $JAVA21
+. ~/bin/java_home.sh $JAVA21
 

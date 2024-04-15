@@ -1,2 +1,2 @@
 # source this file, don't execute it
-. ~/bin/java.sh $JAVA8
+. ~/bin/java_home.sh $JAVA8
