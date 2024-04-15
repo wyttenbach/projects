@@ -1,1 +1,0 @@
-VIER-4063 Create vulnerability scan database

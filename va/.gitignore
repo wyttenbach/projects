@@ -1,7 +1,3 @@
-# *.bundle
-# *.iml
-# *.log
-# *.out
-# *.prev
-# *.svn
+/.bash_history
+/.recentf
 /src
