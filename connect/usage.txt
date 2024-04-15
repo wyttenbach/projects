@@ -1,0 +1,33 @@
+no link files found at location:/tools/IBM/ACE/12.0.11.1/tools/links
+BIP0955I Compile a BAR file from source.
+Syntax: mqsicreatebar -data workspace -b barName [-version id] [-esql21]
+	[-p projectName [...]] [-o filePath1 [filePath2 [...]]]
+	[-a applicationName [...]] [-l libraryName [...]] [-x PolicyProjectName [...]] [-skipWSErrorCheck]
+	[-deployAsSource] [-compileOnly] [-trace] [-v traceFilePath]
+Command Options:
+'-data workspace' workspace location (Mandatory)
+'-b barName' bar file name to create or replace
+'-cleanBuild' refresh the workspace projects and perform a clean build before adding
+'-version id' appends '_' and id to compiled names in the archive (optional)
+'-esql21' compile ESQL for integration nodes version 2.1 (optional)
+'-p projectName' specify projects containing files to link (optional, multiple
+	projects can be specified) 
+'-o filePath1' workspace relative path (including the project) of deployable
+	files to add to the BAR. Multiple deployable files can be
+	compiled in a single mqsicreatebar command. (optional)
+'-a applicationName' specify application projects containing files to link
+	(optional, multiple projects can be specified) 
+'-l libraryName'  specify library projects containing files to link
+	(optional, multiple projects can be specified) 
+'-x PolicyProjectName'  specify Policy projects containing files to link
+	(optional, multiple projects can be specified) 
+'-d .NETApplicationDomainName' specify .NET application domain projects containing files to link
+	(optional, multiple projects can be specified) 
+'-skipWSErrorCheck' to ignore the workspace error that is not related to the
+	required content to be put in the archive file (optional)
+'-trace' to display trace information for the command 
+'-deployAsSource' to deploy resources without compilation (if applicable)
+'-compileOnly' to compile workspace projects for the msqipackagebar command
+'-v traceFilePath' to specify output log file name or path where the tracing data will be written to. 
+	It is applicable only if the -trace option is set. If only file name or relative path is
+	specified then the file will be written to the default working directory.
