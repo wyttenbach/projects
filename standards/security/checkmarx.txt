@@ -1,0 +1,43 @@
+Mourish Shanmugam
+https://share.antheminc.com/teams/ASK/ApplicationSecurityWiki/SitePages/Home.aspx
+Get tool access to Checkmarx
+ Any DeCare app will do for all
+
+Login to Checkmarx with Anthem SSO
+
+Filter projects:
+ PROJECT NAME DDS
+ OWNER SrvAppSec
+ TEAM Decare
+
+Results mitigation
+ Select (All)
+ Result state
+ Add comment
+Then
+ Open a Mitigations Review ticket
+  Use NA for required items that don't apply
+  Checkmark URL: ...&ProjectID=4382 (e.g.)
+
+Michelle Beaty:
+The status moves from "Proposed Not Exploitable" to "Confirmed" if the mitigation is rejected.
+When we approve the mitigation, the status is moved to "Not Exploitable"
+"Confirmed" means that it is a Valid, Confirmed finding.
+
+[9:11 AM] Hickson, Michael A.
+AppSec SLA to complete reviews after receipt of the
+Mitigation Review request is 10 business days
+
+IS-ASP-GDL-002 Mitigation Methodology: https://share.antheminc.com/teams/ASK/AppSecDocs/AppSec%20Published%20Documents/IS-ASP-GDL-002_Mitigation%20Methodology.pdf
+
+S-PGM-007 Application Security Program Framework: https://share.antheminc.com/sites/Information-Sec/PolicyPublish/PFDocs/ISPGM007.pdf
+
+IS-GDL-004 Security Integration Guidelines: https://share.antheminc.com/sites/Information-Sec/PolicyPublish/PFDocs/ISGDL004.pdf
+
+Requesting Prod Cert and other Services: IS-PR-051 Application Security Services Request Procedure: https://share.antheminc.com/sites/Information-Sec/PolicyPublish/PFDocs/ISPR051.pdf
+
+Setup Guides for supported IDE plugins: https://share.antheminc.com/teams/ASK/ApplicationSecurityWiki/checkmarx/SitePages/Home.aspx (Scroll down Left side)
+
+
+
+
