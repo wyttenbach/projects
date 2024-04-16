@@ -1,1 +1,11 @@
 VIER-4063 Create vulnerability scan database
+
+sql> select count(*) from vuls;
+COUNT(*)
+920
+(1 row, 37 ms)
+sql> select count(distinct(plugin, nessus_host_name)) from vuls;
+COUNT(DISTINCT ROW (PLUGIN, NESSUS_HOST_NAME))
+831
+(1 row, 136 ms)
+sql> 
