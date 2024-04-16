@@ -1,0 +1,1 @@
+VIER-4284 Need a process for BAR file update
