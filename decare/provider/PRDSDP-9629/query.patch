@@ -1,0 +1,36 @@
+Index: datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java b/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java
+--- a/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java	(revision 408051a998eae8bb26d489bd3b09891f1b3afab4)
++++ b/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java	(date 1640626141777)
+@@ -1179,11 +1179,11 @@
+             "       PL.TERMINATED                                              as LICENSE_TERMINATED,\n" +
+             "       PL.DEA_NUMBER                                              as LICENSE_DEA_NUMBER,\n" +
+             "       PL.DEA_NUMBER_EXPIRES                                      as LICENSE_DEA_NUMBER_EXPIRES,\n" +
+-            "       nvl(s.DESCRIPTION, gd.DESCRIPTION)                         as SPECIALTY_DESCRIPTION,\n" +
+-            "       nvl(ps.SPECIALTY_CODE, gd.CODE)                            as SPECIALTY_CODE,\n" +
+-            "       nvl(ps.SPECIALTY_TYPE, 'P')                                as SPECIALTY_TYPE,\n" +
+-            "       sdo.ID                                                     as SPECIALTY_DATA_OWNER_ID,\n" +
+-            "       sdo.DISPLAY_NAME                                           as SPECIALTY_DATA_OWNER_NAME,\n" +
++            "       null                         as SPECIALTY_DESCRIPTION,\n" +
++            "       null                            as SPECIALTY_CODE,\n" +
++            "       null                                as SPECIALTY_TYPE,\n" +
++            "       null                                                     as SPECIALTY_DATA_OWNER_ID,\n" +
++            "       null                                           as SPECIALTY_DATA_OWNER_NAME,\n" +
+             "       FA.ID                                                      as FEE_ASSIGNMENT_ID,\n" +
+             "       FA.FEE_TYPE                                                as FEE_TYPE,\n" +
+             "       FA.EFFECTIVE_FROM                                          as FEE_EFFECTIVE_FROM,\n" +
+@@ -1209,10 +1209,6 @@
+             "         left join NPI_PROVIDER NP on P.ID = NP.PROVIDER_ID\n" +
+             "         left join NPI NPI on NP.NPI_ID = NPI.ID\n" +
+             "         left join PROVIDER_LICENSE PL on PL.PROVIDER_ID = P.ID\n" +
+-            "         left join PROVIDER_SPECIALTY_VIEW ps ON p.id = ps.PROVIDER_ID\n" +
+-            "         left join CORE.SPECIALTY s on s.CODE = ps.SPECIALTY_CODE\n" +
+-            "         left join core.SPECIALTY gd on gd.CODE = '000'\n" +
+-            "         left join core.data_owner sdo on sdo.id = ps.DATA_OWNER_ID\n" +
+             "         left join FEE_ASSIGNMENT FA on N.ID = FA.NETWORK_ID and P.ID = FA.PROVIDER_ID and FA.CLINIC_ID = cp.CLINIC_ID\n" +
+             "         left join DIRECTORY_EXIT_LOG del on del.CLINIC_PROVIDER_ID = cp.ID\n" +
+             "         left join CORE.DIRECTORY_EXIT_REASONS der on del.EXIT_REASON_ID = der.ID\n" +

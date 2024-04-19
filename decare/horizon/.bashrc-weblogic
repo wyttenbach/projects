@@ -1,0 +1,16 @@
+#!/bin/bash
+export WL_DOMAIN="$(cygpath -m $WL/domains/ddssharedservices)"
+export WL_PORT=7794
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+
+. $HOME/.bashrc-weblogic
+
+function deploy-build
+{
+    undeploy
+    deploy-services
+}
+
+export WL_JDWP_PORT=$(expr $WL_PORT + 1000)
+

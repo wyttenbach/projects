@@ -1,0 +1,58 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_PORT=7788
+export WL_CONTEXT_ROOT=claimsweb
+export WL_APP_PROPERTIES=$WL_PROPS/claimsapp.properties
+export WL_DOMAIN="$(cygpath -m $WL/domains/claims)"
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+export JEE_LOG=$SRC/claims.out
+export JEE_URL=http://localhost:$JEE_PORT/claimsweb/loginPage
+export GWT_PROJECT=$SRC/claim-web-parent/claimsweb/claimsui
+
+function gwt-debug
+{
+    echo "0. From claimsui directory run 'mvn -o gwt:debug -Dgwt.noserver=true'"
+    echo "1. Deploy claimsapp in WebLogic, and login with IE as usual"
+    echo "2. Connect in Eclipse project claimsui, localhost:3408, wait for GWT shell window to open"
+    echo "3. Change URL in browser to:"
+    echo "    http://localhost:$JEE_PORT/claimsweb/claims?gwt.codesvr=127.0.0.1:9997"
+    echo "4. A new tab will open in the GWT shell, and in the browser the page takes some time to load"
+    echo "For more information, see https://wiki.decaresystems.ie/display/tech/Debugging+Claims+in+Weblogic"
+    (cd $GWT_PROJECT; mvn -o gwt:debug -Dgwt.noserver=true)
+}
+
+function gwt-report
+{
+    (cd $GWT_PROJECT; mvn -Dgwt.compiler.compileReport=true clean install gwt:compile-report)
+}
+
+function go
+{
+    gwt-login localhost ddwyttenb
+}
+
+function deploy-build
+{
+    deploy-web
+}
+
+function freshen-build
+{
+    freshen-web
+}
+
+function verify
+{
+    local out=$SRC/verify-web.out
+    if [ $# -eq 0 ]; then
+        check-jee || die
+        check-security || die
+        check-log || die
+        check-wlds || die
+    fi
+    roll "$out"
+    go 2>&1 | tee "$out"
+}
+

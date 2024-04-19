@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "A",
+    "CountryCode": null,
+    "CityCode": null,
+    "AreaCode": "651",
+    "AccessCode": null,
+    "Number": "6398445",
+    "Extension": null,
+    "Id": 43389,
+    "Display": "(651)639-8445",
+    "Links": [
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720",
+        "entity": "clinic"
+      },
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720/phoneContacts/43389",
+        "entity": "clinic.phoneContact"
+      }
+    ]
+  },
+  {
+    "Type": "E",
+    "CountryCode": null,
+    "CityCode": null,
+    "AreaCode": "651",
+    "AccessCode": null,
+    "Number": "6398445",
+    "Extension": null,
+    "Id": 32153,
+    "Display": "(651)639-8445",
+    "Links": [
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720",
+        "entity": "clinic"
+      },
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720/phoneContacts/32153",
+        "entity": "clinic.phoneContact"
+      }
+    ]
+  },
+  {
+    "Type": "P",
+    "CountryCode": null,
+    "CityCode": null,
+    "AreaCode": "651",
+    "AccessCode": null,
+    "Number": "6398445",
+    "Extension": null,
+    "Id": 4585,
+    "Display": "(651)639-8445",
+    "Links": [
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720",
+        "entity": "clinic"
+      },
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720/phoneContacts/4585",
+        "entity": "clinic.phoneContact"
+      }
+    ]
+  },
+  {
+    "Type": "F",
+    "CountryCode": null,
+    "CityCode": null,
+    "AreaCode": "651",
+    "AccessCode": null,
+    "Number": "6331707",
+    "Extension": null,
+    "Id": 57865,
+    "Display": "(651)633-1707",
+    "Links": [
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720",
+        "entity": "clinic"
+      },
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720/phoneContacts/57865",
+        "entity": "clinic.phoneContact"
+      }
+    ]
+  }
+]

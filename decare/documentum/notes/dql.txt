@@ -1,0 +1,38 @@
+================================================================
+https://stackoverflow.com/questions/18963000/what-tools-or-techniques-are-available-to-analyze-disk-usage
+select sum(r_full_content_size)/1024/1024/1024 as total_gb
+from dm_sysobject (all)
+where cabinet('/My Cabinet',descend);
+================================================================ 12/13/2019 INC7641460
+select r_object_type, count(*) from dm_document group by r_object_type order by r_object_type
+
+select * from dm_document where r_object_type = 'claims_attachments'
+
+select * from dm_document where object_name = '000011925184'
+
+================================================================ Older
+select r_object_id from enrollment where object_name = '070746229';
+
+090003e98001d99d 
+
+
+http://localhost:8080/webtop/component/drl?objectId=090003e98001d99d
+
+http://localhost:8080/webtop/component/getdocument?objectName=070746229&objectType=enrollment
+
+
+http://localhost:8080/another/component/dialogcontainer?component=about
+
+http://localhost:8080/another/component/dialogcontainer?component=getdocument&objectName=070746229&objectType=enrollment
+
+
+
+http://localhost:8080/webtop/wdk/tracing.jsp
+
+
+
+http://localhost:8080/webtop/component/componentlist
+
+
+
+Documents cached locally at C:\Documentum\Viewed

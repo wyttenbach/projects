@@ -1,0 +1,5 @@
+workspace
+*~
+*.out
+mongo~master.bundle
+src/

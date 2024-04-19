@@ -1,0 +1,316 @@
+[
+  {
+    "id": "1",
+    "label": "ClinicTemp",
+    "op": "add",
+    "path": "/api/clinics",
+    "value": {
+      "CommonName": "Covina Dental Care",
+      "ContactName": "Kristy",
+      "DataOwnerId": "1",
+      "ElectronicClaimsSubmissionSupported": "false",
+      "EmailAddress": "kristy.buesgens@decare.com",
+      "EssentialCommunityProvider": "false",
+      "MemberEmailAddress": "kristy.buesgens@decare.com",
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "Facilities": {
+        "HandicapAccess": "true",
+        "HandicappedParking": "true",
+        "PublicTransport": "true",
+        "WheelchairAccessible": "true",
+        "Emergencies": {
+          "CPR": "true",
+          "Instructions": "false",
+          "Training": "true"
+        }
+      },
+      "Hours": [
+        {
+          "ClosingTime": "04:00",
+          "DayOfWeek": "MON",
+          "OpeningTime": "08:00"
+        },
+        {
+          "ClosingTime": "04:00",
+          "DayOfWeek": "TUE",
+          "OpeningTime": "08:00"
+        },
+        {
+          "ClosingTime": "04:00",
+          "DayOfWeek": "WED",
+          "OpeningTime": "08:00"
+        },
+        {
+          "ClosingTime": "04:00",
+          "DayOfWeek": "THU",
+          "OpeningTime": "08:00"
+        },
+        {
+          "ClosingTime": "04:00",
+          "DayOfWeek": "FRI",
+          "OpeningTime": "08:00"
+        }
+      ],
+      "Patients": {
+        "UnderEighteens": "false",
+        "UnderThrees": "false"
+      },
+      "Services": {
+        "AdultDisabilitySupported": "false",
+        "ChildDisabilitySupported": "false",
+        "DevelopmentallyDisabledServices": "false",
+        "EndodonticService": "false",
+        "HIVServices": "false",
+        "MobilityServices": "false",
+        "OralSurgeryService": "false",
+        "OrthodonticService": "false",
+        "PedodonticService": "false",
+        "PeriodonticService": "false",
+        "Hearing": {
+        },
+        "Vision": {
+        }
+      }
+    }
+  },
+  {
+    "id": "1",
+    "label": "w9temp11",
+    "op": "add",
+    "path": "/api/w9",
+    "value": {
+      "BackupWithholdingTax": "true",
+      "CorporatePayment": "true",
+      "DataOwnerId": "1",
+      "IRSName": "Covina Dental Care LLC",
+      "Tin": "998877665",
+      "Type": "EIN",
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/w9/{w9temp11}/legalAddress",
+    "value": {
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/w9",
+    "value": {
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "W9": {
+        "Id": "{w9temp11}"
+      }
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/addresses",
+    "value": {
+      "City": "Covina",
+      "Country": "USA",
+      "County": "Los Angeles",
+      "Line1": "4521 N Glenfinnan Ave",
+      "State": "CA",
+      "Type": "D",
+      "ZIPCode": "917231034"
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/phoneContacts",
+    "value": {
+      "AreaCode": "612",
+      "Number": "4995224",
+      "Type": "F"
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/phoneContacts",
+    "value": {
+      "AreaCode": "612",
+      "Number": "4995224",
+      "Type": "P"
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/phoneContacts",
+    "value": {
+      "AreaCode": "612",
+      "Number": "4995224",
+      "Type": "E"
+    }
+  },
+  {
+    "id": "1",
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/phoneContacts",
+    "value": {
+      "AreaCode": "612",
+      "Number": "4995224",
+      "Type": "A"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/networks/613/pdo",
+    "value": {
+      "AcceptsAllContracts": "true",
+      "CapitationType": "1",
+      "ClinicID": "{ClinicTemp}",
+      "EligibilityReport": "true",
+      "HmoConfigId": "10",
+      "OriginalEffectiveDate": "2021-12-29",
+      "Pdo": "001662",
+      "ReimbursementReport": "true",
+      "SpecialCompensationType": "00",
+      "UtilizationPaymentReport": "true",
+      "SpecialtyPdo": {
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/602/clinics",
+    "value": {
+      "Clinic": {
+        "Id": "{ClinicTemp}"
+      },
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics",
+    "value": {
+      "Clinic": {
+        "Id": "{ClinicTemp}"
+      },
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/601/clinics",
+    "value": {
+      "Clinic": {
+        "Id": "{ClinicTemp}"
+      },
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/613/clinics",
+    "value": {
+      "OfficeNumber": "001662",
+      "Clinic": {
+        "Id": "{ClinicTemp}"
+      },
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/611/clinics",
+    "value": {
+      "Clinic": {
+        "Id": "{ClinicTemp}"
+      },
+      "Effective": {
+        "From": "2022-02-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/{ClinicTemp}/providers",
+    "value": {
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "Provider": {
+        "Id": 481360
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/602/clinics/{ClinicTemp}/providers",
+    "value": {
+      "NetworkType": "PPO",
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "Provider": {
+        "Id": "481360"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/{ClinicTemp}/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "Provider": {
+        "Id": "481360"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/601/clinics/{ClinicTemp}/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "Provider": {
+        "Id": "481360"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/613/clinics/{ClinicTemp}/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-02-01"
+      },
+      "Provider": {
+        "Id": "481360"
+      }
+    }
+  }
+]

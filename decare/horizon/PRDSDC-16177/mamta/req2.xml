@@ -1,0 +1,46 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+        <hdrns:ApiSoapHeader xmlns:hdrns="http://horizon.bcbsnj.com/eai/mom/webservices/">
+            <hdrns:X-HZN-Api>dentalclaims
+            </hdrns:X-HZN-Api>
+            <hdrns:X-HZN-ClientName>Zipari
+            </hdrns:X-HZN-ClientName>
+            <hdrns:X-HZN-RootId>rrt-01bfc62f80388302d-c-ea-31374-11753584-1
+            </hdrns:X-HZN-RootId>
+        </hdrns:ApiSoapHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+            <UserName>MOMAPI
+            </UserName>
+            <SourceSystem>DECARE
+            </SourceSystem>
+            <Timeout>55
+            </Timeout>
+            <ClaimSearchCriteria>
+                <MaxRowsToReturn>200
+                </MaxRowsToReturn>
+                <SubscriberId>3HZN55056600
+                </SubscriberId>
+                <ClaimId>64366215
+                </ClaimId>
+                <IncludeClaimDetails>true
+                </IncludeClaimDetails>
+                <IncludeAggregatedAmountFromLines>true
+                </IncludeAggregatedAmountFromLines>
+                <IncludeClaimPayment>true
+                </IncludeClaimPayment>
+                <IncludeClaimHistory>false
+                </IncludeClaimHistory>
+                <IncludeClaimProviderAddress>false
+                </IncludeClaimProviderAddress>
+                <IncludeClaimMessageText>true
+                </IncludeClaimMessageText>
+                <IncludeClaimPatientDetail>true
+                </IncludeClaimPatientDetail>
+                <IncludeSubsGroup>false
+                </IncludeSubsGroup>
+            </ClaimSearchCriteria>
+        </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

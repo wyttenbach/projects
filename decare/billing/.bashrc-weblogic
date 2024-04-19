@@ -1,0 +1,28 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_PORT=7793
+export WL_DOMAIN="$(cygpath -m $WL/domains/billingoutputs)"
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+# login.jsp does not appear to work, even when -Dusehttp=true is set
+#export JEE_URL=http://localhost:$WL_PORT/billingoutputsweb/login.jsp
+export JEE_FUNCTION1=Approval
+export JEE_FUNCTION2=Query%20Reprint
+export JEE_FUNCTION3=Reports
+export JEE_FUNCTION4=Email%20Maintenance
+export JEE_FUNCTION5=Standalone%20Billing%20Data%20Inquiry
+export JEE_URL="http://localhost:$WL_PORT/billingoutputsweb/login?appName=Billing&userName=system&password=admin&functionName=$JEE_FUNCTION3"
+
+function deploy-build
+{
+    check-flag || die
+    local src=$SRC/billingoutputs_parent;
+    local ear=$(cygpath -m $src/*/*/*.ear);
+    if [ ! -f "$ear" ]; then
+        echo "$src" does not contain an ear;
+        return;
+    fi;
+    undeploy;
+    deploy "$ear"
+}

@@ -1,0 +1,37 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_PORT=7791
+export WL_JDWP_PORT=$(expr $WL_PORT + 1000)
+#export DB_PORT=$(server_port)
+export WL_DOMAIN="$(cygpath -m $WL/domains/accesscontrol)"
+export JEE_URL="http://localhost:$WL_PORT/nav/bindNavigation.do?appName=Access%20Control&userName=admin&password=system"
+
+function pre-wlstart {
+    (cd $WL_PROPS; ls -l accesscontrolapp.properties dsiframework.properties)
+}
+
+function jee-start
+{
+    wlstart
+}
+
+function jee-stop {
+    wlstop
+}
+
+function lsd {
+    wll
+}
+
+function undeploy
+{
+    wlundeploy
+}
+
+function go
+{
+    check-java || return
+    dsi-check localhost || return
+    wlgo
+}

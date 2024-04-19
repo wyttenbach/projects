@@ -1,0 +1,19 @@
+SELECT *
+FROM SOT13.CLM_CLAIM_NON_ENR_DEPENDENT
+WHERE subscriber_id = &&subscriber_id
+UNION
+SELECT *
+FROM SOT15.CLM_CLAIM_NON_ENR_DEPENDENT
+WHERE subscriber_id = &&subscriber_id
+UNION
+SELECT *
+FROM SOT22.CLM_CLAIM_NON_ENR_DEPENDENT
+WHERE subscriber_id = &&subscriber_id
+UNION
+SELECT *
+FROM SOT23.CLM_CLAIM_NON_ENR_DEPENDENT
+WHERE subscriber_id = &&subscriber_id
+UNION
+SELECT *
+FROM SOT24.CLM_CLAIM_NON_ENR_DEPENDENT
+WHERE subscriber_id = &&subscriber_id

@@ -1,0 +1,2077 @@
+[{
+        "op": "correlate",
+        "value": "TRN-48543"
+    }, {
+        "op": "add",
+        "path": "/api/clinics",
+        "label": "CLINIC1",
+        "value": {
+            "DataOwnerId": "2",
+            "EmailAddress": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "PaymentContactName": "",
+            "Services": {
+                "OrthodonticService": "false",
+                "Hearing": {
+                    "HearingServicesType": "OTHER"
+                },
+                "DevelopmentallyDisabledServices": "false",
+                "HIVServices": "false",
+                "Vision": {
+                    "VisionServicesType": ""
+                },
+                "OralSurgeryService": "false",
+                "AdultDisabilitySupported": "false",
+                "PeriodonticService": "false",
+                "MobilityServices": "false",
+                "ChildDisabilitySupported": "false",
+                "EndodonticService": "false",
+                "PedodonticService": "false"
+            },
+            "EssentialCommunityProvider": "false",
+            "ElectronicClaimsSubmissionSupported": "false",
+            "CommonName": "Test clinic"
+        }
+    },
+    {
+        "op": "add",
+        "path": "/api/clinics/{CLINIC1}/addresses",
+        "id": "1",
+        "value": {
+            "Type": "D",
+            "ZIPCode": "750415913",
+            "State": "TX",
+            "Country": "USA",
+            "City": "Garland",
+            "Line1": "4821 Saturn Rd Ste 106",
+            "County": "Dallas",
+            "Line2": ""
+        }
+    },
+    {
+        "op": "add",
+        "path": "/api/w9",
+        "label": "W9ID",
+        "value": {
+            "BackupWithholdingTax": true,
+            "CorporatePayment": true,
+            "DataOwnerId": 2,
+            "DelegatedCredentialing": true,
+            "Effective": {
+                "From": "2020-10-10"
+            },
+            "IRSName": "IRS Name",
+            "TaxExempt": true,
+            "Tin": "123006789",
+            "Type": "EIN"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/w9",
+        "label": "W9ID2",
+        "value": {
+            "BackupWithholdingTax": true,
+            "CorporatePayment": true,
+            "DataOwnerId": 2,
+            "DelegatedCredentialing": true,
+            "Effective": {
+                "From": "2020-10-10"
+            },
+            "IRSName": "IRS Name",
+            "TaxExempt": true,
+            "Tin": "123000789",
+            "Type": "EIN"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/w9",
+        "label": "W9ID3",
+        "value": {
+            "BackupWithholdingTax": true,
+            "CorporatePayment": true,
+            "DataOwnerId": 2,
+            "DelegatedCredentialing": true,
+            "Effective": {
+                "From": "2020-10-10"
+            },
+            "IRSName": "IRS Name",
+            "TaxExempt": true,
+            "Tin": "123000089",
+            "Type": "EIN"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/w9",
+        "label": "W9ID4",
+        "value": {
+            "BackupWithholdingTax": true,
+            "CorporatePayment": true,
+            "DataOwnerId": 2,
+            "DelegatedCredentialing": true,
+            "Effective": {
+                "From": "2020-10-10"
+            },
+            "IRSName": "IRS Name",
+            "TaxExempt": true,
+            "Tin": "123000129",
+            "Type": "EIN"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/w9",
+        "label": "W9ID5",
+        "value": {
+            "BackupWithholdingTax": true,
+            "CorporatePayment": true,
+            "DataOwnerId": 2,
+            "DelegatedCredentialing": true,
+            "Effective": {
+                "From": "2020-10-10"
+            },
+            "IRSName": "IRS Name",
+            "TaxExempt": true,
+            "Tin": "103002789",
+            "Type": "EIN"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/clinics",
+        "id": "1",
+        "label": "TRN-48543",
+        "value": {
+            "DataOwnerId": "1",
+            "Patients": {
+                "UnderEighteens": "false",
+                "UnderThrees": "false"
+            },
+            "EmailAddress": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "Facilities": {
+                "HandicappedParking": "",
+                "PublicTransport": "",
+                "HandicapAccess": "",
+                "Emergencies": {
+                    "Training": "",
+                    "CPR": "",
+                    "Instructions": "false"
+                },
+                "WheelchairAccessible": ""
+            },
+            "PaymentContactName": "",
+            "Services": {
+                "OrthodonticService": "false",
+                "Hearing": {
+                    "HearingServicesType": "OTHER"
+                },
+                "DevelopmentallyDisabledServices": "false",
+                "HIVServices": "false",
+                "Vision": {
+                    "VisionServicesType": ""
+                },
+                "OralSurgeryService": "false",
+                "AdultDisabilitySupported": "false",
+                "PeriodonticService": "false",
+                "MobilityServices": "false",
+                "ChildDisabilitySupported": "false",
+                "EndodonticService": "false",
+                "PedodonticService": "false"
+            },
+            "EssentialCommunityProvider": "false",
+            "ElectronicClaimsSubmissionSupported": "false",
+            "WebAddress": "",
+            "MemberEmailAddress": "",
+            "ContactName": "",
+            "SharedProperty": "",
+            "CommonName": "Saturn Dental"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48543}/w9",
+        "id": "1",
+        "value": {
+            "W9": {
+                "Id": "{W9ID}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": ""
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48543"
+    }, {
+        "op": "correlate",
+        "value": "TRN-48543"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48543}/addresses",
+        "id": "1",
+        "value": {
+            "Type": "D",
+            "ZIPCode": "750415913",
+            "State": "TX",
+            "Country": "USA",
+            "City": "Garland",
+            "Line1": "4821 Saturn Rd Ste 106",
+            "County": "Dallas",
+            "Line2": ""
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48543"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48543}/phoneContacts",
+        "id": "1",
+        "value": {
+            "Type": "P",
+            "Number": "8551201",
+            "AreaCode": "972"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/providers",
+        "label": "providertemp",
+        "value": {
+            "NamePrefix": "DDS",
+            "SpecialtySchool": "",
+            "SpecialtyGradYear": "",
+            "DataOwnerId": "1",
+            "FirstName": "Rebecca",
+            "Gender": "F",
+            "MiddleName": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "GraduationYear": "2005",
+            "Tin": "",
+            "NameSuffix": "",
+            "LastName": "Smith",
+            "SchoolOfDentistry": "Florida State University",
+            "BirthDate": "1982-01-11"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/providers/{providertemp}/licenses",
+        "value": {
+            "LicenseNumber": "48530",
+            "IssuingState": "TX",
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/providers/{providertemp}/credentials",
+        "value": {
+            "Credentialed": "2021-10-04",
+            "CredentialingLevel": "NCQA",
+            "IsInitialCred": "true"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48543}/providers",
+        "value": {
+            "IsParticipating": "false",
+            "InLimbo": "false",
+            "ProviderRelationship": "A",
+            "InDirectory": "false",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48543}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics/{TRN-48543}/providers",
+        "value": {
+            "NetworkType": "PPO",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/providers/{providertemp}/specialties",
+        "value": {
+            "Specialty": {
+                "Type": "Primary",
+                "Code": "000"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "S",
+            "PanelNumber": "298",
+            "ClinicID": "{TRN-48543}",
+            "NetworkID": "600",
+            "FeeSchedule": "TX_TRD_01",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48543}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics/{TRN-48543}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48543}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics/{TRN-48543}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48543}",
+            "NetworkID": "609"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48543}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics/{TRN-48543}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48543}",
+            "NetworkID": "610"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48543}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics/{TRN-48543}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48543}",
+            "NetworkID": "611"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48543}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics/{TRN-48543}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48544"
+    }, {
+        "op": "add",
+        "path": "/api/clinics",
+        "id": "1",
+        "label": "TRN-48544",
+        "value": {
+            "DataOwnerId": "1",
+            "Patients": {
+                "UnderEighteens": "false",
+                "UnderThrees": "false"
+            },
+            "EmailAddress": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "Facilities": {
+                "HandicappedParking": "",
+                "PublicTransport": "",
+                "HandicapAccess": "",
+                "Emergencies": {
+                    "Training": "",
+                    "CPR": "",
+                    "Instructions": "false"
+                },
+                "WheelchairAccessible": ""
+            },
+            "PaymentContactName": "",
+            "Services": {
+                "OrthodonticService": "false",
+                "Hearing": {
+                    "HearingServicesType": "OTHER"
+                },
+                "DevelopmentallyDisabledServices": "false",
+                "HIVServices": "false",
+                "Vision": {
+                    "VisionServicesType": ""
+                },
+                "OralSurgeryService": "false",
+                "AdultDisabilitySupported": "false",
+                "PeriodonticService": "false",
+                "MobilityServices": "false",
+                "ChildDisabilitySupported": "false",
+                "EndodonticService": "false",
+                "PedodonticService": "false"
+            },
+            "EssentialCommunityProvider": "false",
+            "ElectronicClaimsSubmissionSupported": "false",
+            "WebAddress": "",
+            "MemberEmailAddress": "",
+            "ContactName": "",
+            "SharedProperty": "",
+            "CommonName": "Highland Dental"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48544}/w9",
+        "id": "1",
+        "value": {
+            "W9": {
+                "Id": "{W9ID2}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": ""
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48544"
+    }, {
+        "op": "correlate",
+        "value": "TRN-48544"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48544}/addresses",
+        "id": "1",
+        "value": {
+            "Type": "D",
+            "ZIPCode": "785014020",
+            "State": "TX",
+            "Country": "USA",
+            "City": "Mcallen",
+            "Line1": "1002 Highland Ave",
+            "County": "MIssion",
+            "Line2": ""
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48544"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48544}/phoneContacts",
+        "id": "1",
+        "value": {
+            "Type": "P",
+            "Number": "2514211",
+            "AreaCode": "956"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48544}/providers",
+        "value": {
+            "IsParticipating": "false",
+            "InLimbo": "false",
+            "ProviderRelationship": "A",
+            "InDirectory": "false",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48544}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics/{TRN-48544}/providers",
+        "value": {
+            "NetworkType": "PPO",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "S",
+            "PanelNumber": "298",
+            "ClinicID": "{TRN-48544}",
+            "NetworkID": "600",
+            "FeeSchedule": "TX_TRD_01",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48544}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics/{TRN-48544}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48544}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics/{TRN-48544}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48544}",
+            "NetworkID": "609"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48544}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics/{TRN-48544}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48544}",
+            "NetworkID": "610"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48544}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics/{TRN-48544}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48544}",
+            "NetworkID": "611"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48544}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics/{TRN-48544}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48545"
+    }, {
+        "op": "add",
+        "path": "/api/clinics",
+        "id": "1",
+        "label": "TRN-48545",
+        "value": {
+            "DataOwnerId": "1",
+            "Patients": {
+                "UnderEighteens": "false",
+                "UnderThrees": "false"
+            },
+            "EmailAddress": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "Facilities": {
+                "HandicappedParking": "",
+                "PublicTransport": "",
+                "HandicapAccess": "",
+                "Emergencies": {
+                    "Training": "",
+                    "CPR": "",
+                    "Instructions": "false"
+                },
+                "WheelchairAccessible": ""
+            },
+            "PaymentContactName": "",
+            "Services": {
+                "OrthodonticService": "false",
+                "Hearing": {
+                    "HearingServicesType": "OTHER"
+                },
+                "DevelopmentallyDisabledServices": "false",
+                "HIVServices": "false",
+                "Vision": {
+                    "VisionServicesType": ""
+                },
+                "OralSurgeryService": "false",
+                "AdultDisabilitySupported": "false",
+                "PeriodonticService": "false",
+                "MobilityServices": "false",
+                "ChildDisabilitySupported": "false",
+                "EndodonticService": "false",
+                "PedodonticService": "false"
+            },
+            "EssentialCommunityProvider": "false",
+            "ElectronicClaimsSubmissionSupported": "false",
+            "WebAddress": "",
+            "MemberEmailAddress": "",
+            "ContactName": "",
+            "SharedProperty": "",
+            "CommonName": "Pine Dental"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48545}/w9",
+        "id": "1",
+        "value": {
+            "W9": {
+                "Id": "{W9ID3}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": ""
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48545"
+    }, {
+        "op": "correlate",
+        "value": "TRN-48545"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48545}/addresses",
+        "id": "1",
+        "value": {
+            "Type": "D",
+            "ZIPCode": "755015111",
+            "State": "TX",
+            "Country": "USA",
+            "City": "Texarkana",
+            "Line1": "817 Pine St",
+            "County": "Bowie",
+            "Line2": ""
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48545"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48545}/phoneContacts",
+        "id": "1",
+        "value": {
+            "Type": "P",
+            "Number": "8881244",
+            "AreaCode": "903"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48545}/providers",
+        "value": {
+            "IsParticipating": "false",
+            "InLimbo": "false",
+            "ProviderRelationship": "A",
+            "InDirectory": "false",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48545}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics/{TRN-48545}/providers",
+        "value": {
+            "NetworkType": "PPO",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "S",
+            "PanelNumber": "298",
+            "ClinicID": "{TRN-48545}",
+            "NetworkID": "600",
+            "FeeSchedule": "TX_TRD_01",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48545}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics/{TRN-48545}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48545}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics/{TRN-48545}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48545}",
+            "NetworkID": "609"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48545}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics/{TRN-48545}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48545}",
+            "NetworkID": "610"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48545}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics/{TRN-48545}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48545}",
+            "NetworkID": "611"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48545}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics/{TRN-48545}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48546"
+    }, {
+        "op": "add",
+        "path": "/api/clinics",
+        "id": "1",
+        "label": "TRN-48546",
+        "value": {
+            "DataOwnerId": "1",
+            "Patients": {
+                "UnderEighteens": "false",
+                "UnderThrees": "false"
+            },
+            "EmailAddress": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "Facilities": {
+                "HandicappedParking": "",
+                "PublicTransport": "",
+                "HandicapAccess": "",
+                "Emergencies": {
+                    "Training": "",
+                    "CPR": "",
+                    "Instructions": "false"
+                },
+                "WheelchairAccessible": ""
+            },
+            "PaymentContactName": "",
+            "Services": {
+                "OrthodonticService": "false",
+                "Hearing": {
+                    "HearingServicesType": "OTHER"
+                },
+                "DevelopmentallyDisabledServices": "false",
+                "HIVServices": "false",
+                "Vision": {
+                    "VisionServicesType": ""
+                },
+                "OralSurgeryService": "false",
+                "AdultDisabilitySupported": "false",
+                "PeriodonticService": "false",
+                "MobilityServices": "false",
+                "ChildDisabilitySupported": "false",
+                "EndodonticService": "false",
+                "PedodonticService": "false"
+            },
+            "EssentialCommunityProvider": "false",
+            "ElectronicClaimsSubmissionSupported": "false",
+            "WebAddress": "",
+            "MemberEmailAddress": "",
+            "ContactName": "",
+            "SharedProperty": "",
+            "CommonName": "Jupiter Dental"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48546}/w9",
+        "id": "1",
+        "value": {
+            "W9": {
+                "Id": "{W9ID3}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": ""
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48546"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48546}/addresses",
+        "id": "1",
+        "value": {
+            "Type": "D",
+            "ZIPCode": "750446578",
+            "State": "TX",
+            "Country": "USA",
+            "City": "Garland",
+            "Line1": "3112 N Jupiter Rd Ste 200",
+            "County": "Dallas",
+            "Line2": ""
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48546"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48546}/phoneContacts",
+        "id": "1",
+        "value": {
+            "Type": "P",
+            "Number": "5214210",
+            "AreaCode": "972"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48546}/providers",
+        "value": {
+            "IsParticipating": "false",
+            "InLimbo": "false",
+            "ProviderRelationship": "A",
+            "InDirectory": "false",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48546}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics/{TRN-48546}/providers",
+        "value": {
+            "NetworkType": "PPO",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "S",
+            "PanelNumber": "298",
+            "ClinicID": "{TRN-48546}",
+            "NetworkID": "600",
+            "FeeSchedule": "TX_TRD_01",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48546}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics/{TRN-48546}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48546}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics/{TRN-48546}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48546}",
+            "NetworkID": "609"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48546}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics/{TRN-48546}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48546}",
+            "NetworkID": "610"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48546}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics/{TRN-48546}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48546}",
+            "NetworkID": "611"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48546}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics/{TRN-48546}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48547"
+    }, {
+        "op": "add",
+        "path": "/api/clinics",
+        "id": "1",
+        "label": "TRN-48547",
+        "value": {
+            "DataOwnerId": "1",
+            "Patients": {
+                "UnderEighteens": "false",
+                "UnderThrees": "false"
+            },
+            "EmailAddress": "",
+            "Effective": {
+                "From": "2020-01-01"
+            },
+            "Facilities": {
+                "HandicappedParking": "",
+                "PublicTransport": "",
+                "HandicapAccess": "",
+                "Emergencies": {
+                    "Training": "",
+                    "CPR": "",
+                    "Instructions": "false"
+                },
+                "WheelchairAccessible": ""
+            },
+            "PaymentContactName": "",
+            "Services": {
+                "OrthodonticService": "false",
+                "Hearing": {
+                    "HearingServicesType": "OTHER"
+                },
+                "DevelopmentallyDisabledServices": "false",
+                "HIVServices": "false",
+                "Vision": {
+                    "VisionServicesType": ""
+                },
+                "OralSurgeryService": "false",
+                "AdultDisabilitySupported": "false",
+                "PeriodonticService": "false",
+                "MobilityServices": "false",
+                "ChildDisabilitySupported": "false",
+                "EndodonticService": "false",
+                "PedodonticService": "false"
+            },
+            "EssentialCommunityProvider": "false",
+            "ElectronicClaimsSubmissionSupported": "false",
+            "WebAddress": "",
+            "MemberEmailAddress": "",
+            "ContactName": "",
+            "SharedProperty": "",
+            "CommonName": "Travis Dental"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48547}/w9",
+        "id": "1",
+        "value": {
+            "W9": {
+                "Id": "{W9ID4}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": ""
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48547"
+    }, {
+        "op": "correlate",
+        "value": "TRN-48547"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48547}/addresses",
+        "id": "1",
+        "value": {
+            "Type": "D",
+            "ZIPCode": "775753532",
+            "State": "TX",
+            "Country": "USA",
+            "City": "Liberty",
+            "Line1": "822 N Travis St",
+            "County": "Liberty",
+            "Line2": ""
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48547"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48547}/phoneContacts",
+        "id": "1",
+        "value": {
+            "Type": "P",
+            "Number": "8795412",
+            "AreaCode": "936"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{TRN-48547}/providers",
+        "value": {
+            "IsParticipating": "false",
+            "InLimbo": "false",
+            "ProviderRelationship": "A",
+            "InDirectory": "false",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48547}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/600/clinics/{TRN-48547}/providers",
+        "value": {
+            "NetworkType": "PPO",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "S",
+            "PanelNumber": "298",
+            "ClinicID": "{TRN-48547}",
+            "NetworkID": "600",
+            "FeeSchedule": "TX_TRD_01",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48547}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics/{TRN-48547}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48547}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics/{TRN-48547}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48547}",
+            "NetworkID": "609"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48547}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics/{TRN-48547}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48547}",
+            "NetworkID": "610"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48547}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics/{TRN-48547}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{TRN-48547}",
+            "NetworkID": "611"
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{TRN-48547}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics",
+        "value": {
+            "Clinic": {
+                "Id": "{CLINIC1}"
+            },
+            "Effective": {
+                "From": "2020-10-04"
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/api/networks/611/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{CLINIC1}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{CLINIC1}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/api/networks/610/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{CLINIC1}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics",
+        "id": "1",
+        "value": {
+            "Clinic": {
+                "Id": "{CLINIC1}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics/{TRN-48547}/providers",
+        "value": {
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "OverrideExceptions": "true",
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "correlate",
+        "value": "TRN-48549"
+    }, {
+        "op": "add",
+        "path": "/api/clinics/{CLINIC1}/providers",
+        "value": {
+            "IsParticipating": "false",
+            "InLimbo": "false",
+            "ProviderRelationship": "A",
+            "InDirectory": "false",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/609/clinics/{CLINIC1}/providers",
+        "value": {
+            "OverrideExceptions": "true",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{CLINIC1}",
+            "NetworkID": "609"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/608/clinics/{CLINIC1}/providers",
+        "value": {
+            "OverrideExceptions": "true",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2020-01-01",
+                "To": "2021-10-03"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/610/clinics/{CLINIC1}/providers",
+        "value": {
+            "OverrideExceptions": "true",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{CLINIC1}",
+            "NetworkID": "610"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/611/clinics/{CLINIC1}/providers",
+        "value": {
+            "OverrideExceptions": "true",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }, {
+        "op": "add",
+        "path": "/api/fees/assignments",
+        "value": {
+            "ProviderID": "{providertemp}",
+            "FeeType": "R",
+            "ClinicID": "{CLINIC1}",
+            "NetworkID": "611"
+        }
+    }, {
+        "op": "add",
+        "path": "/api/networks/747/clinics/{CLINIC1}/providers",
+        "value": {
+            "OverrideExceptions": "true",
+            "Provider": {
+                "Id": "{providertemp}"
+            },
+            "Effective": {
+                "From": "2021-10-04"
+            }
+        }
+    }
+
+]

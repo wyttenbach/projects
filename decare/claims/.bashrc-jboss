@@ -1,0 +1,19 @@
+#!/bin/bash
+export JEE_HOME=$PROJECT_HOME/jboss-4.2.3.GA
+export JEE_DEPLOY=$JEE_HOME/server/default/deploy
+
+function jee-start
+{
+    export JAVA_OPTS="$JAVA_OPTS -Ddefault.flavour=real"
+    export JAVA_OPTS="$JAVA_OPTS -Dclaimstasksservice.flavour=dummy"
+    export JAVA_OPTS="$JAVA_OPTS -Dsuspendedclaimservice.flavour=dummy" 
+    export JAVA_OPTS="$JAVA_OPTS -Dhistorycrosscheckservice.flavour=dummy" 
+    export JAVA_OPTS="$JAVA_OPTS -Ddctm.flavour=dummy"
+
+    export JAVA_OPTS="$JAVA_OPTS -Dclaimsweb.flavour=gwtreal"
+    export JAVA_OPTS="$JAVA_OPTS -Ddatabase.url=jdbc:oracle:thin:@opst.decare.com:1571:OPST"
+
+    export JAVA_OPTS="$JAVA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=4000"; 
+    (cd $JEE_HOME/bin; ./run.bat -b 0.0.0.0)
+}
+

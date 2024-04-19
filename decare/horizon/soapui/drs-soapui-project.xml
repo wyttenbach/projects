@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="drs" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" id="7b51066a-f4da-4039-a14b-51887cb13712" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="DrsPortBinding" type="wsdl" bindingName="{http://service.drs.dds.com/ws}DrsPortBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:9090/dds-drs-remote-services/service/DocumentRetrievalService.wsdl" id="b497255f-b552-4917-9451-587cc3db3a8c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:9090/dds-drs-remote-services/service/DocumentRetrievalService.wsdl"><con:part><con:url>http://localhost:9090/dds-drs-remote-services/service/DocumentRetrievalService.wsdl</con:url><con:content><![CDATA[<definitions name="drs" targetNamespace="http://service.drs.dds.com/ws" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.drs.dds.com/ws" xmlns:drsns="http://ws.service.drs.dds.com/" xmlns:drsd="http://api.drs.dds.com/">
+  <types>
+    <xs:schema targetNamespace="http://service.drs.dds.com/ws">
+      <xs:import namespace="http://api.drs.dds.com/" schemaLocation="DocumentRetrievalService.xsd"/>
+      <xs:simpleType name="DocumentRetrievalResponseCode">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="SUCCESS"/>
+          <xs:enumeration value="DOCUMENT_NOT_FOUND"/>
+          <xs:enumeration value="UNKNOWN_ERROR"/>
+          <xs:enumeration value="VALIDATION_ISSUES"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:complexType name="DocumentRetrievalResponseMessage">
+        <xs:sequence>
+          <xs:element type="tns:DocumentRetrievalResponseCode" name="responseCode"/>
+          <xs:element type="xs:string" name="message"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BaseRequest">
+        <xs:sequence>
+          <xs:element type="xs:string" name="clientName"/>
+          <xs:element type="xs:string" name="userName"/>
+          <xs:element type="xs:string" name="clientTransactionId"/>
+          <xs:element type="xs:dateTime" name="clientSubmitDateTime"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BaseResponse">
+        <xs:sequence>
+          <xs:element type="xs:string" name="clientName"/>
+          <xs:element type="xs:string" name="userName"/>
+          <xs:element type="xs:string" name="clientTransactionId"/>
+          <xs:element type="xs:dateTime" name="clientSubmitDateTime"/>
+          <xs:element type="xs:string" name="serverTransactionId"/>
+          <xs:element type="tns:DocumentRetrievalResponseMessage" name="responseMessage"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetDocumentRequest">
+        <xs:complexContent>
+          <xs:extension base="tns:BaseRequest">
+            <xs:sequence>
+              <xs:element type="xs:string" name="documentIdentifier"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="GetDocumentResponse">
+        <xs:complexContent>
+          <xs:extension base="tns:BaseResponse">
+            <xs:sequence>
+              <xs:element type="drsd:Document" name="document" minOccurs="0"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="getDocument" type="tns:GetDocumentRequest"/>
+      <xs:element name="getDocumentResponse" type="tns:GetDocumentResponse"/>
+    </xs:schema>
+  </types>
+  <message name="getDocument">
+    <part name="getDocumentRequest" element="tns:getDocument"/>
+  </message>
+  <message name="getDocumentResponse">
+    <part name="getDocumentResponse" element="tns:getDocumentResponse"/>
+  </message>
+  <binding name="DrsPortBinding" type="tns:DocumentRetrievalService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getDocument">
+      <soap:operation soapAction="http://drs.dds.com/DocumentRetrievalService/getDocument/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <portType name="DocumentRetrievalService">
+    <operation name="getDocument">
+      <input message="tns:getDocument"/>
+      <output message="tns:getDocumentResponse"/>
+    </operation>
+  </portType>
+  <service name="drs">
+    <port name="DrsServicePort" binding="tns:DrsPortBinding">
+      <soap:address location="http://localhost:9080/DrsWebServiceV1/drs"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:9090/dds-drs-remote-services/service/DocumentRetrievalService.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="http://api.drs.dds.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Document" xmlns="http://www.w3.org/2001/XMLSchema">
+    <xs:sequence>
+      <xs:element name="name" type="string"/>
+      <xs:element name="type" type="string"/>
+      <xs:element name="contentType" type="string"/>
+      <xs:element name="contentSize" type="long"/>
+      <xs:element name="content" type="base64Binary"/>
+      <xs:element name="waterMarked" type="boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#endpoint}/dds-drs-remote-services/service/drs</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://drs.dds.com/DocumentRetrievalService/getDocument/" name="getDocument" bindingOperationName="getDocument" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="2499c9c2-8b91-4da0-80ab-513913bac360"><con:settings/><con:call name="Request 1" id="7b78c288-d967-4737-bea2-fa4d419b47ac"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#endpoint}/dds-drs-remote-services/service/drs</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://service.drs.dds.com/ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getDocument>
+         <clientName>soapui</clientName>
+         <userName>soapui</userName>
+         <clientTransactionId>soapui</clientTransactionId>
+         <clientSubmitDateTime>2001-12-17T09:30:47Z</clientSubmitDateTime>
+         <documentIdentifier>${#Project#documentIdentifier}</documentIdentifier>
+      </ws:getDocument>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://drs.dds.com/DocumentRetrievalService/getDocument/"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="TestSuite 1" id="84c262dd-f530-4060-97a3-e4d046db8a93"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true" id="c54bb450-82f9-49e2-8e3e-4cef3cf47a50"><con:settings/><con:testStep type="request" name="getDocument - Request 1" id="d391a8fe-daad-47c0-9390-aea6f7e41707"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DrsPortBinding</con:interface><con:operation>getDocument</con:operation><con:request name="getDocument - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="16d66fed-29c5-405f-8d86-ef4d6ea4ef6d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#endpoint}/dds-drs-remote-services/service/drs</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://service.drs.dds.com/ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getDocument>
+         <clientName>soapui</clientName>
+         <userName>soapui</userName>
+         <clientTransactionId>soapui</clientTransactionId>
+         <clientSubmitDateTime>2001-12-17T09:30:47Z</clientSubmitDateTime>
+         <documentIdentifier>${#Project#documentIdentifier}</documentIdentifier>
+      </ws:getDocument>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response" id="39336481-cf85-49b6-b1fc-4a297d371b27"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault" id="1d6ed5de-8dae-4bcc-ac2c-6000638e59b2"/><con:assertion type="Simple NotContains" name="Not Contains" id="935302f2-5ffb-4522-8efc-0a8ec4e2181c"><con:configuration><token>ERROR</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://drs.dds.com/DocumentRetrievalService/getDocument/"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>endpoint</con:name><con:value>${#Project#tomcat}</con:value></con:property><con:property><con:name>documentIdentifier</con:name><con:value>1204</con:value></con:property><con:property><con:name>devtest</con:name><con:value>oraappdds4.decaresystems.ie:8080</con:value></con:property><con:property><con:name>qa</con:name><con:value>hydrus.decare.com:8080</con:value></con:property><con:property><con:name>prod</con:name><con:value>argus.decare.com:8080</con:value></con:property><con:property><con:name>tomcat</con:name><con:value>localhost:8080</con:value></con:property><con:property><con:name>jetty</con:name><con:value>localhost:9090</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

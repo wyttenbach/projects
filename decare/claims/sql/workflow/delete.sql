@@ -1,0 +1,13 @@
+delete from wh_task_role;
+delete from wh_payload;
+delete from wh_business_administrator;
+delete from wh_assignee;
+delete from wf_event_type;
+delete from wf_proc_inst;
+delete from wf_session;
+delete from wf_var_inst;
+delete from wf_work_item;
+delete from wh_task;
+commit;
+--delete from clm_document_image where claim_type_id <= 7;
+--delete from wh_task where name = 'ClaimDocument.EnterClaim';

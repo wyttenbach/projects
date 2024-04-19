@@ -1,0 +1,57 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_DOMAIN="$(cygpath -m $WL/domains/ddssharedservices)"
+export WL_PORT=7794
+export JEE_PORT="$WL_PORT"
+export JEE_DEPLOY="$WL_DEPLOY"
+
+function deploy-build
+{
+    undeploy
+    deploy-bins
+}
+
+function deploy-bins
+{
+    deploy $SRC/dds-document-bins/*/*/*.war
+    export WL_CONTEXT_ROOT=ddsdocumentbins
+}
+
+function deploy-dds
+{
+    deploy $P/enrollment/src/enrollment/dds-sharedservices-parent/*/*/*.ear
+    export WL_CONTEXT_ROOT=ddssharedservicessr
+}
+
+function deploy-ddsws
+{
+    # Note appears to require JDK8 to compile
+    deploy $SRC/dds-sharedwebservices-parent/*/*/*.war
+    export WL_CONTEXT_ROOT=ddsws
+}
+
+function go
+{ 
+    host=localhost;
+    if [ $# -gt 0 ]; then
+        host=$(lookup $1);
+        shift;
+    fi;
+
+    uri="/ddsdocumentbins/api/bins/claimattachment?documentName=000018164531";
+    if [ $# -gt 0 ]; then
+        uri="$1";
+        shift;
+    fi;
+
+    dir=/tmp/go-get;
+    mkdir -p $dir;
+    file="$dir/ddsdocumentbins-${host}.json";
+    roll $file;
+
+    url=$(printf "http://%s:7794%s" $host $uri);
+    echo $url
+    do_echo curl -u enrollment:P8yi49f9bQv -k -X GET $url -o $file && ls -l $file*
+}
+

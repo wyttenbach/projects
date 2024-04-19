@@ -1,0 +1,74 @@
+#!/bin/bash
+export TOMCAT_HOME="$PROJECT_HOME/apache-tomcat-6.0.26"
+export CATALINA_HOME="$TOMCAT_HOME"
+export JEE_HOME="$TOMCAT_HOME"
+export JEE_DEPLOY="$TOMCAT_HOME/webapps"
+export JEE_CONTEXT_ROOT=claimsweb-0.5-SNAPSHOT
+export JEE_APP=$SRC/claimsweb/target/*.war
+export JEE_WEB=$JEE_DEPLOY/claimsweb
+export JEE_PORT=8080
+
+function jee-start
+{
+    export CATALINA_OPTS="-server -Xmx512m -XX:MaxPermSize=128m"
+    export CATALINA_OPTS="$CATALINA_OPTS -ea"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote"
+    export CATALINA_OPTS="$CATALINA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=4000"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.port=22222"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.ssl=false"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.authenticate=false"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dbtm.root=$CATALINA_HOME -Dbitronix.tm.configuration=$CATALINA_HOME/conf/btm-config.properties"
+    export CATALINA_OPTS="$CATALINA_OPTS -Ddatabase.url=jdbc:oracle:thin:@opst.decare.com:1571:OPST"
+    export CATALINA_OPTS="$CATALINA_OPTS -Ddefault.flavour=real"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dclaimsaccesscontrolservice.flavour=dummy"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dorthotreatmentplanservice.flavour=dummy"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dclaimstasksservice.flavour=dummy"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dsuspendedclaimservice.flavour=dummy" 
+    export CATALINA_OPTS="$CATALINA_OPTS -Dhistorycrosscheckservice.flavour=dummy" 
+    export CATALINA_OPTS="$CATALINA_OPTS -Ddctm.flavour=dummy"
+    export CATALINA_OPTS="$CATALINA_OPTS -Ddctm.docbase=docd -Ddctm.localpath=c:\Documentum\temp"
+    export CATALINA_OPTS="$CATALINA_OPTS -Xbootclasspath/a:c:\Documentum\config"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dclaims.incoming.brokerURL=tcp://aea.decare.com:61616"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dclaims.complete.brokerURL=tcp://aea.decare.com:61616"
+# following may not be valid: check claimsweb's hibernate.properties!
+##    export CATALINA_OPTS="$CATALINA_OPTS -Dclaimsweb.hibernate.connection.url=jdbc:oracle:thin:@192.168.213.230:1521:DEV2"
+#    export CATALINA_OPTS="$CATALINA_OPTS -Dclaims.incoming.brokerURL=tcp://dd20401230.decare.com:61616?jms.useAsyncSend=true"
+#    export CATALINA_OPTS="$CATALINA_OPTS -Dclaims.complete.brokerURL=tcp://dd20401230.decare.com:61616"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denr.naming.provider.url=ormi://localhost:3231/enrollmentsharedservicesapp"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denr.naming.security.credentials=welcome"
+# following are bogus but required
+    export CATALINA_OPTS="$CATALINA_OPTS -Denrollmentejb.groupsharedservices.naming.provider.url=ormi://localhost:3231/groupsharedservicesapp"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denrollmentejb.hibernate.cache.provider_class=corporate.fs.enrollment.hibernate.DummyOSCacheProvider"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denrollmentejb.groupsharedservices.cache.size=10"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denrollmentejb.groupsharedservices.cache.global_refresh_period=600"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denrollmentejb.groupsharedservices.hyration_type=HYDRATION_FULL"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dgroupsharedservices.naming.factory.initial=com.evermind.server.rmi.RMIInitialContextFactory"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dgroupsharedservices.naming.security.principal=oc4jadmin"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dgroupsharedservices.naming.security.credentials=welcome"
+    echo $CATALINA_OPTS
+# also modified catalina.bat to not use "start" command 
+# when invoking java
+    (cd $TOMCAT_HOME/bin; ./startup.bat)
+}
+
+function jee-stop
+{
+    (cd $TOMCAT_HOME/bin; ./shutdown.bat)
+}
+
+function undeploy
+{
+    junk $JEE_DEPLOY/$JEE_CONTEXT_ROOT*
+}
+
+function deploy
+{
+    do_cmd install $SRC/claimsweb/claimsweb/target/*.war $JEE_DEPLOY
+}
+
+function go
+{
+    local url=http://localhost:8080/$JEE_CONTEXT_ROOT
+    echo $url
+    ie $url
+}

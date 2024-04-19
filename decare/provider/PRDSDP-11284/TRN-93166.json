@@ -1,0 +1,233 @@
+[
+  {
+    "op": "add",
+    "path": "/api/clinics/493875/providers",
+    "value": {
+      "ProviderRelationship": "A",
+      "Provider": {
+        "Id": "582202"
+      },
+      "Effective": {
+        "From": "2021-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/612/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "582202"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "582202"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2021-01-01",
+        "To": "2022-04-18"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/1110/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "582202"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/602/clinics/493875/providers",
+    "value": {
+      "NetworkType": "PPO",
+      "Provider": {
+        "Id": "582202"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-93166"
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "582202",
+      "FeeType": "S",
+      "PanelNumber": "340",
+      "ClinicID": "493875",
+      "NetworkID": "602",
+      "FeeSchedule": "D4C_MDOR03",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/493875/providers",
+    "value": {
+      "ProviderRelationship": "A",
+      "Provider": {
+        "Id": "436408"
+      },
+      "Effective": {
+        "From": "2021-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/612/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "436408"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "436408"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2021-01-01",
+        "To": "2022-04-18"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/1110/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "436408"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/493875/providers",
+    "value": {
+      "ProviderRelationship": "A",
+      "Provider": {
+        "Id": "853936"
+      },
+      "Effective": {
+        "From": "2021-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/612/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "853936"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/853936/specialties",
+    "value": {
+      "DataOwner": {
+        "Id": "10"
+      },
+      "Specialty": {
+        "Type": "Primary",
+        "Code": ""
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "853936"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2021-01-01",
+        "To": "2022-04-18"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/853936/specialties",
+    "value": {
+      "DataOwner": {
+        "Id": "10"
+      },
+      "Specialty": {
+        "Type": "Primary",
+        "Code": ""
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/1110/clinics/493875/providers",
+    "value": {
+      "Provider": {
+        "Id": "853936"
+      },
+      "OverrideExceptions": "true",
+      "Effective": {
+        "From": "2022-04-19"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/853936/specialties",
+    "value": {
+      "DataOwner": {
+        "Id": "10"
+      },
+      "Specialty": {
+        "Type": "Primary",
+        "Code": ""
+      }
+    }
+  }
+]

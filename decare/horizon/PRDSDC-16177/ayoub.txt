@@ -1,0 +1,194 @@
+!!com.dds.portal.domain.member.ClaimDetailHeader
+aggregatedAmountFromLines: {claimCoInsuranceAmount: 0.00, claimCoPayAmount: 0.00,
+  claimDeductibleAmount: 0.00}
+claimAdjustmentReasonCode: null
+claimAdjustmentReasonDef: null
+claimAllowedAmount: 0.00
+claimCheckDate: null
+claimCheckNo: null
+claimComments: null
+claimEFTTraceNo: null
+claimFirstServiceDate: {}
+claimId: '61929916'
+claimLastServiceDate: {}
+claimLastUpdate: &id001 {}
+claimMessageText: null
+claimNotCoveredAmount: 875.00
+claimPaidAmount: 0.00
+claimPatientDOB: {}
+claimPatientDetail: {patientCoInsuranceAmount: 0.00, patientCoPayAmount: 0.00, patientDeductibleAmount: 0.00,
+  patientLiabilityAmount: 0.00}
+claimPatientFirstName: ADAM
+claimPatientGender: MALE
+claimPatientLastName: BALKAR
+claimPatientMiddleInitial: null
+claimPayeeName: Shoshana Sperling
+claimPayeeType: PROVIDER
+claimPaymentIndicator: null
+claimProviderAddress: null
+claimProviderFirstName: Shoshana
+claimProviderId: '843823921'
+claimProviderLastName: Sperling
+claimProviderMiddleName: L
+claimProviderNPI: '808401508294356'
+claimProviderOrgName: null
+claimReceivedDate: {}
+claimStatusCode: FINALIZED
+claimStatusDate: *id001
+claimSubsBrandingInd: null
+claimSubscriberGender: FEMALE
+claimSubscriberId: 3HZN37214820
+claimTotalChargeAmount: 875.00
+subscriberFirstName: LITSA
+subscriberLastName: AYOUB
+
+1- !!com.dds.portal.domain.member.ClaimLineDetail
+  chargeAmount: 175.00
+  claimDetailAllowedAmount: 0.00
+  claimDetailCoinsuranceAmount: 0.00
+  claimDetailCopayAmount: 0.00
+  claimDetailDeductibleAmount: 0.00
+  claimDetailMessage: null
+  claimDetailMessageCode: '914'
+  claimDetailNotCoveredAmount: 175.00
+  claimDetailPatientLiabilityAmount: 0.00
+  claimDetailProviderLiabilityAmount: 0.00
+  claimDetailServiceDef: null
+  claimDetailServiceType: null
+  claimDetailStatusCode: FINALIZED
+  claimDetailToothNumberQuadrant: ''
+  claimLineLastUpdate: {}
+  claimLineSequeceNumber: '1'
+  paidAmount: 0.00
+  procedureCode: null
+  procedureCodeType: null
+  serviceFromDate: {}
+  serviceUnitCount: 1
+  servicetoDate: {}
+  statusCategoryDescription: null
+  statusDescription: null
+2- !!com.dds.portal.domain.member.ClaimLineDetail
+  chargeAmount: 175.00
+  claimDetailAllowedAmount: 0.00
+  claimDetailCoinsuranceAmount: 0.00
+  claimDetailCopayAmount: 0.00
+  claimDetailDeductibleAmount: 0.00
+  claimDetailMessage: null
+  claimDetailMessageCode: '914'
+  claimDetailNotCoveredAmount: 175.00
+  claimDetailPatientLiabilityAmount: 0.00
+  claimDetailProviderLiabilityAmount: 0.00
+  claimDetailServiceDef: null
+  claimDetailServiceType: null
+  claimDetailStatusCode: FINALIZED
+  claimDetailToothNumberQuadrant: ''
+  claimLineLastUpdate: {}
+  claimLineSequeceNumber: '2'
+  paidAmount: 0.00
+  procedureCode: null
+  procedureCodeType: null
+  serviceFromDate: {}
+  serviceUnitCount: 1
+  servicetoDate: {}
+  statusCategoryDescription: null
+  statusDescription: null
+3- !!com.dds.portal.domain.member.ClaimLineDetail
+  chargeAmount: 175.00
+  claimDetailAllowedAmount: 0.00
+  claimDetailCoinsuranceAmount: 0.00
+  claimDetailCopayAmount: 0.00
+  claimDetailDeductibleAmount: 0.00
+  claimDetailMessage: null
+  claimDetailMessageCode: '914'
+  claimDetailNotCoveredAmount: 175.00
+  claimDetailPatientLiabilityAmount: 0.00
+  claimDetailProviderLiabilityAmount: 0.00
+  claimDetailServiceDef: null
+  claimDetailServiceType: null
+  claimDetailStatusCode: FINALIZED
+  claimDetailToothNumberQuadrant: ''
+  claimLineLastUpdate: {}
+  claimLineSequeceNumber: '3'
+  paidAmount: 0.00
+  procedureCode: null
+  procedureCodeType: null
+  serviceFromDate: {}
+  serviceUnitCount: 1
+  servicetoDate: {}
+  statusCategoryDescription: null
+  statusDescription: null
+4- !!com.dds.portal.domain.member.ClaimLineDetail
+  chargeAmount: 175.00
+  claimDetailAllowedAmount: 0.00
+  claimDetailCoinsuranceAmount: 0.00
+  claimDetailCopayAmount: 0.00
+  claimDetailDeductibleAmount: 0.00
+  claimDetailMessage: null
+  claimDetailMessageCode: '914'
+  claimDetailNotCoveredAmount: 175.00
+  claimDetailPatientLiabilityAmount: 0.00
+  claimDetailProviderLiabilityAmount: 0.00
+  claimDetailServiceDef: null
+  claimDetailServiceType: null
+  claimDetailStatusCode: FINALIZED
+  claimDetailToothNumberQuadrant: ''
+  claimLineLastUpdate: {}
+  claimLineSequeceNumber: '4'
+  paidAmount: 0.00
+  procedureCode: null
+  procedureCodeType: null
+  serviceFromDate: {}
+  serviceUnitCount: 1
+  servicetoDate: {}
+  statusCategoryDescription: null
+  statusDescription: null
+5- !!com.dds.portal.domain.member.ClaimLineDetail
+  chargeAmount: 175.00
+  claimDetailAllowedAmount: 0.00
+  claimDetailCoinsuranceAmount: 0.00
+  claimDetailCopayAmount: 0.00
+  claimDetailDeductibleAmount: 0.00
+  claimDetailMessage: null
+  claimDetailMessageCode: '914'
+  claimDetailNotCoveredAmount: 175.00
+  claimDetailPatientLiabilityAmount: 0.00
+  claimDetailProviderLiabilityAmount: 0.00
+  claimDetailServiceDef: null
+  claimDetailServiceType: null
+  claimDetailStatusCode: FINALIZED
+  claimDetailToothNumberQuadrant: ''
+  claimLineLastUpdate: {}
+  claimLineSequeceNumber: '5'
+  paidAmount: 0.00
+  procedureCode: null
+  procedureCodeType: null
+  serviceFromDate: {}
+  serviceUnitCount: 1
+  servicetoDate: {}
+  statusCategoryDescription: null
+  statusDescription: null
+6- !!com.dds.portal.domain.member.ClaimLineDetail
+  chargeAmount: 875.00
+  claimDetailAllowedAmount: 0.00
+  claimDetailCoinsuranceAmount: 0.00
+  claimDetailCopayAmount: 0.00
+  claimDetailDeductibleAmount: 0.00
+  claimDetailMessage: null
+  claimDetailMessageCode: '709'
+  claimDetailNotCoveredAmount: 875.00
+  claimDetailPatientLiabilityAmount: 0.00
+  claimDetailProviderLiabilityAmount: 875.00
+  claimDetailServiceDef: ORTHODONTICS
+  claimDetailServiceType: '38'
+  claimDetailStatusCode: FINALIZED
+  claimDetailToothNumberQuadrant: ''
+  claimLineLastUpdate: {}
+  claimLineSequeceNumber: '6'
+  paidAmount: 0.00
+  procedureCode: null
+  procedureCodeType: null
+  serviceFromDate: {}
+  serviceUnitCount: 1
+  servicetoDate: {}
+  statusCategoryDescription: null
+  statusDescription: null

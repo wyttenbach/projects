@@ -1,0 +1,8 @@
+==== accumulator-cache-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/accumulator-cache-parent
+==== claim-accumulator-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-accumulator-parent
+==== dds-document-bins ====
+ssh://git@bitbucket.decaresystems.ie:7999/dss/dds-document-bins
+==== overjet-gateway-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/overjet-gateway-parent

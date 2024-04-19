@@ -1,0 +1,19 @@
+{
+  "Id": 430720,
+  "CommonName": "Brian L Pierce DDS, PA",
+  "Counts": {
+    "GeneralDentists": 1,
+    "Orthodontists": 0,
+    "Specialists": 0,
+    "Relationships": {
+      "Associates": 1,
+      "Owners": 0,
+      "Partners": 0,
+      "Unknown": 0
+    }
+  },
+  "Checks": {
+    "HmoOnly": false,
+    "NonHmoOnly": true
+  }
+}

@@ -1,0 +1,8 @@
+==== dds-util ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/dds-util
+==== ddscore ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/ddscore
+==== ddsdatasource ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/ddsdatasource
+==== group-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsgrp/group-parent

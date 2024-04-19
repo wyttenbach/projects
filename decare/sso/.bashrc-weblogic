@@ -1,0 +1,21 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_DOMAIN="$(cygpath -m $WL/domains/sharedservicesof)"
+export WL_PORT=7784
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+export WL_JDWP_PORT=$(expr $WL_PORT + 1000)
+
+
+function deploy-build
+{
+    undeploy
+#    deploy $SRC/pricingconfig-parent/*/*/*.ear
+    deploy $SRC/group-parent/groupsharedservices-parent/*/*/*.ear
+}
+
+function go {
+    echo Nowhere to go
+}
+

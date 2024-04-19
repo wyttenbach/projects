@@ -1,0 +1,18 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+export JEE_URL="http://localhost:$WL_PORT/groupweb/login.html"
+
+## groupweb
+export WL_DOMAIN="$(cygpath -m $WL/domains/group)"
+export WL_PORT=7787
+
+function deploy-build
+{
+    undeploy
+    deploy-services
+    deploy-web
+}
+

@@ -1,0 +1,22 @@
+# PROD (CRM)
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.accesscontrol.provider.url=opmn:ormi://$PRODHOST:6003:accesscontrol/accesscontrol"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.security.credentials=ora10as"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.security.principal=oc4jadmin"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.security.provider.url=opmn:ormi://$PRODHOST:6003:accesscontrol/accesscontrol"
+
+# PROD (accesscontrol)
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.external.ldap.base.dn=dc=decare,dc=com"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.external.ldap.search.base.dn="
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.external.ldap.credentials=gIl12GQwJkZ5"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.external.ldap.initial.context.factory=com.sun.jndi.ldap.LdapCtxFactory"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.external.ldap.principal=smadmin"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.external.ldap.provider.url=ldap://aether.decare.com:389"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.authorization.type=simple"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.base.dn=dc=decare,dc=com"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.search.base.dn="
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.grp.search.base.dn=ou=siteminder,ou=apps,dc=decare,dc=com"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.credentials=gIl12GQwJkZ5"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.initial.context.factory=com.sun.jndi.ldap.LdapCtxFactory"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.principal=smadmin"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Ddsiframework.ldap.provider.url=ldap://aether.decare.com:389"
+	export OC4J_JVM_ARGS="$OC4J_JVM_ARGS -Dfsnavigationweb.flavour=prod"

@@ -1,0 +1,1 @@
+DDSPMNS-18: Provider Feeder - Support for search on TIN AND NPI OR License&State

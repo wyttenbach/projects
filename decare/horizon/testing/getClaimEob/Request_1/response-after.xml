@@ -1,0 +1,124 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:getClaimEobResponse xmlns:ns2="http://ws.service.member.portal.dds.com/">
+         <ClientName>?</ClientName>
+         <UserName>?</UserName>
+         <ClientTransactionId>?</ClientTransactionId>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSessionId>?</ClientSessionId>
+         <Timeout>60</Timeout>
+         <ServerTransactionId>44537f23-e187-4df2-af35-4706ea0562ac</ServerTransactionId>
+         <ResponseMessage>
+            <ResponseCode>SUCCESS</ResponseCode>
+            <Message>SUCCESS</Message>
+         </ResponseMessage>
+         <EOBSearchResponse match="Single">
+            <EOB>
+               <MemberID>3HZN86819480</MemberID>
+               <ClaimId>48762065</ClaimId>
+               <CheckNumber>?</CheckNumber>
+               <DocumentType>OR</DocumentType>
+               <DocumentID>d385e6f4-0436-400a-a805-54f947950a23</DocumentID>
+               <DocumentDate>2020-06-16</DocumentDate>
+               <CustSvceAddr>
+                  <Line1>PO Box 1311</Line1>
+                  <Line2>Minneapolis</Line2>
+                  <Line3>MN 55440-1311</Line3>
+               </CustSvceAddr>
+               <CheckAmount>127.20</CheckAmount>
+               <SubsID>154823445</SubsID>
+               <SubsCCID>3HZN86819480</SubsCCID>
+               <GroupNumber>0100DN</GroupNumber>
+               <PmntSummary>
+                  <NetClaimAmnt>127.20</NetClaimAmnt>
+               </PmntSummary>
+               <ClaimsSummary isMultiClaim="false">
+                  <ClaimsSummaryLine>
+                     <SubRes>249.20</SubRes>
+                     <AmntHorizonPaid>28.80</AmntHorizonPaid>
+                     <ClmAmt>28.80</ClmAmt>
+                     <Provider>BUTLER FAMILY DENTAL ASSOCIATES</Provider>
+                     <Patient>ALISON GLAZER</Patient>
+                     <ClaimNum>48762065</ClaimNum>
+                     <EmpId>0100DN</EmpId>
+                  </ClaimsSummaryLine>
+                  <ClaimsSummaryLine>
+                     <SubRes>241.60</SubRes>
+                     <AmntHorizonPaid>98.40</AmntHorizonPaid>
+                     <ClmAmt>98.40</ClmAmt>
+                     <Provider>BUTLER FAMILY DENTAL ASSOCIATES</Provider>
+                     <Patient>ALISON GLAZER</Patient>
+                     <ClaimNum>48762065</ClaimNum>
+                     <EmpId>0100DN</EmpId>
+                  </ClaimsSummaryLine>
+               </ClaimsSummary>
+               <Total>
+                  <AlldAmt>209.00</AlldAmt>
+                  <DedAmt>50.00</DedAmt>
+                  <OthCarAmt>31.80</OthCarAmt>
+                  <NcovAmt>409.00</NcovAmt>
+                  <HorPdAmt>127.20</HorPdAmt>
+                  <SubRes>490.80</SubRes>
+               </Total>
+               <Claims ClaimNum="48762065" isFirstClm="true" isLastClm="true">
+                  <ClaimSummary>
+                     <ClaimNum>48762065</ClaimNum>
+                     <PatientName>ALISON GLAZER</PatientName>
+                     <AmntHorizonPaid>127.20</AmntHorizonPaid>
+                     <Rel>Self</Rel>
+                     <GroupNumber>0100DN</GroupNumber>
+                     <TotCharge>618.00</TotCharge>
+                     <SubRes>490.80</SubRes>
+                     <ProName>BUTLER FAMILY DENTAL ASSOCIATES</ProName>
+                     <SubsCCID>3HZN86819480</SubsCCID>
+                  </ClaimSummary>
+                  <ClmDet>
+                     <PatientName>ALISON GLAZER</PatientName>
+                     <ClaimNum>48762065</ClaimNum>
+                     <FrDt>2020-06-02</FrDt>
+                     <PosTos>20 DO</PosTos>
+                     <AlldAmt>86.00</AlldAmt>
+                     <CoinCop>0.00</CoinCop>
+                     <DedAmt>50.00</DedAmt>
+                     <OthCarAmt>7.20</OthCarAmt>
+                     <NcovAmt>0.00</NcovAmt>
+                     <HorPdAmt>28.80</HorPdAmt>
+                     <ProName>BUTLER FAMILY DENTAL ASSOCIATES</ProName>
+                     <SubRes>249.20</SubRes>
+                     <ProcCod>D2392</ProcCod>
+                     <TotSrf>20 DO</TotSrf>
+                  </ClmDet>
+                  <ClmDet>
+                     <PatientName>ALISON GLAZER</PatientName>
+                     <ClaimNum>48762065</ClaimNum>
+                     <FrDt>2020-06-02</FrDt>
+                     <PosTos>15 DOB</PosTos>
+                     <AlldAmt>123.00</AlldAmt>
+                     <CoinCop>0.00</CoinCop>
+                     <DedAmt>0.00</DedAmt>
+                     <OthCarAmt>24.60</OthCarAmt>
+                     <NcovAmt>0.00</NcovAmt>
+                     <HorPdAmt>98.40</HorPdAmt>
+                     <ProName>BUTLER FAMILY DENTAL ASSOCIATES</ProName>
+                     <SubRes>241.60</SubRes>
+                     <ProcCod>D2393</ProcCod>
+                     <TotSrf>15 DOB</TotSrf>
+                  </ClmDet>
+                  <Total>
+                     <AlldAmt>209.00</AlldAmt>
+                     <CoinCop>0.00</CoinCop>
+                     <DedAmt>50.00</DedAmt>
+                     <OthCarAmt>31.80</OthCarAmt>
+                     <NcovAmt>409.00</NcovAmt>
+                     <HorPdAmt>127.20</HorPdAmt>
+                     <SubRes>490.80</SubRes>
+                  </Total>
+               </Claims>
+               <AppealLetter>
+                  <MsgBrdCast134>Additional Information - If you require additional information regarding this claim, please write to us at: Horizon BCBSNJ Dental Programs PO BOX 1311 MINNEAPOLIS, MN 55440-1311 or, for immediate assistance please call us at: 1-800-433-6825 Adverse benefit Determination / Alternative Dispute Resolution Methods: 1. This claim has been adjudicated according to the member's specific plan design. 2. The claimant (or his/her authorized representative) has the right to appeal this claim decision, and may do so by writing to us at the address listed below. The claimant has 180 days from receipt of this notice to appeal. We will respond to appeal within 30 calendar days. Please send your appeal to the following address: Horizon BCBSNJ Dental Appeals P.O. Box 551 Minneapolis, Minnesota 55337 3. If the claimant disagrees with the result of the initial written appeal to Horizon BCBSNJ Dental Programs, the claimant has the right to further the appeal by sending to Horizon BCBSNJ Dental Programs any additional information or data the claimant determines relevant to the appeal. We will respond to the second appeal within 30 calendar days. 4. If the member is covered under an ERISA group and is still not satisfied after exhausting this and not more than one other level of appeal, the member has a right to bring a civil action under Section 502(a) of the Employee Retirement Income Security Act (ERISA) of 1974.</MsgBrdCast134>
+               </AppealLetter>
+            </EOB>
+         </EOBSearchResponse>
+      </ns2:getClaimEobResponse>
+   </S:Body>
+</S:Envelope>

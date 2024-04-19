@@ -1,0 +1,111 @@
+{
+  "Effective": {
+    "From": "2021-10-15",
+    "To": null
+  },
+  "Brand": {
+    "Id": 1
+  },
+  "NetworkClass": "PPO/Medicare",
+  "DefaultFeeType": null,
+  "ApplicableFees": [],
+  "DisplayName": "Decare Dental Network",
+  "DirectoryAccuracy": "Y",
+  "AllowDiversified": false,
+  "AllowDiversifiedSpecialty": false,
+  "NetworkName": "Decare Dental Network",
+  "ContractTerms": {
+    "Id": 6
+  },
+  "Id": 479,
+  "Network": {
+    "Id": 433,
+    "Name": "DDN - Expanded DDN",
+    "IsHmoNetwork": false
+  },
+  "Grid": {
+    "Id": 24,
+    "Name": "Minnesota",
+    "State": "MN",
+    "CredentialsAppId": 1
+  },
+  "Specialties": [
+    "GENERAL DENTIST"
+  ],
+  "OptionalContractDocuments": [
+    {
+      "Id": 89,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/contractDocuments/89",
+          "entity": "contractDocument"
+        }
+      ],
+      "DocumentCode": "000C69"
+    },
+    {
+      "Id": 90,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/contractDocuments/90",
+          "entity": "contractDocument"
+        }
+      ],
+      "DocumentCode": "000C70"
+    },
+    {
+      "Id": 95,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/contractDocuments/95",
+          "entity": "contractDocument"
+        }
+      ],
+      "DocumentCode": "000C76"
+    }
+  ],
+  "TemplateDocuments": [
+    {
+      "Id": 87,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/contractDocuments/87",
+          "entity": "contractDocument"
+        }
+      ],
+      "DocumentCode": "000C67"
+    }
+  ],
+  "CredentialingDocuments": [
+    {
+      "Id": 2,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/contractDocuments/2",
+          "entity": "contractDocument"
+        }
+      ],
+      "DocumentCode": "0000A1"
+    },
+    {
+      "Id": 3,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/contractDocuments/3",
+          "entity": "contractDocument"
+        }
+      ],
+      "DocumentCode": "0000A2"
+    }
+  ],
+  "DataOwner": {
+    "Id": 7,
+    "Name": "DeCare"
+  }
+}

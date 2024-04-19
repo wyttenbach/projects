@@ -1,0 +1,1 @@
+Continued in PRDSDP-10565: Par validation correction in existing endpoints

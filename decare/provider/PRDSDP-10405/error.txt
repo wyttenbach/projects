@@ -1,0 +1,6 @@
+va33tlvdps301:/apps/pmda/logs > grep ff74af *
+api_3.log:2021-12-17 08:22:27.580 [https-jsse-nio-8443-exec-50] ERROR c.a.s.p.a.e.CustomExceptionHandler - id: 6e578a1e-7edf-41fa-8c90-75634eff74af | path: /api/screens/screen | msg: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ANTHEM.UIX_PROV_CODE_D_OWNER]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+api_trace_3.log:2021-12-17 08:22:27.580 [https-jsse-nio-8443-exec-50] ERROR c.a.s.p.a.e.CustomExceptionHandler - id: 6e578a1e-7edf-41fa-8c90-75634eff74af | path: /api/screens/screen | msg: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [ANTHEM.UIX_PROV_CODE_D_OWNER]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+ 
+(ORA-00001: unique constraint (ANTHEM.UIX_PROV_CODE_D_OWNER) violated)
+

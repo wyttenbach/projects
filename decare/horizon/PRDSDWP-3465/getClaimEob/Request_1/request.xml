@@ -1,0 +1,25 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getClaimEob>
+         <ClientName>?</ClientName>
+         <UserName>?</UserName>
+         <ClientTransactionId>?</ClientTransactionId>
+         <SourceSystem>DECARE</SourceSystem>
+         <!--Optional:-->
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>
+         <!--Optional:-->
+         <ClientSessionId>?</ClientSessionId>
+         <!--Optional:-->
+         <Timeout>60</Timeout>
+         <EOBSearchRequest>
+            <MemberID>3HZN86819480</MemberID>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <ClaimId>48762065</ClaimId>
+            <CheckNumber>?</CheckNumber>
+            <ClientType>?</ClientType>
+            <UserId>?</UserId>
+         </EOBSearchRequest>
+      </ws:getClaimEob>
+   </soapenv:Body>
+</soapenv:Envelope>

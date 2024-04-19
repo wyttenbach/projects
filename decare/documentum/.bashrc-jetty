@@ -1,0 +1,55 @@
+#!/bin/bash
+
+export JEE_JDWP_PORT=8000
+
+function jetty-run
+{
+    local profile=live
+    if [ $# != 0 ]; then
+        profile=$1
+    fi
+
+    local dir=$SRC/dds-drs-parent/dds-drs-remote-services
+    if [ -d "$dir" ]; then
+        cd "$dir"
+    fi
+
+    export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
+    export MAVEN_OPTS="$MAVEN_OPTS -Dlog4j.debug=true"
+    export MAVEN_OPTS="$MAVEN_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=$JEE_JDWP_PORT"
+    export MAVEN_OPTS="$MAVEN_OPTS -Dspring.profiles.active=$profile"
+    export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.localpath=D:/Documentum/local"
+
+    #export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.docbase=dctmprp"
+    #export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.username=dmadmp"
+    #export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.password=aXBhVFRGb3RVUzAx"
+    #export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.passwordEncoded=true"
+    
+    export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.docbase=docd"
+    export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.username=dmadmin"
+    export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.password=aTJ1QU1YbXE="
+    export MAVEN_OPTS="$MAVEN_OPTS -Ddctm.passwordEncoded=true"
+    
+#    export MAVEN_OPTS="$MAVEN_OPTS -Dsot01.database.url=jdbc:oracle:thin:@opss.decare.com:1562:OPSS"
+    
+    #export MAVEN_OPTS="$MAVEN_OPTS -Ddrs.altPrintFileLocation=//ino/test_pres_archive"
+    export MAVEN_OPTS="$MAVEN_OPTS -Ddrs.altPrintFileLocation=d:/temp"
+    
+    # export MAVEN_OPTS="$MAVEN_OPTS -Ddds.documentretrieval.endpointAddress=http://localhost:8080/spring-ws-1.0-SNAPSHOT/drs"
+    # export MAVEN_OPTS="$MAVEN_OPTS -Ddds.documentretrieval.namespaceUri=http://www.springframework.org/spring-ws/samples/drs"
+    # export MAVEN_OPTS="$MAVEN_OPTS -Ddds.documentretrieval.wsdlDocumentUrl=http://oraappdds4.decaresystems.ie:8080/spring-ws-1.0-SNAPSHOT/drs.wsdl"
+    mvn jetty:run
+}
+
+# http://localhost:9090/dds-drs-remote-services/service/DocumentRetrievalService.wsdl
+
+# http://localhost:9080/horizon-portal/service/MemberPortalService.wsdl
+# http://localhost:9080/horizon-portal/service/memberPortalService
+
+# http://localhost:9080/horizon-portal/service/ProviderPortalService.wsdl
+# http://localhost:9080/horizon-portal/service/providerPortalService
+
+function go-jetty 
+{
+    go-common $HOSTNAME 9090 dds-drs-remote-services/test.jsp chrome
+}

@@ -1,0 +1,354 @@
+[
+  {
+    "op": "correlate",
+    "value": "TRN-58118"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers",
+    "label": "providertemp",
+    "value": {
+      "NamePrefix": "DDS",
+      "SpecialtySchool": "",
+      "SpecialtyGradYear": "",
+      "DataOwnerId": "1",
+      "FirstName": "Perry",
+      "MiddleName": "",
+      "Effective": {
+        "From": "2020-01-01"
+      },
+      "GraduationYear": "1988",
+      "Tin": "",
+      "NameSuffix": "",
+      "LastName": "Ellis",
+      "SchoolOfDentistry": "ODU",
+      "BirthDate": ""
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58118"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/licenses",
+    "value": {
+      "LicenseNumber": "PE123TEST",
+      "IssuingState": "GA",
+      "Effective": {
+        "From": "2021-12-21"
+      }
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58118"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/credentials",
+    "value": {
+      "Credentialed": "2021-12-22",
+      "CredentialingLevel": "NCQA",
+      "IsInitialCred": "true"
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58118"
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/486127/providers",
+    "value": {
+      "IsParticipating": "false",
+      "InLimbo": "false",
+      "ProviderRelationship": "A",
+      "InDirectory": "false",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/610/clinics/486127/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "486127",
+      "NetworkID": "610",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/486127/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01",
+        "To": "2021-12-21"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/611/clinics/486127/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "486127",
+      "NetworkID": "611",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/602/clinics/486127/providers",
+    "value": {
+      "NetworkType": "PPO",
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "S",
+      "PanelNumber": "237",
+      "ClinicID": "486127",
+      "NetworkID": "602",
+      "FeeSchedule": "GA_TRD_02",
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/601/clinics/486127/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/621/clinics/486127/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/specialties",
+    "value": {
+      "Specialty": {
+        "Type": "Primary",
+        "Code": "000"
+      }
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58118"
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/605966/providers",
+    "value": {
+      "IsParticipating": "false",
+      "InLimbo": "false",
+      "ProviderRelationship": "A",
+      "InDirectory": "false",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/610/clinics/605966/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "605966",
+      "NetworkID": "610",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/605966/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01",
+        "To": "2021-12-21"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/611/clinics/605966/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "605966",
+      "NetworkID": "611",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/602/clinics/605966/providers",
+    "value": {
+      "NetworkType": "PPO",
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "S",
+      "PanelNumber": "237",
+      "ClinicID": "605966",
+      "NetworkID": "602",
+      "FeeSchedule": "GA_TRD_02",
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/601/clinics/605966/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/621/clinics/605966/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/specialties",
+    "value": {
+      "Specialty": {
+        "Type": "Primary",
+        "Code": "000"
+      }
+    }
+  }
+]

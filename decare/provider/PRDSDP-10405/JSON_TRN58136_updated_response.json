@@ -1,0 +1,23 @@
+[
+  {
+    "FieldName": "providertemp",
+    "FieldValue": "1009415"
+  }
+]
+
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-encoding: gzip  content-type: application/json
+correlation-identifier: TRN-58136, TRN-58136, TRN-58136, TRN-58136, TRN-58136, TRN-58136,TRN-58136
+date: Thu, 23 Dec 2021 13:55:59 GMT
+expires: 0
+location: ["/api/providers/1009415","/api/providers/1009415/licenses/871322",null,"/api/clinics/488373/providers/1009415","/api/networks/610/clinics/488373/providers/1009415","/api/fees/assignments/4712127","/api/networks/608/clinics/488373/providers/1009415","/api/networks/611/clinics/488373/providers/1009415","/api/fees/assignments/4712128","/api/networks/600/clinics/488373","/api/networks/600/clinics/488373/providers/1009415","/api/fees/assignments/4712129","/api/providers/1009415/specialties/000/dataOwners/10","/api/clinics/470205/providers/1009415","/api/networks/610/clinics/470205/providers/1009415","/api/fees/assignments/4712130","/api/networks/608/clinics/470205/providers/1009415","/api/networks/611/clinics/470205/providers/1009415","/api/fees/assignments/4712131","/api/networks/600/clinics/470205/providers/1009415","/api/fees/assignments/4712132"] 
+pragma: no-cache
+strict-transport-security:
+max-age=31536000 ; includeSubDomains
+transfer-encoding: chunked
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1;
+mode=block 
+

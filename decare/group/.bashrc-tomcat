@@ -1,0 +1,27 @@
+#!/bin/bash
+export TOMCAT_HOME=$PROJECT_HOME/workspace/.metadata/.plugins/com.genuitec.eclipse.easie.tomcat.myeclipse/tomcat
+export JEE_DEPLOY=$TOMCAT_HOME/webapps
+export JEE_WEB=$JEE_DEPLOY/groupweb
+export JEE_PORT=8080
+export JEE_URL=http://localhost:$JEE_PORT/groupweb/login.html
+
+function build
+{
+# never build with flavours again, or spurious rebuilds are tiggered
+    (do_cd $PROJECT_HOME/workspace/groupdojo; make)
+}
+
+function deploy
+{
+	echo "Use Eclipse to perform Tomcat deploy"
+}
+
+function jee-start
+{
+# also modified catalina.bat to not use "start" command 
+# when invoking java
+#    (cd $TOMCAT_HOME/bin; env "CATALINA_OPTS=-Xmx200m -Dcom.sun.management.jmxremote" ./startup.bat)
+    echo "Use Eclipse"
+}
+
+

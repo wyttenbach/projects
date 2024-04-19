@@ -1,0 +1,47 @@
+================================================================================================================================
+https://share.antheminc.com/projects/Dental-Audit/Lists/ProjectSchedule/calendar.aspx
+================================================================================================================================
+https://bamboo.decaresystems.ie/project/viewProject.action?projectKey=AMASDATA
+================================================================================================================================
+Wiki
+https://wiki.decaresystems.ie/display/DECARE/Provider+Data+Accuracy
+https://wiki.decaresystems.ie/display/DECARE/Release+provider+API+project
+================================================================================================================================
+Web
+https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+================================================================================================================================
+DPDA-2404  PRDSDP-9627:  Performance: Expanding Providers within Clinic Transaction (C-C-1 top 5)      SERGIU DONE 0.111
+DPDA-2508  PRDSDP-9626:  Performance: Expanding Clinics within Provider Transaction (C-C-1 top 10-15)  DALE   DONE 0.115
+DPDA-2564  PRDSDP-10017  Expanding Providers within Clinic Transaction: Add license status             DALE   DONE 0.115
+DPDA-2509  PRDSDP-9628:  Performance: Expanding Network Association to an Office (C-C-2)               SERGIU DONE 0.114
+DPDA-2510  PRDSDP-9629:  Performance: Expanding Network and Office Association with Provider (C-C-2)   DALE   DONE 0.120, SERGIU 0.120.1, with Nithish
+DPDA-2352  PRDSDP-9643:  Performance- Search                                                           RON    With Mustafa
+DPDA-2473  PRDSDP-9633:  Performance: Associating networks to a Clinic, Provider                              With Nithish
+DPDA-2625  PRDSDP-10142: Performance Search - Clinic                                                   RON    DONE 0.121
+DPDA-2623  PRDSDP-10144: Performance Search W9 Legal                                                          Abandoned
+DPDA-2538  PRDSDP-9899:  maxHttpHeaderSize                                                             DALE   DONE 0.122
+DPDA-2226  PRDSDP-9217:  History - 835 Transaction View History Screen                                 SERGIU DONE 0.135    error in 0.145   
+DPDA-2757  PRDSDP-10405: Initial Contracting (with 2 linked LE): Unable to approve                            Unique constraint, dupe request (Arpoova)
+DPDA-2495  PRDSDP-10114: LGSTD - Network Add - Error message, unable to add Dental Net_Specialists     SERGIU DONE 0.128
+DPDA-2792  PRDSDP-10414: Par status required in existing endpoint                                      DALE   DONE 0.123
+DPDA-2795  PRDSDP-10565: Par validation correction in existing endpoints                               DALE   DONE 0.125
+DPDA-2837  PRDSDP-8511:  Replace the word "Unterminated" in errors and replace with the term "Active". DALE   DONE 0.129
+DPDA-2838  PRDSDP-8511:  Change HTTP 403 error messages to include the term "security violation"       DALE   DONE 0.129
+DPDA-2724  PRDSDP-10035: Network Portal - Network Class                                                DALE   DONE 0.137
+DPDA-3022  PRDSDP-10927: Termination (Invol): Fee End Date is being Applied ... for Fee Type 'R'       DALE   DONE 0.141
+DPDA-2805  PRDSDP-10508: Par Val Incorrect: Provider in Limbo Status                                   SANDOR DONE 0.129
+DPDA-3056  PRDSDP-11270: HMO Transfer search-Displaying Closed PDO' Frozen office status as "No"       SANDOR DONE 0.145
+DPDA-2222  PRDSDP-8966:  History - Migrated from DPS (New NCP View)                                    RON    DONE 0.143
+DPDA-3064  PRDSDP-11277: History - Legal - List of Organization                                        DALE   DONE 0.147
+DPDA-3060  PRDSDP-11284: LGSTD - Location Existing_Error 500_Unable to complete transaction            DALE   ANSWERED (TWICE)
+================================================================================================================================
+Data Sources
+/Users/dwyttenb/projects/provider/develop/provider-master-data-api/db/credentials.xlsx
+
+https://bitbucket.decaresystems.ie/projects/ANTMPROV/repos/provider-master-data-api/browse/creation_scripts/SQL/DBALL/dntlprvd_set.sql
+================================================================================================================================
+Dev
+https://va33dlvdps300.wellpoint.com:8443/swagger-ui.html
+
+
+

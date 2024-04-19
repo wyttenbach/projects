@@ -1,0 +1,2 @@
+select * from HISTORY_CROSSCHECK_SNAPSHOT
+WHERE HISTORY_CROSSCHECK_IDENTIFIER LIKE '%&&history_crosscheck_identifier'

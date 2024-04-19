@@ -1,0 +1,49 @@
+[
+  {
+    "Id": 30018,
+    "Effective": {
+      "From": "2009-03-04",
+      "To": null
+    },
+    "Provider": {
+      "Id": 393302,
+      "FirstName": "Brian",
+      "MiddleName": "L",
+      "LastName": "Pierce",
+      "Specialties": [
+        {
+          "Description": "GENERAL DENTIST",
+          "Code": "000",
+          "Type": "Primary",
+          "DataOwner": null
+        }
+      ],
+      "Licenses": [
+        {
+          "LicenseNumber": "D10162",
+          "IssuingState": "MN"
+        }
+      ],
+      "IndividualNPI": "1194820258",
+      "ProviderStudies": {
+        "SchoolOfDentistry": "U of MN",
+        "GraduationYear": 1987,
+        "SpecialtySchool": null,
+        "SpecialtyGradYear": null
+      },
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/providers/393302",
+          "entity": "provider"
+        }
+      ]
+    },
+    "ProviderType": null,
+    "InDirectory": true,
+    "ProviderStatus": "ACTIVE",
+    "IsParticipating": true,
+    "InLimbo": false,
+    "DirectoryStatusHistory": null
+  }
+]

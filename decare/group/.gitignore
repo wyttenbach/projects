@@ -1,0 +1,15 @@
+*.log
+/2019.*
+/2020.*
+FB_*
+PRDSDC-6148/
+PR_AM/
+RB_*
+XB_ANTHEM_AD/
+XB_WLS_12.1.3/
+audit/
+develop/
+src
+svn/
+workspace
+

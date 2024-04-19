@@ -1,0 +1,1 @@
+$MONGO_HOME/bin/mongo --nodb --quiet --eval "var param1=7, param2=8" $PROJECT_HOME/bin/addthem.js

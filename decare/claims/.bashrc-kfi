@@ -1,0 +1,31 @@
+#!/bin/bash
+
+. $PROJECT_HOME/.bashrc-jboss
+
+function clean-kfi
+{
+    (cd $PROJECT_HOME/src/kfidemo; mvn -o clean)
+}
+
+function build-kfi
+{
+    (cd $PROJECT_HOME/src/kfidemo; mvn install eclipse:eclipse)
+}
+
+function deploy-kfi-demo
+{
+    (cd $PROJECT_HOME/src/kfidemo; mvn cargo:deploy)
+}
+
+function kfi
+{
+    # oc4j in eclipse
+    ie "http://localhost:8181/kfi"
+}
+
+function kfi-demo
+{
+    # jboss running as a service
+    ie "http://dd20401230.decare.com:8080/kfi"
+}
+

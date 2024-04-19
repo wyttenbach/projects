@@ -1,0 +1,1 @@
+select * from sot22.clm_um_ai_crit_proc

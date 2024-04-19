@@ -1,0 +1,5 @@
+(home)
+(goto-char (point-max))
+(if (getenv "CRM_SEGMENT")
+    (insert (getenv "CRM_SEGMENT"))
+    (insert "CRM_SEGMENT not set"))

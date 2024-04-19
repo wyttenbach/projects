@@ -1,0 +1,4 @@
+==== electronicenrollment-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsenr/electronicenrollment-parent
+==== enrollment ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsenr/enrollment

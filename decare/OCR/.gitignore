@@ -1,0 +1,6 @@
+*.bundle
+*.iml
+*.log
+*.out
+*.prev
+*.xlsx

@@ -1,0 +1,24 @@
+[
+  {
+    "Effective": {
+      "From": "1997-01-01",
+      "To": null
+    },
+    "W9Id": 109521,
+    "Tin": "411706150",
+    "TinType": "EIN",
+    "IRSName": "Brian L Pierce DDS, PA",
+    "Clinics": [
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720",
+        "entity": "clinic"
+      }
+    ],
+    "Diversified": false,
+    "Organizations": null,
+    "EFT": false,
+    "LargeGroup": null,
+    "DelegatedCredentialing": false
+  }
+]

@@ -1,0 +1,1 @@
+perl -p -i.bak -e '{ s/([^\s]*)\s+$/$1\n/ }' list.txt

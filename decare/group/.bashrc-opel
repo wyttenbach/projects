@@ -1,0 +1,6 @@
+#!/bin/bash
+export OPEL_GIM="http://opel:7787/groupweb/login.html"
+
+function go-opel {
+    ie "$OPEL_GIM"
+}

@@ -1,0 +1,14 @@
+#!/bin/bash
+export TOMCAT_HOME=$PROJECT_HOME/apache-tomcat-5.5.23
+export WEBAPPS=$TOMCAT_HOME/webapps
+export CRMWEB=$WEBAPPS/CRMweb
+export CRM_PORT=8080
+
+function tomcat
+{
+# also modified catalina.bat to not use "start" command 
+# when invoking java
+    (cd $TOMCAT_HOME/bin; env CATALINA_OPTS=-Xmx200m ./startup.bat)
+}
+  
+

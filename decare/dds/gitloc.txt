@@ -1,0 +1,12 @@
+==== dds-document-bins ====
+ssh://git@bitbucket.decaresystems.ie:7999/dss/dds-document-bins
+==== dds-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/dds-parent
+==== dds-type ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/dds-type
+==== dds-util ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/dds-util
+==== ddsdatasource ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/ddsdatasource
+==== ddsmanagement ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddscom/ddsmanagement

@@ -1,0 +1,330 @@
+[
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers",
+    "label": "providertemp",
+    "value": {
+      "NamePrefix": "DDS",
+      "SpecialtySchool": "",
+      "SpecialtyGradYear": "",
+      "DataOwnerId": "1",
+      "FirstName": "Blues",
+      "MiddleName": "",
+      "Effective": {
+        "From": "2020-01-01"
+      },
+      "GraduationYear": "1989",
+      "Tin": "",
+      "NameSuffix": "",
+      "LastName": "Clues",
+      "SchoolOfDentistry": "OSDU",
+      "BirthDate": ""
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/npi",
+    "value": {
+      "NPI": "1164077327"
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/licenses",
+    "value": {
+      "LicenseNumber": "32909",
+      "IssuingState": "TX",
+      "Effective": {
+        "From": "2021-12-21"
+      }
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/credentials",
+    "value": {
+      "Credentialed": "2021-12-22",
+      "CredentialingLevel": "NCQA",
+      "IsInitialCred": "true"
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/488373/providers",
+    "value": {
+      "IsParticipating": "false",
+      "InLimbo": "false",
+      "ProviderRelationship": "A",
+      "InDirectory": "false",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/610/clinics/488373/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "488373",
+      "NetworkID": "610",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/488373/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01",
+        "To": "2021-12-21"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/611/clinics/488373/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "488373",
+      "NetworkID": "611",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/600/clinics",
+    "id": "1",
+    "value": {
+      "Clinic": {
+        "Id": "488373"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/600/clinics/488373/providers",
+    "value": {
+      "NetworkType": "PPO",
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "S",
+      "PanelNumber": "298",
+      "ClinicID": "488373",
+      "NetworkID": "600",
+      "FeeSchedule": "TX_TRD_01",
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/specialties",
+    "value": {
+      "Specialty": {
+        "Type": "Primary",
+        "Code": "000"
+      }
+    }
+  },
+  {
+    "op": "correlate",
+    "value": "TRN-58136"
+  },
+  {
+    "op": "add",
+    "path": "/api/clinics/470205/providers",
+    "value": {
+      "IsParticipating": "false",
+      "InLimbo": "false",
+      "ProviderRelationship": "A",
+      "InDirectory": "false",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/610/clinics/470205/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "470205",
+      "NetworkID": "610",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/608/clinics/470205/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2020-01-01",
+        "To": "2021-12-21"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/611/clinics/470205/providers",
+    "value": {
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "R",
+      "PanelNumber": "",
+      "ClinicID": "470205",
+      "NetworkID": "611",
+      "FeeSchedule": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/networks/600/clinics/470205/providers",
+    "value": {
+      "NetworkType": "PPO",
+      "OverrideExceptions": "true",
+      "Provider": {
+        "Id": "{providertemp}"
+      },
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/fees/assignments",
+    "value": {
+      "ProviderID": "{providertemp}",
+      "FeeType": "S",
+      "PanelNumber": "298",
+      "ClinicID": "470205",
+      "NetworkID": "600",
+      "FeeSchedule": "TX_TRD_01",
+      "Effective": {
+        "From": "2021-12-22"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/specialties",
+    "value": {
+      "Specialty": {
+        "Type": "Primary",
+        "Code": "000"
+      }
+    }
+  }
+]

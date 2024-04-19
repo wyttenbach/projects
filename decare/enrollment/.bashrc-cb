@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## cb_enr
+export ENR_PROJECT=electronicenrollment-parent
+export WL_DOMAIN="$(cygpath -m $WL/domains/cb_enr)"
+export WL_CONTEXT_ROOT=FilterWeb
+export WL_PORT=7790
+
+function deploy-build
+{
+	undeploy
+    (cd $SRC/electronicenrollment-parent; deploy electronicenrollmentweb/target/*.war)
+}

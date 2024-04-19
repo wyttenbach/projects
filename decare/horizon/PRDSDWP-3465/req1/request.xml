@@ -1,0 +1,26 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN22670390</SubscriberId>
+            <ClaimDosStartDate>2018-06-16Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-16Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,1 @@
+select * from SOT01.FND_GROUP_CLAIM_WELLMARK_TMP where stop_code = '0200';

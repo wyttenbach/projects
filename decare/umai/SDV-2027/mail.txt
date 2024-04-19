@@ -1,0 +1,58 @@
+FYI
+This is related to the 2 JIRAs
+
+https://jira.anthem.com/browse/SDV-2027
+https://jira.anthem.com/browse/SDV-2026
+
+ 
+
+From: Michal Bali 
+Sent: 14 March 2022 13:23
+To: Ansley, Kathryn <kathryn.ansley@decare.com>
+Subject: RE: Production COB Error
+ 
+Hi Kathryn,
+ 
+The secondary claim 66433572 initially suspended S11 on Feb 28th (it
+did not deny D246). Then when it was repaired then it denied D246. The
+reason for the D246 was that the claim was flagged as secondary
+however it did not have any primary paid amount. It seems that the
+amount was lost during the first repair activity.  Note that the
+primary paid amount was in this case at line level and was 0 in all
+cases. I am wondering whether we have a bug in the wip screen that
+drops line level primary paid amount if it is zero. It could also be
+that the user removed it but that is unlikely.
+ 
+http://va10plpxap001.decare.com:10010/messages/2022_02_28/56b57db7-93b6-41d7-bbfc-143b8090f7ae/56b57db7-93b6-41d7-bbfc-143b8090f7ae_0-out.xml
+http://va10plpxap001.decare.com:10010/messages/2022_03_08/56b57db7-93b6-41d7-bbfc-143b8090f7ae/56b57db7-93b6-41d7-bbfc-143b8090f7ae_0-out.xml
+ 
+Michal Bali
+Senior Software Developer
+8 West Consulting
+ 
+From: Ansley, Kathryn <kathryn.ansley@decare.com> 
+Sent: Friday, March 11, 2022 9:32 PM
+To: Michal Bali <mbali_contractor@8west.ie>
+Subject: Production COB Error
+ 
+Hi Michal,
+ 
+I must be missing something obvious. For some reason the secondary
+claim is being denied for COB, but the group is setup with COB = None,
+and I cannot see any COB amounts or flags on the secondary claim that
+would cause this. I was thinking that maybe it was caused by HXC rule
+or other rule that was setup with the wrong value, but this doesn’t
+seem to be the case. I was trying to think if there was an issue with
+the WIP submission process as a result of changes in the Feb release
+that might be reporting data it shouldn’t be.  Do you have any ideas ?
+ 
+Primary claim 66261085 – Group # IN69YK-0001, COB Type: Standard
+Secondary claim 66433572 – Group # IN674S-0001, COB Type: None (initially denied D246 for COB)
+
+Thanks.
+ 
+Kathryn Ansley, Developer Advisor
+1285 Northland Drive,  Mendota Heights, MN
+Mobile : 612.449.5340
+Kathryn.Ansley@decare.com
+ 

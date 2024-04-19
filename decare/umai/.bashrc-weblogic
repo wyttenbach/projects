@@ -1,0 +1,13 @@
+#!/bin/bash
+. $P/dds/.bashrc-weblogic
+
+function deploy-build
+{
+    undeploy
+    deploy-bins
+}
+
+function go {
+    get-attachment localhost
+}
+

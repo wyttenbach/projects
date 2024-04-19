@@ -1,0 +1,20 @@
+==== 0-claim-director-api ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-director-api
+==== 1-adjudication-api-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/adjudication-api-parent
+==== 2-adjudication-externalaccumulators-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/adjudication-externalaccumulators-parent
+==== 3-adjudication-remotefee-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/adjudication-remotefee-parent
+==== 4-claim-accumulator-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-accumulator-parent
+==== 5-oon-gateway-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/oon-gateway-parent
+==== 6-adjudication-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/adjudication-parent
+==== 7-adjudication-script-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/adjudication-script-parent
+==== 8-anthem-setup-scripts ====
+ssh://git@bitbucket.decaresystems.ie:7999/atmscr/anthem-setup-scripts.git
+==== 9-accumulator-cache-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/accumulator-cache-parent

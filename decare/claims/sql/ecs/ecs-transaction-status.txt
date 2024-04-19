@@ -1,0 +1,26 @@
+public enum EcsTransactionStatus {
+  /**
+   * indicates that the ECS transaction has been loaded (sent into the engine)
+   */
+  PROCESSED("P"),
+
+  /**
+   * indicates that the ECS transaction has been rejected and should be included in the ECS reject report
+   */
+  REJECTED("R"),
+
+  /**
+   * indicates that the ECS transaction is waiting to be processed, note that 'null' is another valid value that means
+   * the same thing
+   */
+  READY("N"),
+  
+  /**
+   * ECS transaction is being processed by the ECS loader (status that will follow: PROCESSED or REJECTED)
+   */
+  PENDING("E"),
+
+  /**
+   * ECS transaction has errored while processing.
+   */
+  ERROR("X");

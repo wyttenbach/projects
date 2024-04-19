@@ -1,0 +1,28 @@
+[
+  {
+    "Line1": "969 Old Hwy 8 NW",
+    "Line2": "Ste 200",
+    "Line3": null,
+    "City": "New Brighton",
+    "State": "MN",
+    "ZIPCode": "55112",
+    "County": "RAMSEY",
+    "Country": "USA",
+    "Province": null,
+    "Latitude": null,
+    "Longitude": null,
+    "DataOwner": {
+      "Id": 7,
+      "Name": "DeCare"
+    },
+    "Links": [
+      {
+        "rel": "self",
+        "href": "/api/clinics/430720/addresses/4585",
+        "entity": "clinic.address"
+      }
+    ],
+    "Id": 4585,
+    "Type": "D"
+  }
+]

@@ -1,0 +1,1 @@
+[{ "op":"add" ,"path":"/api/networks/613/clinics" ,"value":{ "Clinic":{ "Id":"493854" } ,"Effective":{ "From":"2021-12-28" } } } ,{ "op":"add" ,"path":"/api/networks/613/clinics/493854/providers" ,"value":{ "OverrideExceptions":"true" ,"Effective":{ "From":"2021-12-28" } ,"Provider":{ "Id":"483195" } } }]

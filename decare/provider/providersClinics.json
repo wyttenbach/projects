@@ -1,0 +1,35 @@
+[
+  {
+    "Comments": null,
+    "ClearLicenseNumber": false,
+    "ProviderSpecialistClinic": false,
+    "ProviderRelationship": "A",
+    "PayClinicOrProvider": "C",
+    "DeltaPrecertified": false,
+    "CorporatePayment": false,
+    "ProviderCOB": false,
+    "BCI": null,
+    "ProviderClaimInReview": false,
+    "ProfessionalReviewUnderway": false,
+    "IsParticipating": null,
+    "InLimbo": null,
+    "InDirectory": true,
+    "Id": 155503,
+    "DataOwner": null,
+    "Effective": {
+      "From": "1997-01-01",
+      "To": null
+    },
+    "Clinic": {
+      "CommonName": "Brian L Pierce DDS, PA",
+      "Id": 430720,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720",
+          "entity": "clinic"
+        }
+      ]
+    }
+  }
+]

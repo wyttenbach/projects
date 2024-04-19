@@ -1,0 +1,2885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="1e58f376-81ec-4e7e-bb15-274e42f42930" activeEnvironment="Default" name="MemberPortalService2" resourceRoot="" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="MemberPortalServicePortBinding TestSuite"/>
+  <con:entry key="Endpoint" value="http://localhost:7794/horizon-portal/service/memberPortalService"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value="2GZQVyFSJTcsKZ4wrAsgMUPx"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="getClaimEobAttachement TestCase"/>
+  <con:entry key="Username" value="8ufZzeEKxjHcbVrzMtgH7zTT"/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="8016780a-0a3e-4cee-845a-b1636bd93cbb" wsaVersion="NONE" name="MemberPortalServicePortBinding" type="wsdl" bindingName="{http://service.member.portal.dds.com/ws}MemberPortalServicePortBinding" soapVersion="1_1" anonymous="optional" definition="file:/D:/projects/horizon/soapui/MemberPortalService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\D:\projects\horizon\soapui\MemberPortalService.wsdl"><con:part><con:url>file:\D:\projects\horizon\soapui\MemberPortalService.wsdl</con:url><con:content><![CDATA[<definitions name="providerPortalService" targetNamespace="http://service.member.portal.dds.com/ws" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.member.portal.dds.com/ws" xmlns:mpsns="http://ws.service.member.portal.dds.com/">
+  <import namespace="http://ws.service.member.portal.dds.com/" location="MemberPortalServicePortType.wsdl"/>
+  <binding name="MemberPortalServicePortBinding" type="mpsns:MemberPortalService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getPCD">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getPCD/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getAccumulationBenefit">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getAccumulationBenefit/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClaimEobAttachement">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClaimEob">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getClaimEob/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+    <!--<operation name="getClaimLine">      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getClaimLine/" />      <input>      <soap:body use="literal" />      </input>      <output>      <soap:body use="literal" />      </output>      <fault name="BusinessError">      <soap:fault name="BusinessError" use="literal" />      </fault>      <fault name="SystemError">      <soap:fault name="SystemError" use="literal" />      </fault>      </operation>-->
+    <operation name="getClaim">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getClaim/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getClaimSOP">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getClaimSOP/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getPayments">
+      <soap:operation soapAction="http://member.portal.dds.com/MemberPortalService/getPayments/"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="BusinessError">
+        <soap:fault name="BusinessError" use="literal"/>
+      </fault>
+      <fault name="SystemError">
+        <soap:fault name="SystemError" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="memberPortalService">
+    <port name="MemberPortalServicePort" binding="tns:MemberPortalServicePortBinding">
+      <soap:address location="http://${#Project#endpoint}/MemberPortalWebServiceV1/memberPortalService"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\D:\projects\horizon\soapui\MemberPortalServicePortType.wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="http://ws.service.member.portal.dds.com/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmns="http://core.message.portal.dds.com/" xmlns:mpsns="http://ws.service.member.portal.dds.com/">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://ws.service.member.portal.dds.com/" schemaLocation="ServiceMemberPortal.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://core.message.portal.dds.com/" schemaLocation="MessageCore.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://member.message.portal.dds.com/" schemaLocation="MessageMemberPortal.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://core.domain.portal.dds.com/" schemaLocation="DomainCore.xsd"/>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import namespace="http://member.domain.portal.dds.com/" schemaLocation="DomainMemberPortal.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="getAccumulationBenefit">
+    <part name="request" element="mpsns:getAccumulationBenefit"/>
+  </message>
+  <message name="getAccumulationBenefitResponse">
+    <part name="response" element="mpsns:getAccumulationBenefitResponse"/>
+  </message>
+  <message name="getClaimEobAttachement">
+    <part name="request" element="mpsns:getClaimEobAttachement"/>
+  </message>
+  <message name="getClaimEobAttachementResponse">
+    <part name="response" element="mpsns:getClaimEobAttachementResponse"/>
+  </message>
+  <message name="getClaimEob">
+    <part name="request" element="mpsns:getClaimEob"/>
+  </message>
+  <message name="getClaimEobResponse">
+    <part name="response" element="mpsns:getClaimEobResponse"/>
+  </message>
+  <message name="getClaimLine">
+    <part name="request" element="mpsns:getClaimLine"/>
+  </message>
+  <message name="getClaimLineResponse">
+    <part name="response" element="mpsns:getClaimLineResponse"/>
+  </message>
+  <message name="getClaim">
+    <part name="request" element="mpsns:getClaim"/>
+  </message>
+  <message name="getClaimResponse">
+    <part name="response" element="mpsns:getClaimResponse"/>
+  </message>
+  <message name="getPCD">
+    <part name="request" element="mpsns:getPCD"/>
+  </message>
+  <message name="getPCDResponse">
+    <part name="response" element="mpsns:getPCDResponse"/>
+  </message>
+  <message name="getClaimSOP">
+    <part name="request" element="mpsns:getClaimSOP"/>
+  </message>
+  <message name="getClaimSOPResponse">
+    <part name="response" element="mpsns:getClaimSOPResponse"/>
+  </message>
+  <message name="getPayments">
+    <part name="request" element="mpsns:getPayments"/>
+  </message>
+  <message name="getPaymentResponse">
+    <part name="response" element="mpsns:getPaymentResponse"/>
+  </message>
+  <message name="BusinessError">
+    <part name="fault" element="mpsns:businessError"/>
+  </message>
+  <message name="SystemError">
+    <part name="fault" element="mpsns:systemError"/>
+  </message>
+  <portType name="MemberPortalService">
+    <operation name="getAccumulationBenefit">
+      <input message="mpsns:getAccumulationBenefit"/>
+      <output message="mpsns:getAccumulationBenefitResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+    <operation name="getClaimEobAttachement">
+      <input message="mpsns:getClaimEobAttachement"/>
+      <output message="mpsns:getClaimEobAttachementResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+    <operation name="getClaimEob">
+      <input message="mpsns:getClaimEob"/>
+      <output message="mpsns:getClaimEobResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+    <!--<operation name="getClaimLine">      <input message="mpsns:getClaimLine" />      <output message="mpsns:getClaimLineResponse" />      <fault name="BusinessError" message="mpsns:BusinessError" />      <fault name="SystemError" message="mpsns:SystemError" />    </operation>-->
+    <operation name="getClaim">
+      <input message="mpsns:getClaim"/>
+      <output message="mpsns:getClaimResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+    <operation name="getClaimSOP">
+      <input message="mpsns:getClaimSOP"/>
+      <output message="mpsns:getClaimSOPResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+    <operation name="getPCD">
+      <input message="mpsns:getPCD"/>
+      <output message="mpsns:getPCDResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+    <operation name="getPayments">
+      <input message="mpsns:getPayments"/>
+      <output message="mpsns:getPaymentResponse"/>
+      <fault name="BusinessError" message="mpsns:BusinessError"/>
+      <fault name="SystemError" message="mpsns:SystemError"/>
+    </operation>
+  </portType>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\D:\projects\horizon\soapui\ServiceMemberPortal.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="http://ws.service.member.portal.dds.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cmns="http://core.message.portal.dds.com/" xmlns:mpmns="http://member.message.portal.dds.com/">
+  <xs:import namespace="http://member.message.portal.dds.com/" schemaLocation="MessageMemberPortal.xsd"/>
+  <xs:import namespace="http://core.message.portal.dds.com/" schemaLocation="MessageCore.xsd"/>
+  <xs:element name="getAccumulationBenefit" nillable="true" type="mpmns:GetAccumulationBenefitRequest"/>
+  <xs:element name="getAccumulationBenefitResponse" nillable="true" type="mpmns:GetAccumulationBenefitResponse"/>
+  <xs:element name="getClaimEobAttachement" nillable="true" type="mpmns:GetClaimEobAttachementRequest"/>
+  <xs:element name="getClaimEobAttachementResponse" nillable="true" type="mpmns:GetClaimEobAttachementResponse"/>
+  <xs:element name="getClaimEob" nillable="true" type="mpmns:GetClaimEobRequest"/>
+  <xs:element name="getClaimEobResponse" nillable="true" type="mpmns:GetClaimEobResponse"/>
+  <xs:element name="getClaimLine" nillable="true" type="mpmns:GetClaimLineRequest"/>
+  <xs:element name="getClaimLineResponse" nillable="true" type="mpmns:GetClaimLineResponse"/>
+  <xs:element name="getClaim" nillable="true" type="mpmns:GetClaimRequest"/>
+  <xs:element name="getClaimResponse" nillable="true" type="mpmns:GetClaimResponse"/>
+  <xs:element name="getClaimSOP" nillable="true" type="mpmns:GetClaimSOPRequest"/>
+  <xs:element name="getClaimSOPResponse" nillable="true" type="mpmns:GetClaimSOPResponse"/>
+  <xs:element name="getPCD" nillable="true" type="mpmns:GetPCDRequest"/>
+  <xs:element name="getPCDResponse" nillable="true" type="mpmns:GetPCDResponse"/>
+  <xs:element name="getPayments" nillable="true" type="mpmns:GetPaymentRequest"/>
+  <xs:element name="getPaymentResponse" nillable="true" type="mpmns:GetPaymentResponse"/>
+  <xs:element name="businessError" nillable="true" type="mpmns:MemberPortalBusinessError"/>
+  <xs:element name="systemError" nillable="true" type="mpmns:MemberPortalSystemError"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\D:\projects\horizon\soapui\MessageMemberPortal.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="http://member.message.portal.dds.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cmns="http://core.message.portal.dds.com/" xmlns:mpdns="http://member.domain.portal.dds.com/" xmlns:cdns="http://core.domain.portal.dds.com/" xmlns:mmns="http://member.message.portal.dds.com/">
+  <xs:import namespace="http://core.message.portal.dds.com/" schemaLocation="MessageCore.xsd"/>
+  <xs:import namespace="http://member.domain.portal.dds.com/" schemaLocation="DomainMemberPortal.xsd"/>
+  <xs:import namespace="http://core.domain.portal.dds.com/" schemaLocation="DomainCore.xsd"/>
+  <xs:simpleType name="ClientName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="32"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TransactionId">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="64"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Timeout">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MemberPortalResponseCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUCCESS"/>
+      <xs:enumeration value="REQUIRED_DATA_REQUEST"/>
+      <xs:enumeration value="RESULT_NOT_FOUND"/>
+      <xs:enumeration value="RESULT_MAX_SIZE_EXCEEDED"/>
+      <xs:enumeration value="VALIDATION_ISSUES"/>
+      <xs:enumeration value="ERROR"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="MemberPortalBusinessError">
+    <xs:sequence>
+      <xs:element name="Code" type="mpdns:MemberPortalBusinessErrorCode"/>
+      <xs:element name="Description" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MemberPortalSystemError">
+    <xs:sequence>
+      <xs:element name="Code" type="mpdns:MemberPortalSystemErrorCode"/>
+      <xs:element name="Description" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MemberPortalResponseMessage">
+    <xs:sequence>
+      <xs:element type="mmns:MemberPortalResponseCode" name="ResponseCode"/>
+      <xs:element type="mpdns:MemberPortalBusinessErrorCode" name="BusinessCode" minOccurs="0"/>
+      <xs:element type="xs:string" name="Message"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MemberPortalBaseRequest">
+    <xs:sequence>
+      <xs:element type="mmns:ClientName" name="ClientName"/>
+      <xs:element type="cdns:UserName" name="UserName"/>
+      <xs:element type="mmns:TransactionId" name="ClientTransactionId"/>
+      <xs:element type="cdns:SourceSystem" name="SourceSystem" default="DECARE"/>
+      <xs:element type="xs:dateTime" name="ClientSubmitDateTime" minOccurs="0"/>
+      <xs:element type="mmns:TransactionId" name="ClientSessionId" minOccurs="0"/>
+      <xs:element type="mmns:Timeout" name="Timeout" default="60" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MemberPortalBaseResponse">
+    <xs:sequence>
+      <xs:element type="mmns:ClientName" name="ClientName"/>
+      <xs:element type="cdns:UserName" name="UserName"/>
+      <xs:element type="mmns:TransactionId" name="ClientTransactionId"/>
+      <xs:element type="cdns:SourceSystem" name="SourceSystem" default="DECARE"/>
+      <xs:element type="xs:dateTime" name="ClientSubmitDateTime" minOccurs="0"/>
+      <xs:element type="mmns:TransactionId" name="ClientSessionId" minOccurs="0"/>
+      <xs:element type="mmns:Timeout" name="Timeout" default="60" minOccurs="0"/>
+      <xs:element type="mmns:TransactionId" name="ServerTransactionId"/>
+      <xs:element type="mmns:MemberPortalResponseMessage" name="ResponseMessage"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="GetAccumulationBenefitRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:AccumulationBenefitSearchCriteria" name="SearchCriteria"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetAccumulationBenefitResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:AccumulationBenefitDetail" name="Detail" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetPCDRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:GetPCDSearchCriteria" name="SearchCriteria"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetPCDResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:MemberPCDDetail" name="MemberPCDDetail" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimEobAttachementRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="xs:string" name="DocumentId"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimEobAttachementResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:EOBDocument" name="Document" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimEobRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:EOBSearchRequest" name="EOBSearchRequest"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimEobResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:EOBSearchResponse" name="EOBSearchResponse" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimLineRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimLineSearchCriteria" name="ClaimSearchCriteria"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimLineResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:Claim" name="Claim" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimDetailSearchCriteria" name="ClaimSearchCriteria"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimDetail" name="ClaimDetail" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimSOPRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimSOPSearchCriteria" name="SearchCriteria"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetClaimSOPResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimSOP" name="ClaimSOP" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetPaymentRequest">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseRequest">
+        <xs:sequence>
+          <xs:element type="mpdns:PaymentSearchCriteria" name="PaymentSearchCriteria"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetPaymentResponse">
+    <xs:complexContent>
+      <xs:extension base="mmns:MemberPortalBaseResponse">
+        <xs:sequence>
+          <xs:element type="mpdns:PaymentResponse" name="ClaimPayment" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\D:\projects\horizon\soapui\MessageCore.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="http://core.message.portal.dds.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cdns="http://core.domain.portal.dds.com/" xmlns:cmns="http://core.message.portal.dds.com/">
+  <xs:import namespace="http://core.domain.portal.dds.com/" schemaLocation="DomainCore.xsd"/>
+  <xs:complexType name="BaseRequest">
+    <xs:sequence>
+      <xs:element type="xs:string" name="transactionId"/>
+      <xs:element type="xs:string" name="userName"/>
+      <xs:element type="xs:string" name="liasonUserName" minOccurs="0"/>
+      <xs:element type="xs:string" name="programName"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AnonymousRequest">
+    <xs:sequence>
+      <xs:element type="xs:string" name="transactionId"/>
+      <xs:element type="xs:string" name="programName"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BaseResponse">
+    <xs:sequence>
+      <xs:element name="transactionId" type="xs:string"/>
+      <xs:element name="responseMessage" type="cmns:ResponseMessage"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SystemError">
+    <xs:sequence>
+      <xs:element name="code" type="cdns:SystemErrorCodeEnum"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="trace" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BusinessError">
+    <xs:sequence>
+      <xs:element name="code" type="cdns:BusinessErrorCodeEnum"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="trace" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ResponseMessage">
+    <xs:sequence>
+      <xs:element type="cmns:ResponseCodeEnum" name="responseCode"/>
+      <xs:element type="xs:string" name="message"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ResponseCodeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUCCESS"/>
+      <xs:enumeration value="REQUIRED_DATA_REQUEST"/>
+      <xs:enumeration value="RESULT_NOT_FOUND"/>
+      <xs:enumeration value="RESULT_MAX_SIZE_EXCEEDED"/>
+      <xs:enumeration value="INVALID_BUSINESS_SEGMENT"/>
+      <xs:enumeration value="INVALID_GROUP"/>
+      <xs:enumeration value="VALIDATION_ISSUES"/>
+      <xs:enumeration value="OPTIMISTIC_LOCKING_FAILURE"/>
+      <xs:enumeration value="SYSTEM_EXCEPTION"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\D:\projects\horizon\soapui\DomainCore.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="http://core.domain.portal.dds.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://core.domain.portal.dds.com/" xmlns:cdns="http://core.domain.portal.dds.com/">
+  <xs:simpleType name="BusinessSegment">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:complexType name="BaseBusinessObject">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="Address">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element name="addressLine1" type="xs:string" minOccurs="0"/>
+          <xs:element name="addressLine2" type="xs:string" minOccurs="0"/>
+          <xs:element name="addressLine3" type="xs:string" minOccurs="0"/>
+          <xs:element name="city" type="xs:string" minOccurs="0"/>
+          <xs:element name="state" type="xs:string" minOccurs="0"/>
+          <xs:element name="postalCode" type="xs:string" minOccurs="0"/>
+          <xs:element name="country" type="xs:string" minOccurs="0"/>
+          <xs:element name="county" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="SystemErrorCodeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BUSS_LAYER_ERR"/>
+      <xs:enumeration value="DATA_LAYER_ERR"/>
+      <xs:enumeration value="INTG_LAYER_ERR"/>
+      <xs:enumeration value="EXTR_VEND_APP_ERR"/>
+      <xs:enumeration value="OPTIMISTIC_LOCK_ERR"/>
+      <xs:enumeration value="NOT_CATEGORIZED_ERR"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BusinessErrorCodeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DUPLICATE_USER"/>
+      <xs:enumeration value="NO_USER_FOUND"/>
+      <xs:enumeration value="INVALID_PASSWORD"/>
+      <xs:enumeration value="NO_ORG_FOUND"/>
+      <xs:enumeration value="NO_ASSOCIATION_FOUND"/>
+      <xs:enumeration value="DUPLICATE_ORG"/>
+      <xs:enumeration value="USER_VALIDATION"/>
+      <xs:enumeration value="ORG_VALIDATION"/>
+      <xs:enumeration value="PAYMENTS_VALIDATION"/>
+      <xs:enumeration value="ELIGIBILITY_VALIDATION"/>
+      <xs:enumeration value="PROVIDER_VALIDATION"/>
+      <xs:enumeration value="INCORRECT_SECURITY_ANSWER"/>
+      <xs:enumeration value="EOP_ENABLED"/>
+      <xs:enumeration value="LAST_REMAINING_OFFICE_MANAGER"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--Eligibility Enums-->
+  <xs:simpleType name="BenefitType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Dental"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RelationShip">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Self"/>
+      <xs:enumeration value="Spouse"/>
+      <xs:enumeration value="Child"/>
+      <xs:enumeration value="Life_Partner"/>
+      <xs:enumeration value="Ex_Spouse"/>
+      <xs:enumeration value="Other"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SubscriberIdentifierSearchType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Primary"/>
+      <xs:enumeration value="Alt"/>
+      <xs:enumeration value="Both"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Gender">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Male"/>
+      <xs:enumeration value="Female"/>
+      <xs:enumeration value="Unknown"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CoverageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Subscriber"/>
+      <xs:enumeration value="Subscriber_Spouse"/>
+      <xs:enumeration value="Subscriber_Child"/>
+      <xs:enumeration value="Family"/>
+      <xs:enumeration value="Waived"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GroupStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pending"/>
+      <xs:enumeration value="Enrollment Ready"/>
+      <xs:enumeration value="Active"/>
+      <xs:enumeration value="Cancelled"/>
+      <xs:enumeration value="Terminated"/>
+      <xs:enumeration value="Transferred"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProcedureCategory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Preventive"/>
+      <xs:enumeration value="Diagnostic"/>
+      <xs:enumeration value="Sealants"/>
+      <xs:enumeration value="Basic-Restorative"/>
+      <xs:enumeration value="Nonsurgical-Endodontics"/>
+      <xs:enumeration value="Surgical-Endodontics"/>
+      <xs:enumeration value="Nonsurgical-Periodontics"/>
+      <xs:enumeration value="Surgical-Periodontics"/>
+      <xs:enumeration value="Simple-Oral-Surgery"/>
+      <xs:enumeration value="Complex-Oral-Surgery"/>
+      <xs:enumeration value="TMJ"/>
+      <xs:enumeration value="Posterior-Composites"/>
+      <xs:enumeration value="Major-Restorative"/>
+      <xs:enumeration value="Crowns"/>
+      <xs:enumeration value="Prosthetic-Repair/Reline"/>
+      <xs:enumeration value="Prosthetics"/>
+      <xs:enumeration value="Bridges"/>
+      <xs:enumeration value="Orthodontics"/>
+      <xs:enumeration value="Habit-Breaking-Appliances"/>
+      <xs:enumeration value="Miscellaneous"/>
+      <xs:enumeration value="Implants"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderIdentifierSearchType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Tin"/>
+      <xs:enumeration value="Npi"/>
+      <xs:enumeration value="Licence"/>
+      <xs:enumeration value="Clinic"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CheckStatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Cashed"/>
+      <xs:enumeration value="Cleared"/>
+      <xs:enumeration value="Void"/>
+      <xs:enumeration value="Paid"/>
+      <xs:enumeration value="Cancelled"/>
+      <xs:enumeration value="Reissued"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CheckType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bulk"/>
+      <xs:enumeration value="Single"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PayeeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Provider"/>
+      <xs:enumeration value="Subscriber"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PaymentMethodCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Check"/>
+      <xs:enumeration value="Electronic"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TransactionHandlingCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Closed"/>
+      <xs:enumeration value="Open"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Finalized"/>
+      <xs:enumeration value="Pended"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Dental"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProcedureStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Finalized"/>
+      <xs:enumeration value="Pended"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClientType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IVR"/>
+      <xs:enumeration value="UCSW"/>
+      <xs:enumeration value="MEMBER_PORTAL"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SourceSystem">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DECARE"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimLineNumber">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProcedureCode">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PENDED"/>
+      <xs:enumeration value="FINALIZED"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimNumber">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimId">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimVersion">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tin">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="9"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Npi">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Identifier">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="40"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="FirstName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="55"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LastName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="55"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Name">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MiddleName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="25"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SubgroupNumber">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GroupNumber">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BenefitName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="60"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CheckNo">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="11"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EftTraceNo">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NetworkName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="40"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="UserName">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimPaymentPayeeRole">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Member"/>
+      <xs:enumeration value="Provider"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimPaymentCheckStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Applied"/>
+      <xs:enumeration value="Cashed"/>
+      <xs:enumeration value="Reissued"/>
+      <xs:enumeration value="Stop Dated"/>
+      <xs:enumeration value="Void"/>
+      <xs:enumeration value="Cancelled"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ContentEncoding">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BASE-64"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ServiceTypeEB03">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="40"/>
+      <xs:enumeration value="26"/>
+      <xs:enumeration value="24"/>
+      <xs:enumeration value="36"/>
+      <xs:enumeration value="38"/>
+      <xs:enumeration value="39"/>
+      <xs:enumeration value="23"/>
+      <xs:enumeration value="35"/>
+      <xs:enumeration value="25"/>
+      <xs:enumeration value="27"/>
+      <xs:enumeration value="28"/>
+      <xs:enumeration value="37"/>
+      <xs:enumeration value="41"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BenefitTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DEDUCTIBLE"/>
+      <xs:enumeration value="MAXIMUM"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CoverageLevelCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FAMILY"/>
+      <xs:enumeration value="INDIVIDUAL"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TimePeriodQualifierCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ANNUAL"/>
+      <xs:enumeration value="LIFETIME"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ClaimPaymentIndicator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="C"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ProviderPar">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PAR"/>
+      <xs:enumeration value="NONPAR"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="AttachmentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="pdf"/>
+      <xs:enumeration value="rtf"/>
+      <xs:enumeration value="xls"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\D:\projects\horizon\soapui\DomainMemberPortal.xsd</con:url><con:content><![CDATA[<xs:schema version="1.0" targetNamespace="http://member.domain.portal.dds.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cdns="http://core.domain.portal.dds.com/" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:mpdns="http://member.domain.portal.dds.com/">
+  <xs:import namespace="http://core.domain.portal.dds.com/" schemaLocation="DomainCore.xsd"/>
+  <xs:complexType name="EOBDocument">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="DocumentId"/>
+          <xs:element type="cdns:ContentEncoding" name="PDFContentEncoding"/>
+          <xs:element type="xs:base64Binary" name="PDFContent"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Member">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Identifier" name="SubscriberId"/>
+          <xs:element type="cdns:FirstName" name="MemberFirstName"/>
+          <xs:element type="cdns:MiddleName" name="MemberMiddleName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="MemberLastName"/>
+          <xs:element type="xs:date" name="MemberDOB"/>
+          <xs:element type="cdns:RelationShip" name="MemberRelationship"/>
+          <xs:element type="cdns:Gender" name="MemberGender"/>
+          <xs:element type="mpdns:MemberCoverage" name="Coverage" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MemberCoverage">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:GroupNumber" name="Group"/>
+          <xs:element type="cdns:SubgroupNumber" name="Subgroup"/>
+          <xs:element type="xs:date" name="ServiceDateStart"/>
+          <xs:element type="xs:date" name="ServiceDateEnd" minOccurs="0"/>
+          <xs:element type="mpdns:MemberBenefitDetail" name="BenefitDetail" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MemberBenefitDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:BenefitTypeCode" name="BenefitTypeCode"/>
+          <xs:element type="cdns:CoverageLevelCode" name="CoverageLevelCode"/>
+          <xs:element type="cdns:TimePeriodQualifierCode" name="TimePeriodQualifierCode"/>
+          <xs:element type="cdns:BenefitName" name="BenefitName"/>
+          <xs:element type="cdns:NetworkName" name="NetworkName"/>
+          <xs:element type="cdns:ServiceTypeEB03" name="ServiceType"/>
+          <xs:element type="xs:decimal" name="MonetaryAmountMaximum" nillable="true"/>
+          <xs:element type="xs:decimal" name="MonetaryAmountRemaining" nillable="true"/>
+          <xs:element type="xs:decimal" name="MonetaryAmountAccumulator" nillable="true"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AccumulationBenefitSearchCriteria">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Identifier" name="SubscriberId"/>
+          <xs:element type="cdns:FirstName" name="MemberFirstName"/>
+          <xs:element type="cdns:MiddleName" name="MemberMiddleName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="MemberLastName"/>
+          <xs:element type="xs:date" name="MemberDOB"/>
+          <xs:element type="cdns:RelationShip" name="MemberRelationship"/>
+          <xs:element type="cdns:Gender" name="MemberGender"/>
+          <xs:element type="xs:date" name="ServiceDateStart"/>
+          <xs:element type="xs:date" name="ServiceDateEnd"/>
+          <xs:element type="cdns:GroupNumber" name="Group" minOccurs="0"/>
+          <xs:element type="cdns:SubgroupNumber" name="Subgroup" minOccurs="0"/>
+          <xs:element type="cdns:ServiceTypeEB03" name="ServiceTypes" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GetPCDSearchCriteria">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Identifier" name="SubscriberId"/>
+          <xs:element type="cdns:FirstName" name="MemberFirstName"/>
+          <xs:element type="cdns:MiddleName" name="MemberMiddleName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="MemberLastName"/>
+          <xs:element type="xs:date" name="MemberDOB"/>
+          <xs:element type="cdns:RelationShip" name="MemberRelationship"/>
+          <xs:element type="cdns:Gender" name="MemberGender"/>
+          <xs:element type="xs:date" name="ServiceDateStart"/>
+          <xs:element type="xs:date" name="ServiceDateEnd"/>
+          <xs:element type="cdns:GroupNumber" name="Group" minOccurs="0"/>
+          <xs:element type="cdns:SubgroupNumber" name="Subgroup" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MemberPCDDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:Member" name="Member" minOccurs="0"/>
+          <xs:element type="mpdns:MemberPCD" name="MemberPCD" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MemberPCD">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:FirstName" name="PCDFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="PCDLastName" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="PCDBusinessName" minOccurs="0"/>
+          <xs:element type="xs:date" name="PCDEffectiveDate" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AccumulationBenefitDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:Member" name="Member" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimLineSearchCriteria">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="MaxRowsToReturn" default="100" nillable="true"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimNumber"/>
+          <xs:element type="xs:boolean" name="IncludeClaimLines" default="true"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimDetailSearchCriteria">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="MaxRowsToReturn" default="100" nillable="true"/>
+          <xs:element type="cdns:ProviderPar" name="ProviderParStatus" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ClaimProviderId" minOccurs="0"/>
+          <xs:element type="cdns:Npi" name="ClaimProviderNPI" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubscriberId"/>
+          <xs:element type="cdns:FirstName" name="SubscriberFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="SubscriberLastName" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimPatientFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimPatientLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPatientPatientDOB" minOccurs="0"/>
+          <xs:element type="cdns:RelationShip" name="ClaimPatientRelationship" minOccurs="0"/>
+          <xs:element type="cdns:Gender" name="ClaimPatientGender" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimDosStartDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimDosEndDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId" minOccurs="0"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimStatusCode" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimCheckNo" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:PayeeType" name="ClaimPaymentPayeeType" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeSubscriberProductInformation" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimDetails" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeAggregatedAmountFromLines" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPayment" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHistory" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimProviderAddress" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimMessageText" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPatientDetail" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeSubsGroup" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="ActualRowsReturned" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="HasMoreRows" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeSubscriberProductInformation" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimDetails" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeAggregatedAmountFromLines" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPayment" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHistory" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimProviderAddress" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimMessageText" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPatientDetail" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeSubsGroup" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimDetailHeader" name="ClaimHeader" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimDetailHeader">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId"/>
+          <xs:element type="xs:date" name="ClaimLastUpdate" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ClaimProviderId" minOccurs="0"/>
+          <xs:element type="cdns:Npi" name="ClaimProviderNPI" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimProviderOrgName" minOccurs="0"/>
+          <xs:element type="cdns:PayeeType" name="ClaimPayeeType" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="ClaimSubscriberId"/>
+          <xs:element type="cdns:FirstName" name="SubscriberFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="SubscriberLastName" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimSubsBrandingInd" minOccurs="0"/>
+          <xs:element type="cdns:Gender" name="ClaimSubscriberGender" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimPatientFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimPatientLastName" minOccurs="0"/>
+          <xs:element type="cdns:MiddleName" name="ClaimPatientMiddleInitial" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPatientDOB" minOccurs="0"/>
+          <xs:element type="cdns:Gender" name="ClaimPatientGender" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimProviderFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimProviderLastName" minOccurs="0"/>
+          <xs:element type="cdns:MiddleName" name="ClaimProviderMiddleName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimReceivedDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimFirstServiceDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimLastServiceDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimStatusCode" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimStatusDate" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimAdjustmentReasonCode" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimAdjustmentReasonDef" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimTotalChargeAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimAllowedAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimNotCoveredAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPayeeName" minOccurs="0"/>
+          <xs:element type="cdns:ClaimPaymentIndicator" name="ClaimPaymentIndicator" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimCheckNo" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimCheckDate" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimPaidAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimComments" minOccurs="0"/>
+          <xs:element type="mpdns:SubsPID" name="SubsPID" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:SubsGroup" name="SubsGroup" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:ClaimPatientDetail" name="ClaimPatientDetail" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimProviderAddress" name="ClaimProviderAddress" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimMessageText" name="ClaimMessageText" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimPayment" name="ClaimPayment" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:AggregatedAmount" name="AggregatedAmountFromLines" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimLineDetail" name="ClaimLine" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimPatientDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:decimal" name="PatientCoInsuranceAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PatientCoPayAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PatientLiabilityAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PatientDeductibleAmount" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubsGroup">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:GroupNumber" name="GroupNumber" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="GroupName" minOccurs="0"/>
+          <xs:element type="cdns:SubgroupNumber" name="SubProductCode" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AggregatedAmount">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:decimal" name="ClaimCoInsuranceAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimCoPayAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDeductibleAmount" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimLineDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimLineNumber" name="ClaimLineSequeceNumber" minOccurs="0"/>
+          <xs:element type="cdns:ProcedureCode" name="ProcedureCode" minOccurs="0"/>
+          <xs:element type="xs:string" name="ProcedureCodeType" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ChargeAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PaidAmount" minOccurs="0"/>
+          <xs:element type="xs:int" name="ServiceUnitCount" minOccurs="0"/>
+          <xs:element type="xs:string" name="StatusCategoryDescription" minOccurs="0"/>
+          <xs:element type="xs:string" name="StatusDescription" minOccurs="0"/>
+          <xs:element type="xs:date" name="ServiceFromDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ServicetoDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimDetailStatusCode" minOccurs="0"/>
+          <xs:element type="cdns:ServiceTypeEB03" name="ClaimDetailServiceType" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailServiceDef" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailCoinsuranceAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailCopayAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailAllowedAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailNotCoveredAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailProviderLiabilityAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailPatientLiabilityAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailDeductibleAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailToothNumberQuadrant" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimLineLastUpdate" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailMessageCode" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailMessage" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimPayment">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimPaymentPayeeRole" name="ClaimPaymentPayeeRole" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="ClaimPaymentSubscriberId" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentProviderId" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentProviderName" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimCheckPayeeFirstName" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimCheckPayeeInitial" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimCheckPayeeLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPaymentProcessDate" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimPaymentAmount" minOccurs="0"/>
+          <xs:element type="cdns:ClaimPaymentIndicator" name="ClaimPaymentIndicator" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimPaymentEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimPaymentCheckNo" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPaymentCheckDate" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeStreet" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeCity" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeState" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeZip9" minOccurs="0"/>
+          <xs:element type="cdns:ClaimPaymentCheckStatus" name="ClaimPaymentCheckStatus" minOccurs="0"/>
+          <xs:element type="cdns:SourceSystem" name="ClaimPaymentSourceSystem" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimMessageText">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="ClaimMessageCode" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimMessage" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimProviderAddress">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="ClaimProviderStreet" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimProviderCity" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimProviderState" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimProviderZip5" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubsPID">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Identifier" name="SubscriberCCID" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubscriberSSN" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Claim">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimHeader" name="ClaimHeader"/>
+          <xs:element type="mpdns:ClaimLine" name="ClaimLines" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimHeader">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimNumber" name="ClaimNumber"/>
+          <xs:element type="xs:date" name="ClaimLastUpdate"/>
+          <xs:element type="cdns:Tin" name="ClaimProviderId"/>
+          <xs:element type="cdns:Identifier" name="ClaimSubscriberIdentifier"/>
+          <xs:element type="xs:date" name="ClaimFirstDos"/>
+          <xs:element type="xs:date" name="ClaimLastDos"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimLine">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimLineNumber" name="ClaimDetailId"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimDetailStatusCode" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimDetailDos"/>
+          <xs:element type="cdns:ServiceTypeEB03" name="ClaimDetailServiceDef" minOccurs="0"/>
+          <xs:element type="xs:int" name="ClaimDetailServiceUnitCount" nillable="true"/>
+          <xs:element type="cdns:ProcedureCode" name="ClaimDetailProcedureCode"/>
+          <xs:element type="xs:string" name="ClaimDetailProcedureDef"/>
+          <xs:element type="xs:decimal" name="ClaimDetailCharge" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailAllowedAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailNotCoveredAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailCoinsuranceAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailCopayAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailDeductibleAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailPaidAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailProviderLiabilityAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimDetailPatientLiabilityAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailToothNumberQuadrant" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailMessageCode" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimDetailMessage" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimSOPSearchCriteria">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="MaxRowsToReturn" default="100" nillable="true"/>
+          <xs:element type="cdns:ProviderPar" name="ProviderParStatus" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ProviderId" minOccurs="0"/>
+          <xs:element type="cdns:Npi" name="ProviderNPI" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubscriberId"/>
+          <xs:element type="cdns:FirstName" name="ClaimPatientFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimPatientLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPatientPatientDOB" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimDosStartDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimDosEndDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId" minOccurs="0"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimStatusCode" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimCheckNo" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:PayeeType" name="ClaimPaymentPayeeType" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludePIDSearch" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHistory" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimProviderAddress" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimMessageText" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPatientDetail" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeSubsGroup" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPayment" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeAggregateAmountFromLines" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimSOP">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="ActualRowsReturned" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="HasMoreRows" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludePIDSearch" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHistory" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimProviderAddress" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimMessageText" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPatientDetail" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeSubsGroup" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPayment" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeAggregateAmountFromLines" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimSOPClaim" name="Claim" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:SubsPID" name="SubsPID" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimSOPDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:ClaimSOPPatientDetail" name="ClaimPatientDetail" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimSOPPatientDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:decimal" name="PatientCoInsuranceAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PatientCoPayAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PatientDeductibleAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="PatientLiabilityAmount" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimSOPClaim">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId"/>
+          <xs:element type="xs:date" name="ClaimLastUpdate" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ClaimProviderId" minOccurs="0"/>
+          <xs:element type="cdns:Npi" name="ClaimProviderNPI" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimProviderOrgName" minOccurs="0"/>
+          <xs:element type="cdns:PayeeType" name="ClaimPayeeType" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="ClaimSubscriberId"/>
+          <xs:element type="xs:string" name="ClaimSubsBrandingInd" minOccurs="0"/>
+          <xs:element type="cdns:Gender" name="ClaimSubscriberGender" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimPatientFirstName" minOccurs="0"/>
+          <xs:element type="cdns:MiddleName" name="ClaimPatientMiddleInitial" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimPatientLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPatientDOB" minOccurs="0"/>
+          <xs:element type="cdns:Gender" name="ClaimPatientGender" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimProviderFirstName" minOccurs="0"/>
+          <xs:element type="cdns:MiddleName" name="ClaimProviderMiddleName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimProviderLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimReceivedDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimFirstServiceDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimLastServiceDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimStatusCode" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimStatusDate" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimTotalChargeAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimAllowedAmount" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimNotCoveredAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPayeeName" minOccurs="0"/>
+          <xs:element type="cdns:ClaimPaymentIndicator" name="ClaimPaymentIndicator" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimCheckNo" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimCheckDate" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimPaidAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimComments" minOccurs="0"/>
+          <xs:element type="mpdns:ClaimSOPDetail" name="ClaimDetail" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:AggregatedAmount" name="AggregatedAmountFromLines" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBSearchRequest">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Identifier" name="MemberID"/>
+          <xs:choice>
+            <xs:element type="cdns:ClaimNumber" name="ClaimId"/>
+            <xs:element type="cdns:CheckNo" name="CheckNumber"/>
+          </xs:choice>
+          <xs:element type="cdns:ClientType" name="ClientType"/>
+          <xs:element type="cdns:UserName" name="UserId"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBSearchResponse">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:EOB" name="EOB" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute type="mpdns:EobMatchType" name="match"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="EobMatchType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Multiple"/>
+      <xs:enumeration value="Single"/>
+      <xs:enumeration value="None"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="EOB">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Identifier" name="MemberID" minOccurs="0"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="CheckNumber" minOccurs="0"/>
+          <xs:element type="cdns:ClientType" name="ClientType" minOccurs="0"/>
+          <xs:element type="mpdns:DocumentType" name="DocumentType" minOccurs="0"/>
+          <xs:element type="xs:string" name="DocumentID" minOccurs="0"/>
+          <xs:element type="xs:date" name="DocumentDate" minOccurs="0"/>
+          <xs:element type="mpdns:EOBCustSvceAddr" name="CustSvceAddr" minOccurs="0"/>
+          <xs:element type="mpdns:EOBPayeeAddr" name="Addr" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="CheckAmount" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubsID" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubsCCID" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="SubsName" minOccurs="0"/>
+          <xs:element type="cdns:GroupNumber" name="GroupNumber" minOccurs="0"/>
+          <xs:element type="mpdns:EOBPmntSummary" name="PmntSummary" minOccurs="0"/>
+          <xs:element type="mpdns:EOBClaimsSummary" name="ClaimsSummary" minOccurs="0"/>
+          <xs:element type="mpdns:EOBTotal" name="Total" minOccurs="0"/>
+          <xs:element type="mpdns:EOBClaim" name="Claims" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:EOBAppealLetter" name="AppealLetter" minOccurs="0"/>
+          <xs:element type="xs:string" name="MsgBrdCast134" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="DocumentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OR"/>
+      <xs:enumeration value="RI"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="EOBCustSvceAddr">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="Line1" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line2" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line3" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line4" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBPayeeAddr">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="Line1" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line2" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line3" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line4" minOccurs="0"/>
+          <xs:element type="xs:string" name="Line5" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBPmntSummary">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:decimal" name="NetClaimAmnt" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBClaimsSummary">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:EOBClaimsSummaryLine" name="ClaimsSummaryLine" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute type="xs:boolean" name="isMultiClaim"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBClaimsSummaryLine">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:decimal" name="SubRes" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="AmntHorizonPaid" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClmAmt" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="Provider" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="Patient" minOccurs="0"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimNum"/>
+          <xs:element type="cdns:ProviderPar" name="ProvStatus" minOccurs="0"/>
+          <xs:element type="xs:string" name="EmpName" minOccurs="0"/>
+          <xs:element type="cdns:GroupNumber" name="EmpId" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBTotal">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:decimal" name="BildAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="AlldAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="CoinCop" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="DedAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="OthCarAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="NcovAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="HorPdAmt" minOccurs="0"/>
+          <xs:element type="xs:string" name="MsgCd" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="SubRes" minOccurs="0"/>
+          <xs:element type="xs:string" name="GrpDesc" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBClaim">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="mpdns:EOBClaimSummary" name="ClaimSummary"/>
+          <xs:element type="mpdns:EOBClmDets" name="ClmDet" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:EOBClaimMsg" name="Msg" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:EOBTotal" name="Total" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="cdns:ClaimNumber" name="ClaimNum"/>
+        <xs:attribute type="xs:boolean" name="isFirstClm"/>
+        <xs:attribute type="xs:boolean" name="isLastClm"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBClaimSummary">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimNumber" name="ClaimNum"/>
+          <xs:element type="cdns:Name" name="PatientName" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="AmntHorizonPaid" minOccurs="0"/>
+          <xs:element type="cdns:RelationShip" name="Rel" minOccurs="0"/>
+          <xs:element type="cdns:GroupNumber" name="GroupNumber" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="TotCharge" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="SubRes" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="ProName" minOccurs="0"/>
+          <xs:element type="cdns:ProviderPar" name="ProvStatus" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubsCCID" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBAppealLetter">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="MsgBrdCast134"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="AppealType"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBClmDets">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:Name" name="PatientName" minOccurs="0"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimNum"/>
+          <xs:element type="xs:date" name="FrDt" minOccurs="0"/>
+          <xs:element type="xs:date" name="ToDt" minOccurs="0"/>
+          <xs:element type="xs:string" name="PosTos"/>
+          <xs:element type="xs:decimal" name="BildAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="AlldAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="CoinCop" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="DedAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="OthCarAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="NcovAmt" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="HorPdAmt" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="ProName" minOccurs="0"/>
+          <xs:element type="xs:string" name="MsgCd" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="SubRes" minOccurs="0"/>
+          <xs:element type="cdns:ProcedureCode" name="ProcCod" minOccurs="0"/>
+          <xs:element type="xs:string" name="TotSrf" minOccurs="0"/>
+          <xs:element type="mpdns:EOBClaimMsg" name="Msg" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EOBClaimMsg">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="MsgTxt"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="MsgID"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentSearchCriteria">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="MaxRowsToReturn" default="100" nillable="true"/>
+          <xs:element type="cdns:ProviderPar" name="ProviderParStatus" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ProviderId" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="SubscriberId"/>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimPaymentEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimPaymentCheckNo" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPaymentCheckDate" minOccurs="0"/>
+          <xs:element type="cdns:SourceSystem" name="ClaimPaymentSourceSystem" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludePIDSearch" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHeader" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHistory" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPayeeAddress" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentResponse">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:int" name="ActualRowsReturned" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="HasMoreRows" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludePIDSearch" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHeader" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimHistory" minOccurs="0"/>
+          <xs:element type="xs:boolean" name="IncludeClaimPayeeAddress" minOccurs="0"/>
+          <xs:element type="mpdns:PaymentDetail" name="ClaimPayment" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentDetail">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ProviderPar" name="ProviderParStatus" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ClaimPaymentProviderId" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="ClaimProviderOrganizationName" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentProviderName" minOccurs="0"/>
+          <xs:element type="cdns:ClaimPaymentPayeeRole" name="ClaimPaymentPayeeRole" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="ClaimPaymentSubscriberId"/>
+          <xs:element type="xs:string" name="ClaimPaymentSubsBrandingInd" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimPaymentEFTTraceNo" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimPaymentCheckNo" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPaymentCheckDate" minOccurs="0"/>
+          <xs:element type="cdns:Name" name="ClaimCheckPayeeName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPaymentProcessDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimPaymentCheckStatus" name="ClaimPaymentCheckStatus" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimPaymentAmount" minOccurs="0"/>
+          <xs:element type="cdns:SourceSystem" name="ClaimPaymentSourceSystem" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPaymentLastUpdate" minOccurs="0"/>
+          <xs:element type="mpdns:SubsPID" name="SubsPID" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element type="mpdns:ClaimPayeeAddress" name="ClaimPayeeAddress" minOccurs="0"/>
+          <xs:element type="mpdns:PaymentClaimHeader" name="ClaimHeader" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClaimPayeeAddress">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeStreet" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeCity" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeState" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPaymentCheckPayeeZip9" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentClaimHeader">
+    <xs:complexContent>
+      <xs:extension base="cdns:BaseBusinessObject">
+        <xs:sequence>
+          <xs:element type="cdns:ClaimNumber" name="ClaimId"/>
+          <xs:element type="xs:date" name="ClaimLastUpdate" minOccurs="0"/>
+          <xs:element type="cdns:Tin" name="ClaimProviderId" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimProviderOrganizationName" minOccurs="0"/>
+          <xs:element type="cdns:Identifier" name="ClaimSubscriberId"/>
+          <xs:element type="xs:string" name="ClaimSubsBrandingInd" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimPatientFirstName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimPatientLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimPatientDOB" minOccurs="0"/>
+          <xs:element type="cdns:Gender" name="ClaimPatientGender" minOccurs="0"/>
+          <xs:element type="cdns:FirstName" name="ClaimProviderFirstName" minOccurs="0"/>
+          <xs:element type="cdns:MiddleName" name="ClaimProviderMiddleName" minOccurs="0"/>
+          <xs:element type="cdns:LastName" name="ClaimProviderLastName" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimFirstServiceDate" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimLastServiceDate" minOccurs="0"/>
+          <xs:element type="cdns:ClaimStatus" name="ClaimStatusCode" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimStatusDate" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimAdjustmentReasonCode" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimAdjustmentReasonDef" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimTotalChargeAmount" minOccurs="0"/>
+          <xs:element type="xs:string" name="ClaimPayeeName" minOccurs="0"/>
+          <xs:element type="cdns:CheckNo" name="ClaimCheckNo" minOccurs="0"/>
+          <xs:element type="cdns:EftTraceNo" name="ClaimEFTTraceNo" minOccurs="0"/>
+          <xs:element type="xs:date" name="ClaimCheckDate" minOccurs="0"/>
+          <xs:element type="xs:decimal" name="ClaimPaidAmount" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="MemberPortalBusinessErrorCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUBSCRIBER-NOT-FOUND"/>
+      <xs:enumeration value="DEPENDENT-NOT-FOUND"/>
+      <xs:enumeration value="DEPENDENT-NOT-ACTIVE"/>
+      <xs:enumeration value="SUBSCRIBER-NOT-ACTIVE"/>
+      <xs:enumeration value="VALIDATION_ISSUE"/>
+      <xs:enumeration value="NOT_IMPLEMENTED"/>
+      <xs:enumeration value="BENEFITS-NOT-FOUND"/>
+      <xs:enumeration value="MEMBER_MULTIPLE_RESULTS_FOUND"/>
+      <xs:enumeration value="NO_RESULTS_FOUND"/>
+      <xs:enumeration value="NOT_CATEGORIZED"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MemberPortalSystemErrorCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BUSS_LAYER_ERR"/>
+      <xs:enumeration value="DATA_LAYER_ERR"/>
+      <xs:enumeration value="INTG_LAYER_ERR"/>
+      <xs:enumeration value="EXTR_VEND_APP_ERR"/>
+      <xs:enumeration value="NOT_CATEGORIZED"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#endpoint}/MemberPortalWebServiceV1/memberPortalService</con:endpoint></con:endpoints><con:operation id="bbd790c6-60da-4e5c-ad1d-485eaf4bd9d2" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getAccumulationBenefit/" name="getAccumulationBenefit" bindingOperationName="getAccumulationBenefit" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="03e9004a-0391-4cc8-b042-995f55a1a8fd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#endpoint}/MemberPortalWebServiceV1/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getAccumulationBenefit>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <SearchCriteria>\r
+            <SubscriberId>?</SubscriberId>\r
+            <MemberFirstName>?</MemberFirstName>\r
+            <!--Optional:-->\r
+            <MemberMiddleName>?</MemberMiddleName>\r
+            <MemberLastName>?</MemberLastName>\r
+            <MemberDOB>?</MemberDOB>\r
+            <MemberRelationship>?</MemberRelationship>\r
+            <MemberGender>?</MemberGender>\r
+            <ServiceDateStart>?</ServiceDateStart>\r
+            <ServiceDateEnd>?</ServiceDateEnd>\r
+            <!--Optional:-->\r
+            <Group>?</Group>\r
+            <!--Optional:-->\r
+            <Subgroup>?</Subgroup>\r
+            <!--Zero or more repetitions:-->\r
+            <ServiceTypes>?</ServiceTypes>\r
+         </SearchCriteria>\r
+      </ws:getAccumulationBenefit>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getAccumulationBenefit/"/></con:call></con:operation><con:operation id="77e8f00c-fd8d-4e0a-a462-f40da1caf942" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getClaim/" name="getClaim" bindingOperationName="getClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a27790aa-5607-4b05-8ae4-928f16dc803b" name="Dale (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN98714610</SubscriberId>
+            <ClaimDosStartDate>2020-01-01Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-25Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>true</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="46de99d0-ccca-43b3-8987-3ef502b5b3ed" name="sample_Request_2 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN04586060</SubscriberId>
+            <ClaimDosStartDate>2018-06-16Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-16Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="99b78264-01c7-4c8b-9658-8ae9aba6782e" name="sample_Request_1 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN22670390</SubscriberId>
+            <ClaimDosStartDate>2018-06-16Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-16Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="64161321-fb3f-449b-9978-67cfb0438afd" name="sample_Request_2 (opspp)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apps.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN04586060</SubscriberId>
+            <ClaimDosStartDate>2018-06-16Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-16Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="7d46bbe6-defe-410a-a1b8-1cf041b57d3b" name="sample_Request_1 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>240</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN22670390</SubscriberId>
+            <ClaimDosStartDate>2020-03-16Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-16Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="0bfe612d-7978-45a9-b1f7-86f3416c5509" name="sample_Request_2 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://VA33DLVWBL301.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>120</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN04586060</SubscriberId>
+            <ClaimDosStartDate>2018-06-16Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-16Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="86acfaf9-0832-473e-8c6f-34ac465dcea9" name="Dale (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN74653840</SubscriberId>
+            <ClaimDosStartDate>2000-01-01Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-06-25Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>true</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a25325aa-f0a6-426a-937f-a2e123987074" name="sample_Request_3 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>120</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN86819480</SubscriberId>
+            <ClaimDosStartDate>2018-11-19Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-11-19Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="432561b7-7265-4d90-922c-64a2e1ccfe25" name="28Apr2021 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN68141470</SubscriberId>
+            <ClaimPatientFirstName>SZYMANSKI</ClaimPatientFirstName>
+            <ClaimPatientLastName>Wilsonxsit</ClaimPatientLastName>
+            <ClaimPatientPatientDOB>1994-10-10</ClaimPatientPatientDOB>
+            <ClaimDosStartDate>2013-08-05</ClaimDosStartDate>
+            <ClaimDosEndDate>2015-08-05</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="792a49f3-30d5-4e0e-8ea0-4917de8025ce" name="25May2021"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apps.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN22646690</SubscriberId>
+            <ClaimDosStartDate>2021-01-01Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2021-05-25Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="b7774f34-d3cc-4fdb-ae5c-c2890901481c" name="25May2021 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN22646690</SubscriberId>
+            <ClaimDosStartDate>2018-01-01Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2021-05-25Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="214f34fa-653c-4b5c-ba82-1e88418d26f2" name="25May2021 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN22646690</SubscriberId>
+            <ClaimDosStartDate>2021-01-01Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2021-05-25Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="84279b69-6fc8-4b65-b082-93a56afc6e80" name="28Apr2021 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN68141470</SubscriberId>
+            <ClaimPatientFirstName>SZYMANSKI</ClaimPatientFirstName>
+            <ClaimPatientLastName>Wilsonxsit</ClaimPatientLastName>
+            <ClaimPatientPatientDOB>1994-10-10</ClaimPatientPatientDOB>
+            <ClaimDosStartDate>2013-08-05</ClaimDosStartDate>
+            <ClaimDosEndDate>2015-08-05</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="578b8f58-16cb-4d8b-9290-5f5b986a7292" name="sample_Request_3 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>MOMAPI</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>120</Timeout>
+         <ClaimSearchCriteria>
+            <MaxRowsToReturn>200</MaxRowsToReturn>
+            <SubscriberId>3HZN86819480</SubscriberId>
+            <ClaimDosStartDate>2018-11-19Z</ClaimDosStartDate>
+            <ClaimDosEndDate>2020-11-19Z</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="716818a7-3e55-4d7c-bbff-b68ae48d5589" name="28Apr2021 (opsuu)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://va33tlvwbl308.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN68141470</SubscriberId>
+            <ClaimPatientFirstName>SZYMANSKI</ClaimPatientFirstName>
+            <ClaimPatientLastName>Wilsonxsit</ClaimPatientLastName>
+            <ClaimPatientPatientDOB>1994-10-10</ClaimPatientPatientDOB>
+            <ClaimDosStartDate>2013-08-05</ClaimDosStartDate>
+            <ClaimDosEndDate>2015-08-05</ClaimDosEndDate>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="2e458f9a-527c-437b-8165-786e8b685cb6" name="14Jun2021 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+   <SOAP-ENV:Header>
+   
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+         <UserName>DALE-TEST</UserName>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSubmitDateTime>2020-06-16T14:15:08.998Z</ClientSubmitDateTime>
+         <Timeout>55</Timeout>
+         <ClaimSearchCriteria xmlns="">
+            <MaxRowsToReturn>10</MaxRowsToReturn>
+            <ClaimProviderId/>
+            <ClaimProviderNPI/>
+            <SubscriberId>3HZN61728730</SubscriberId>
+            <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+            <IncludeClaimPayment>true</IncludeClaimPayment>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+            <IncludeSubsGroup>false</IncludeSubsGroup>
+         </ClaimSearchCriteria>
+      </ns3:getClaim>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="b20b2432-2b07-4932-8390-29cbf93a0bab" name="18Aug2021 (opsuu)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://va33tlvwbl308.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+        <hdrns:ApiSoapHeader xmlns:hdrns="http://horizon.bcbsnj.com/eai/mom/webservices/">
+            <hdrns:X-HZN-Api>dentalclaims</hdrns:X-HZN-Api>
+            <hdrns:X-HZN-ClientName>Zipari</hdrns:X-HZN-ClientName>
+            <hdrns:X-HZN-RootId>rrt-0fc7f481cf38de7c2-c-ea-11806-38812171-1</hdrns:X-HZN-RootId>
+        </hdrns:ApiSoapHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+            <UserName>MOMAPI</UserName>
+            <SourceSystem>DECARE</SourceSystem>
+            <ClientSubmitDateTime>2021-07-22T00:30:30.315Z</ClientSubmitDateTime>
+            <Timeout>55</Timeout>
+            <ClaimSearchCriteria>
+                <MaxRowsToReturn>200</MaxRowsToReturn>
+                <SubscriberId>3HZN23355180</SubscriberId>
+               <ClaimPatientFirstName>LUZ</ClaimPatientFirstName>
+               <ClaimPatientLastName>RIVERA</ClaimPatientLastName>
+                <ClaimDosStartDate>2019-07-22Z</ClaimDosStartDate>
+                <ClaimDosEndDate>2021-07-22Z</ClaimDosEndDate>
+                <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+                <IncludeClaimPayment>true</IncludeClaimPayment>
+                <IncludeClaimHistory>false</IncludeClaimHistory>
+                <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+                <IncludeClaimMessageText>true</IncludeClaimMessageText>
+                <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+                <IncludeSubsGroup>false</IncludeSubsGroup>
+            </ClaimSearchCriteria>
+        </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="693feeee-41e5-4949-bff3-b9556c611b4a" name="18Aug2021-2 (opsuu)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://va33tlvwbl308.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+        <hdrns:ApiSoapHeader xmlns:hdrns="http://horizon.bcbsnj.com/eai/mom/webservices/">
+            <hdrns:X-HZN-Api>dentalclaims</hdrns:X-HZN-Api>
+            <hdrns:X-HZN-ClientName>Zipari</hdrns:X-HZN-ClientName>
+            <hdrns:X-HZN-RootId>rrt-09647e0537dde17cb-b-ea-1918-30986326-1</hdrns:X-HZN-RootId>
+        </hdrns:ApiSoapHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+            <UserName>MOMAPI</UserName>
+            <SourceSystem>DECARE</SourceSystem>
+            <ClientSubmitDateTime>2021-07-22T00:40:27.647Z</ClientSubmitDateTime>
+            <Timeout>55</Timeout>
+            <ClaimSearchCriteria>
+                <MaxRowsToReturn>200</MaxRowsToReturn>
+                <SubscriberId>3HZN23355180</SubscriberId>
+                <ClaimDosStartDate>2019-07-22Z</ClaimDosStartDate>
+                <ClaimDosEndDate>2021-07-22Z</ClaimDosEndDate>
+                <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+                <IncludeClaimPayment>true</IncludeClaimPayment>
+                <IncludeClaimHistory>false</IncludeClaimHistory>
+                <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+                <IncludeClaimMessageText>true</IncludeClaimMessageText>
+                <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+                <IncludeSubsGroup>false</IncludeSubsGroup>
+            </ClaimSearchCriteria>
+        </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="d5298346-4905-4363-9987-e45b77742a6f" name="02Nov2022 (opsuu)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://va33tlvwbl308.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+        <hdrns:ApiSoapHeader xmlns:hdrns="http://horizon.bcbsnj.com/eai/mom/webservices/">
+            <hdrns:X-HZN-Api>dentalclaims</hdrns:X-HZN-Api>
+            <hdrns:X-HZN-ClientName>Zipari</hdrns:X-HZN-ClientName>
+            <hdrns:X-HZN-RootId>rrt-0fc7f481cf38de7c2-c-ea-11806-38812171-1</hdrns:X-HZN-RootId>
+        </hdrns:ApiSoapHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+            <UserName>MOMAPI</UserName>
+            <SourceSystem>DECARE</SourceSystem>
+            <ClientSubmitDateTime>2021-07-22T00:30:30.315Z</ClientSubmitDateTime>
+            <Timeout>55</Timeout>
+            <ClaimSearchCriteria>
+                <MaxRowsToReturn>200</MaxRowsToReturn>
+                <SubscriberId>3HZN68706740</SubscriberId>
+                <ClaimDosStartDate>2022-01-22Z</ClaimDosStartDate>
+                <ClaimDosEndDate>2022-04-22Z</ClaimDosEndDate>
+                <IncludeAggregatedAmountFromLines>true</IncludeAggregatedAmountFromLines>
+                <IncludeClaimPayment>true</IncludeClaimPayment>
+                <IncludeClaimHistory>false</IncludeClaimHistory>
+                <IncludeClaimProviderAddress>false</IncludeClaimProviderAddress>
+                <IncludeClaimMessageText>true</IncludeClaimMessageText>
+                <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>
+                <IncludeSubsGroup>false</IncludeSubsGroup>
+            </ClaimSearchCriteria>
+        </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaim/"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="854dc3ad-8fdc-436d-b726-62c868c50ea7" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getClaimEob/" name="getClaimEob" bindingOperationName="getClaimEob" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e46b310a-13a2-4398-b190-9a7e3ebafac4" name="Request 1 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEob>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <EOBSearchRequest>\r
+            <MemberID>3HZN86819480</MemberID>\r
+            <!--You have a CHOICE of the next 2 items at this level-->\r
+            <ClaimId>48762065</ClaimId>\r
+            <CheckNumber>?</CheckNumber>\r
+            <ClientType>?</ClientType>\r
+            <UserId>?</UserId>\r
+         </EOBSearchRequest>\r
+      </ws:getClaimEob>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEob/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="e214cb63-1e1f-4933-9a3a-59f74d911f61" name="Request 1 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEob>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <EOBSearchRequest>\r
+            <MemberID>3HZN86819480</MemberID>\r
+            <!--You have a CHOICE of the next 2 items at this level-->\r
+            <ClaimId>48762065</ClaimId>\r
+            <CheckNumber>?</CheckNumber>\r
+            <ClientType>?</ClientType>\r
+            <UserId>?</UserId>\r
+         </EOBSearchRequest>\r
+      </ws:getClaimEob>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEob/"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7f46f647-5040-48a0-9eb0-5203606fdbc5" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/" name="getClaimEobAttachement" bindingOperationName="getClaimEobAttachement" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="aa0707d2-7986-4c56-bfe1-d0afe0d0b72b" name="OPSQ Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://stanley:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</DocumentId>
+         <!--<DocumentId>f576df30-8ce5-457a-82dc-4834cd17d42a</DocumentId>-->
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a8cd2448-a59e-4fc4-9c72-c6e3d6de08c2" name="Generate Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://foster:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</DocumentId>
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="f2925440-f784-4d8e-aecf-aa1ed81ecd94" name="OPSP  Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://hart.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>a3bf70fe-95c5-4d4f-998c-e36d0d116308</DocumentId>
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="e485afee-82b2-4d26-b743-3f44b5080577" name="OPSSF Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <!--<DocumentId>27d6f072-3dca-47f4-9b9c-5bbc4863dac1</DocumentId>-->
+         <DocumentId>2102d48f-a0c0-4b7d-a7b6-407fa13d6f76</DocumentId>
+         <!--<DocumentId>f576df30-8ce5-457a-82dc-4834cd17d42a</DocumentId>-->
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="36bcd63f-0b5e-4dc1-8505-c609d5b5b13a" name="localhost Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</DocumentId>
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="7f9217a0-05f9-424b-b939-a1bbcd16ddaf" name="OPSU Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://locomobile.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</DocumentId>
+         <!--<DocumentId>f576df30-8ce5-457a-82dc-4834cd17d42a</DocumentId>-->
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="476d05d6-7fb3-4018-874a-5d42e01b2a08" name="uadds Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://uadds.decare.com:7777/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</DocumentId>
+         <!--<DocumentId>f576df30-8ce5-457a-82dc-4834cd17d42a</DocumentId>-->
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="ff16527c-6aaf-4bed-958c-acaa7f401375" name="https-uadds Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://uadds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>0c4e9362-49dd-4c75-afe1-4c20a34f0a34</DocumentId>
+         <!--<DocumentId>f576df30-8ce5-457a-82dc-4834cd17d42a</DocumentId>-->
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a135bfbc-0fd4-40d6-b6aa-3e05b655c612" name="OPSPP  Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://apps.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>7aabf1b0-d726-4809-b42e-aed1da72a60d</DocumentId>
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="385dd61c-834e-4aa4-8f80-fdb3f38343a8" name="Copy of OPSPP  Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://tmp-apps.decare.com:9794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>a3bf70fe-95c5-4d4f-998c-e36d0d116308</DocumentId>
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="151dcdb4-6d7e-4a41-999a-b122375b0014" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getClaimSOP/" name="getClaimSOP" bindingOperationName="getClaimSOP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="807db7a8-03b2-4476-9b38-840f55944c6d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimSOP>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <SearchCriteria>\r
+            <MaxRowsToReturn>100</MaxRowsToReturn>\r
+            <!--Optional:-->\r
+            <ProviderParStatus></ProviderParStatus>\r
+            <!--Optional:-->\r
+            <ProviderId></ProviderId>\r
+            <!--Optional:-->\r
+            <ProviderNPI></ProviderNPI>\r
+            <SubscriberId>3HZN86819480</SubscriberId>\r
+            <!--Optional:-->\r
+            <ClaimPatientFirstName></ClaimPatientFirstName>\r
+            <!--Optional:-->\r
+            <ClaimPatientLastName></ClaimPatientLastName>\r
+            <!--Optional:-->\r
+            <ClaimPatientPatientDOB></ClaimPatientPatientDOB>\r
+            <!--Optional:-->\r
+            <ClaimDosStartDate></ClaimDosStartDate>\r
+            <!--Optional:-->\r
+            <ClaimDosEndDate></ClaimDosEndDate>\r
+            <!--Optional:-->\r
+            <ClaimId></ClaimId>\r
+            <!--Optional:-->\r
+            <ClaimStatusCode></ClaimStatusCode>\r
+            <!--Optional:-->\r
+            <ClaimCheckNo></ClaimCheckNo>\r
+            <!--Optional:-->\r
+            <ClaimEFTTraceNo></ClaimEFTTraceNo>\r
+            <!--Optional:-->\r
+            <ClaimPaymentPayeeType></ClaimPaymentPayeeType>\r
+            <!--Optional:-->\r
+            <IncludePIDSearch>true</IncludePIDSearch>\r
+            <!--Optional:-->\r
+            <IncludeClaimHistory>true</IncludeClaimHistory>\r
+            <!--Optional:-->\r
+            <IncludeClaimProviderAddress>true</IncludeClaimProviderAddress>\r
+            <!--Optional:-->\r
+            <IncludeClaimMessageText>true</IncludeClaimMessageText>\r
+            <!--Optional:-->\r
+            <IncludeClaimPatientDetail>true</IncludeClaimPatientDetail>\r
+            <!--Optional:-->\r
+            <IncludeSubsGroup>true</IncludeSubsGroup>\r
+            <!--Optional:-->\r
+            <IncludeClaimPayment>true</IncludeClaimPayment>\r
+            <!--Optional:-->\r
+            <IncludeAggregateAmountFromLines>true</IncludeAggregateAmountFromLines>\r
+         </SearchCriteria>\r
+      </ws:getClaimSOP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimSOP/"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a129d06d-794c-4f04-aa74-2999ed7d379b" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getPayments/" name="getPayments" bindingOperationName="getPayments" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8e54f324-4d38-4217-9a6a-4daa61fdd004" name="Request 1 (localhost)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getPayments>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <PaymentSearchCriteria>\r
+            <MaxRowsToReturn>100</MaxRowsToReturn>\r
+            <!--Optional:-->\r
+            <ProviderParStatus>?</ProviderParStatus>\r
+            <!--Optional:-->\r
+            <ProviderId>800384593</ProviderId>\r
+            <SubscriberId>3HZN86819480</SubscriberId>\r
+            <!--Optional:-->\r
+            <ClaimId>48762065</ClaimId>\r
+            <!--Optional:-->\r
+            <ClaimPaymentEFTTraceNo>?</ClaimPaymentEFTTraceNo>\r
+            <!--Optional:-->\r
+            <ClaimPaymentCheckNo>?</ClaimPaymentCheckNo>\r
+            <!--Optional:-->\r
+            <ClaimPaymentCheckDate>?</ClaimPaymentCheckDate>\r
+            <!--Optional:-->\r
+            <ClaimPaymentSourceSystem>?</ClaimPaymentSourceSystem>\r
+            <!--Optional:-->\r
+            <IncludePIDSearch>?</IncludePIDSearch>\r
+            <!--Optional:-->\r
+            <IncludeClaimHeader>?</IncludeClaimHeader>\r
+            <!--Optional:-->\r
+            <IncludeClaimHistory>?</IncludeClaimHistory>\r
+            <!--Optional:-->\r
+            <IncludeClaimPayeeAddress>?</IncludeClaimPayeeAddress>\r
+         </PaymentSearchCriteria>\r
+      </ws:getPayments>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getPayments/"/><con:wsrmConfig version="1.2"/></con:call><con:call id="873d4be3-a854-4edf-b739-e36a629b33be" name="Request 1 (opssf)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://supantdds.decare.com/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getPayments>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <PaymentSearchCriteria>\r
+            <MaxRowsToReturn>100</MaxRowsToReturn>\r
+            <!--Optional:-->\r
+            <ProviderParStatus>?</ProviderParStatus>\r
+            <!--Optional:-->\r
+            <!-- <ProviderId>800384593</ProviderId>\r-->
+            <SubscriberId>3HZN86819480</SubscriberId>\r
+            <!--Optional:-->\r
+            <ClaimId>48762065</ClaimId>\r
+            <!--Optional:-->\r
+            <ClaimPaymentEFTTraceNo>?</ClaimPaymentEFTTraceNo>\r
+            <!--Optional:-->\r
+            <ClaimPaymentCheckNo>?</ClaimPaymentCheckNo>\r
+            <!--Optional:-->\r
+            <ClaimPaymentCheckDate>?</ClaimPaymentCheckDate>\r
+            <!--Optional:-->\r
+            <ClaimPaymentSourceSystem>?</ClaimPaymentSourceSystem>\r
+            <!--Optional:-->\r
+            <IncludePIDSearch>?</IncludePIDSearch>\r
+            <!--Optional:-->\r
+            <IncludeClaimHeader>?</IncludeClaimHeader>\r
+            <!--Optional:-->\r
+            <IncludeClaimHistory>?</IncludeClaimHistory>\r
+            <!--Optional:-->\r
+            <IncludeClaimPayeeAddress>?</IncludeClaimPayeeAddress>\r
+         </PaymentSearchCriteria>\r
+      </ws:getPayments>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getPayments/"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="58482a38-b3ea-4081-9a81-6d001eef8e8c" isOneWay="false" action="http://member.portal.dds.com/MemberPortalService/getPCD/" name="getPCD" bindingOperationName="getPCD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="00582504-0744-4569-8db2-92c7e9c2bb27" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#endpoint}/MemberPortalWebServiceV1/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getPCD>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <SearchCriteria>\r
+            <SubscriberId>?</SubscriberId>\r
+            <MemberFirstName>?</MemberFirstName>\r
+            <!--Optional:-->\r
+            <MemberMiddleName>?</MemberMiddleName>\r
+            <MemberLastName>?</MemberLastName>\r
+            <MemberDOB>?</MemberDOB>\r
+            <MemberRelationship>?</MemberRelationship>\r
+            <MemberGender>?</MemberGender>\r
+            <ServiceDateStart>?</ServiceDateStart>\r
+            <ServiceDateEnd>?</ServiceDateEnd>\r
+            <!--Optional:-->\r
+            <Group>?</Group>\r
+            <!--Optional:-->\r
+            <Subgroup>?</Subgroup>\r
+         </SearchCriteria>\r
+      </ws:getPCD>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getPCD/"/></con:call></con:operation></con:interface><con:testSuite id="6186729d-36c4-484e-8a1a-333803ffef84" name="MemberPortalServicePortBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="96ddde73-e1ee-4b9d-8e69-db11b78cf413" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getClaim TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="80ce3fa1-1013-46a0-9790-d5df4e2eaf96" name="getClaim"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberPortalServicePortBinding</con:interface><con:operation>getClaim</con:operation><con:request name="getClaim" id="e2aeca61-85ab-4ea6-8402-296d4df2e52a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#endpoint}/MemberPortalWebServiceV1/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaim>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <ClaimSearchCriteria>\r
+            <MaxRowsToReturn>100</MaxRowsToReturn>\r
+            <!--Optional:-->\r
+            <ProviderParStatus>?</ProviderParStatus>\r
+            <!--Optional:-->\r
+            <ClaimProviderId>?</ClaimProviderId>\r
+            <!--Optional:-->\r
+            <ClaimProviderNPI>?</ClaimProviderNPI>\r
+            <SubscriberId>?</SubscriberId>\r
+            <!--Optional:-->\r
+            <SubscriberFirstName>?</SubscriberFirstName>\r
+            <!--Optional:-->\r
+            <SubscriberLastName>?</SubscriberLastName>\r
+            <!--Optional:-->\r
+            <ClaimPatientFirstName>?</ClaimPatientFirstName>\r
+            <!--Optional:-->\r
+            <ClaimPatientLastName>?</ClaimPatientLastName>\r
+            <!--Optional:-->\r
+            <ClaimPatientPatientDOB>?</ClaimPatientPatientDOB>\r
+            <!--Optional:-->\r
+            <ClaimPatientRelationship>?</ClaimPatientRelationship>\r
+            <!--Optional:-->\r
+            <ClaimPatientGender>?</ClaimPatientGender>\r
+            <!--Optional:-->\r
+            <ClaimDosStartDate>?</ClaimDosStartDate>\r
+            <!--Optional:-->\r
+            <ClaimDosEndDate>?</ClaimDosEndDate>\r
+            <!--Optional:-->\r
+            <ClaimId>?</ClaimId>\r
+            <!--Optional:-->\r
+            <ClaimStatusCode>?</ClaimStatusCode>\r
+            <!--Optional:-->\r
+            <ClaimCheckNo>?</ClaimCheckNo>\r
+            <!--Optional:-->\r
+            <ClaimEFTTraceNo>?</ClaimEFTTraceNo>\r
+            <!--Optional:-->\r
+            <ClaimPaymentPayeeType>?</ClaimPaymentPayeeType>\r
+            <!--Optional:-->\r
+            <IncludeSubscriberProductInformation>?</IncludeSubscriberProductInformation>\r
+            <!--Optional:-->\r
+            <IncludeClaimDetails>?</IncludeClaimDetails>\r
+            <!--Optional:-->\r
+            <IncludeAggregatedAmountFromLines>?</IncludeAggregatedAmountFromLines>\r
+            <!--Optional:-->\r
+            <IncludeClaimPayment>?</IncludeClaimPayment>\r
+            <!--Optional:-->\r
+            <IncludeClaimHistory>?</IncludeClaimHistory>\r
+            <!--Optional:-->\r
+            <IncludeClaimProviderAddress>?</IncludeClaimProviderAddress>\r
+            <!--Optional:-->\r
+            <IncludeClaimMessageText>?</IncludeClaimMessageText>\r
+            <!--Optional:-->\r
+            <IncludeClaimPatientDetail>?</IncludeClaimPatientDetail>\r
+            <!--Optional:-->\r
+            <IncludeSubsGroup>?</IncludeSubsGroup>\r
+         </ClaimSearchCriteria>\r
+      </ws:getClaim>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://member.portal.dds.com/MemberPortalService/getClaim/"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="20caaf06-2172-4a8e-80e4-3b6dddebbb4e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getClaimEob TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="b6a8373b-8271-43a2-af6a-ec8148ce84a2" name="getClaimEob"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberPortalServicePortBinding</con:interface><con:operation>getClaimEob</con:operation><con:request name="getClaimEob" id="2d6a80d4-cb6e-4cb1-8018-5e3a633c7e96"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#endpoint}/MemberPortalWebServiceV1/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEob>\r
+         <ClientName>?</ClientName>\r
+         <UserName>?</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <EOBSearchRequest>\r
+            <MemberID>?</MemberID>\r
+            <!--You have a CHOICE of the next 2 items at this level-->\r
+            <ClaimId>?</ClaimId>\r
+            <CheckNumber>?</CheckNumber>\r
+            <ClientType>?</ClientType>\r
+            <UserId>?</UserId>\r
+         </EOBSearchRequest>\r
+      </ws:getClaimEob>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://member.portal.dds.com/MemberPortalService/getClaimEob/"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ad79a912-d0e2-4e06-b06a-e32a98f97344" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getClaimEobAttachement TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="09b65f95-0265-4839-8b88-a967255070d5" name="getClaimEobAttachement - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberPortalServicePortBinding</con:interface><con:operation>getClaimEobAttachement</con:operation><con:request name="getClaimEobAttachement - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="3c5c141a-9614-4063-8ac6-04794e1bd6e2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ddhnr3v12.decare.com:7794/horizon-portal/service/memberPortalService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.service.member.portal.dds.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:getClaimEobAttachement>\r
+         <ClientName>bugsy</ClientName>\r
+         <UserName>malone</UserName>\r
+         <ClientTransactionId>?</ClientTransactionId>\r
+         <SourceSystem>DECARE</SourceSystem>\r
+         <!--Optional:-->\r
+         <ClientSubmitDateTime>?</ClientSubmitDateTime>\r
+         <!--Optional:-->\r
+         <ClientSessionId>?</ClientSessionId>\r
+         <!--Optional:-->\r
+         <Timeout>60</Timeout>\r
+         <DocumentId>e1b34b10-c086-4213-a243-9081b508b20b</DocumentId>\r
+      </ws:getClaimEobAttachement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8e94c4c2-2c0a-4e68-a0fd-78d666e34c8b" name="SOAP Response"/><con:credentials><con:username>8ufZzeEKxjHcbVrzMtgH7zTT</con:username><con:password>2GZQVyFSJTcsKZ4wrAsgMUPx</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://member.portal.dds.com/MemberPortalService/getClaimEobAttachement/"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

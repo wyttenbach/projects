@@ -1,0 +1,38 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:getPaymentResponse xmlns:ns2="http://ws.service.member.portal.dds.com/">
+         <ClientName>?</ClientName>
+         <UserName>?</UserName>
+         <ClientTransactionId>?</ClientTransactionId>
+         <SourceSystem>DECARE</SourceSystem>
+         <ClientSessionId>?</ClientSessionId>
+         <Timeout>60</Timeout>
+         <ServerTransactionId>c63b24f9-08c7-42f4-87f1-d49c72798380</ServerTransactionId>
+         <ResponseMessage>
+            <ResponseCode>SUCCESS</ResponseCode>
+            <Message>SUCCESS</Message>
+         </ResponseMessage>
+         <ClaimPayment>
+            <ActualRowsReturned>1</ActualRowsReturned>
+            <HasMoreRows>false</HasMoreRows>
+            <IncludePIDSearch>false</IncludePIDSearch>
+            <IncludeClaimHeader>false</IncludeClaimHeader>
+            <IncludeClaimHistory>false</IncludeClaimHistory>
+            <IncludeClaimPayeeAddress>false</IncludeClaimPayeeAddress>
+            <ClaimPayment>
+               <ClaimPaymentProviderId>800384593</ClaimPaymentProviderId>
+               <ClaimProviderOrganizationName>BUTLER FAMILY DENTAL ASSOCIATES</ClaimProviderOrganizationName>
+               <ClaimPaymentProviderName>BRANDON BLADES</ClaimPaymentProviderName>
+               <ClaimPaymentPayeeRole>Provider</ClaimPaymentPayeeRole>
+               <ClaimPaymentSubscriberId>3HZN86819480</ClaimPaymentSubscriberId>
+               <ClaimPaymentAmount>127.20</ClaimPaymentAmount>
+               <ClaimPaymentSourceSystem>DECARE</ClaimPaymentSourceSystem>
+               <SubsPID>
+                  <SubscriberCCID>3HZN86819480</SubscriberCCID>
+                  <SubscriberSSN>154823445</SubscriberSSN>
+               </SubsPID>
+            </ClaimPayment>
+         </ClaimPayment>
+      </ns2:getPaymentResponse>
+   </S:Body>
+</S:Envelope>

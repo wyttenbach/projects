@@ -1,0 +1,287 @@
+[
+  {
+    "Provider": {
+      "Tin": "470845552",
+      "StateProviderNo": null,
+      "NamePrefix": "DDS",
+      "FirstName": "Brian",
+      "MiddleName": "L",
+      "LastName": "Pierce",
+      "NameSuffix": null,
+      "Gender": "M",
+      "BirthDate": "1961-04-25",
+      "SchoolOfDentistry": "U of MN",
+      "GraduationYear": 1987,
+      "PracticeEffectiveFrom": "1987-03-01",
+      "Comments": null,
+      "Retired": null,
+      "Deceased": null,
+      "MedicareNo": null,
+      "FirstBNotice": null,
+      "SecondBNotice": null,
+      "MalpracticeInsurance": {
+        "Insurer": "CONTINENTAL CASUALTY CO",
+        "InsuredLimit": "B",
+        "Renewal": "2015-10-07",
+        "PolicyNo": "04814134"
+      },
+      "ConsentFormSigned": true,
+      "ConsentSignatureDate": "2014-09-03",
+      "NoDeaNumberReason": null,
+      "SpecialtySchool": null,
+      "AnesthesiaCertificateExpiry": null,
+      "EmailAddress": null,
+      "CollaborationAgreement": false,
+      "ParaLicenseNumber": null,
+      "ParaLicenseState": null,
+      "SpecialtyGradYear": null,
+      "Degree1": null,
+      "Degree2": null,
+      "Terminated": {
+        "From": null,
+        "TerminationLevelId": null
+      },
+      "Effective": {
+        "From": "1997-01-01",
+        "To": null
+      },
+      "DataOwner": {
+        "Id": 7,
+        "Name": "DeCare"
+      },
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/providers/393302",
+          "entity": "provider"
+        }
+      ],
+      "LastCredentialed": "2014-11-03",
+      "Id": 393302,
+      "Diversified": false,
+      "FWAComplianceDate": null
+    },
+    "ProviderCredentials": [
+      {
+        "Id": 83472,
+        "DataOwner": {
+          "Id": 7,
+          "Name": "DeCare"
+        },
+        "Links": [
+          {
+            "rel": "self",
+            "href": "/api/providers/393302",
+            "entity": "provider"
+          }
+        ],
+        "Credentialed": "2009-03-04",
+        "IsInitialCred": false,
+        "LicenseSuspended": false,
+        "LicenseSuspendedComments": null,
+        "DisciplinaryAction": false,
+        "DisciplinaryActionComments": null,
+        "HealthProblem": false,
+        "HealthProblemComments": null,
+        "FelonyMisdemeanor": false,
+        "FelonyMisdemeanorComments": null,
+        "MalpracticeExper": true,
+        "MalpracticeExperComments": "See File",
+        "DEARestricted": false,
+        "DEARestrictedComments": null,
+        "CredentialingLevel": null,
+        "SentForRecred": false
+      },
+      {
+        "Id": 256045,
+        "DataOwner": {
+          "Id": 7,
+          "Name": "DeCare"
+        },
+        "Links": [
+          {
+            "rel": "self",
+            "href": "/api/providers/393302",
+            "entity": "provider"
+          }
+        ],
+        "Credentialed": "2014-11-03",
+        "IsInitialCred": false,
+        "LicenseSuspended": false,
+        "LicenseSuspendedComments": null,
+        "DisciplinaryAction": false,
+        "DisciplinaryActionComments": null,
+        "HealthProblem": false,
+        "HealthProblemComments": null,
+        "FelonyMisdemeanor": false,
+        "FelonyMisdemeanorComments": null,
+        "MalpracticeExper": true,
+        "MalpracticeExperComments": "see file",
+        "DEARestricted": false,
+        "DEARestrictedComments": null,
+        "CredentialingLevel": "NCQA",
+        "SentForRecred": false
+      }
+    ],
+    "Languages": [],
+    "Clinic": {
+      "StateMedicaidNo": null,
+      "CommonName": "Brian L Pierce DDS, PA",
+      "Comments": null,
+      "ContactName": "Vicki",
+      "PaymentContactName": null,
+      "UcrRegionCode": null,
+      "Services": {
+        "DiagnosticService": null,
+        "PreventiveService": null,
+        "RestorativeService": null,
+        "PeriodonticService": null,
+        "PedodonticService": null,
+        "EndodonticService": null,
+        "OrthodonticService": null,
+        "OralSurgeryService": null,
+        "ProsthodonticService": null,
+        "TmjService": null,
+        "Vision": {
+          "VisionServicesType": null
+        },
+        "Hearing": {
+          "HearingServicesType": null
+        },
+        "IntensiveTherapyUnit": {
+          "ITUClinicType": null
+        },
+        "MobilityServices": false,
+        "HIVServices": false,
+        "DevelopmentallyDisabledServices": false,
+        "NursingHomeVisits": null,
+        "ChildDisabilitySupported": false,
+        "AdultDisabilitySupported": false,
+        "SpecialAccommodations": null
+      },
+      "Staffing": {
+        "ProviderCount": null,
+        "HygienistCount": null,
+        "AssistantCount": null,
+        "SpecialistCount": null,
+        "CollaborativeHygienistCount": null,
+        "DentalTherapistCount": null,
+        "AdvancedDentalTherapistCount": null,
+        "AdvancedDentalHygienistCount": null
+      },
+      "ReimburseContinuedEducation": null,
+      "PracticeManagementSoftware": null,
+      "ElectronicClaimsSubmissionSupported": false,
+      "AlphabeticalSortBy": "PIERCE BRIAN L",
+      "MARating": null,
+      "EmailAddress": "blpdds@gmail.com",
+      "MemberEmailAddress": null,
+      "WebAddress": null,
+      "EssentialCommunityProvider": false,
+      "Patients": {
+        "AcceptsNewPatients": null,
+        "AcceptsNewMedicaidPatients": null,
+        "MedicaidPatientsConverted": null,
+        "UnderThrees": false,
+        "UnderEighteens": false,
+        "ProviderMonthlyPatients": null,
+        "HygienistMonthlyPatients": null,
+        "NewMedicaidPatientPolicy": null,
+        "MedicaidMonthlyPatients": null
+      },
+      "VisitedNursingHomes": null,
+      "ProfessionalReviewUnderway": null,
+      "Facilities": {
+        "Emergencies": {
+          "Instructions": false,
+          "Training": null,
+          "CPR": null,
+          "EmergencyKit": false
+        },
+        "WheelchairAccessible": null,
+        "HandicapAccess": null,
+        "PublicTransport": null,
+        "HandicappedParking": null
+      },
+      "OfficeCode": null,
+      "DeptHealthRulesCompliance": false,
+      "SharedProperty": false,
+      "GeneralInsurance": null,
+      "Effective": {
+        "From": "1997-01-01",
+        "To": null
+      },
+      "DataOwner": {
+        "Id": 7,
+        "Name": "DeCare"
+      },
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720",
+          "entity": "clinic"
+        },
+        {
+          "rel": "self",
+          "href": "/api/metadata/dataowners/7",
+          "entity": "dataOwner"
+        }
+      ],
+      "Id": 430720,
+      "DhmoProcessingRequired": null,
+      "Hours": [],
+      "Diversified": false,
+      "CDCAndOSHARulesCompliance": null
+    },
+    "OrganizationalNpis": {
+      "ClinicNPI": [
+        {
+          "Id": 407,
+          "NPI": "1477659050"
+        }
+      ],
+      "CorporateNPI": []
+    },
+    "InDirectory": true,
+    "PaymentName": null,
+    "PayClinicProvider": "C",
+    "CorporatePayment": false,
+    "Addresses": [
+      {
+        "Line1": "969 Old Hwy 8 NW",
+        "Line2": "Ste 200",
+        "Line3": null,
+        "City": "New Brighton",
+        "State": "MN",
+        "ZIPCode": "55112",
+        "County": "RAMSEY",
+        "Country": "USA",
+        "Province": null,
+        "Latitude": null,
+        "Longitude": null,
+        "DataOwner": {
+          "Id": 7,
+          "Name": "DeCare"
+        },
+        "Links": [
+          {
+            "rel": "self",
+            "href": "/api/clinics/430720/addresses/4585",
+            "entity": "clinic.address"
+          }
+        ],
+        "Id": 4585,
+        "Type": "D"
+      }
+    ],
+    "RelatedW9s": [
+      {
+        "Tin": "411706150",
+        "Type": null,
+        "IRSName": "Brian L Pierce DDS, PA",
+        "Id": 109521,
+        "Links": []
+      }
+    ]
+  }
+]

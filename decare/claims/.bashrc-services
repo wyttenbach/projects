@@ -1,0 +1,44 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_PORT=7786
+export WL_CONTEXT_ROOT=claimservices-war
+export WL_APP_PROPERTIES=$WL_PROPS/claimservicesapp.properties
+export WL_DOMAIN="$(cygpath -m $WL/domains/claimservices)"
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+export JEE_LOG=$SRC/claimservices.out
+
+function deploy-build
+{
+    deploy-services
+}
+
+function freshen-build
+{
+    freshen-services
+}
+
+function verify
+{
+    local out=$SRC/verify.out
+    roll "$out"
+    (cd $SRC/claim-test; ./runsuite.sh 2>&1 | tee $out )
+}
+
+function verify-local
+{
+    local out=$SRC/claim-test/verify-local.out
+    if [ $# -eq 0 ]; then
+        check-datasource || die
+        check-version || die
+        check-security || die
+        check-jee || die
+        check-log || die
+        check-wlds || die
+        check-mongo 
+    fi
+    roll "$out"
+    (cd $SRC/claim-test; mvn -e -o test) 2>&1 | tee "$out"
+}
+

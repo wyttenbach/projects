@@ -1,0 +1,14 @@
+*.out
+*.prev
+*.svn
+FB_*
+PR_*
+RB_*
+XB_*
+actordetails
+develop
+prod
+src
+trunk
+workspace
+

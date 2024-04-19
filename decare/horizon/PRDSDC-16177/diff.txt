@@ -1,0 +1,172 @@
+diff 2022.02-4.56/horizon-parent/horizonservice-parent/horizonservice-impl/src/main/java/com/dds/datamodel/member/dao/impl/MemberClaimDetailDAOImpl.java    develop/horizon-parent/horizonservice-parent/horizonservice-impl/src/main/java/com/dds/datamodel/member/dao/impl/MemberClaimDetailDAOImpl.java
+
+8a9
+> import java.util.HashMap;
+626,629c627,630
+<     DateValue fromDate = setDateRangeFromDate(commonMemberClaimSearchCriteria.getClaimDosStartDate(), commonMemberClaimSearchCriteria.getClaimDosEndDate());
+<     DateValue toDate = setDateRangeToDate(commonMemberClaimSearchCriteria.getClaimDosStartDate(), commonMemberClaimSearchCriteria.getClaimDosEndDate());
+< 
+<     List<InquiryClaim> inquirySubscriberClaimList = new ArrayList<InquiryClaim>();
+---
+>     // results list to be returned
+>     List<InquiryClaim> inquiryClaimList = new ArrayList<InquiryClaim>();
+>     
+>     // search for subscriber
+633c634,638
+<       return inquirySubscriberClaimList;
+---
+>       if (LOG.isDebugEnabled()) {
+>         LOG.debug("getInquiryClaimsBySubscriber,subscriber not found");
+>       }
+>       // return empty list
+>       return inquiryClaimList;
+635a641,645
+>     final DateValue fromDate = setDateRangeFromDate(commonMemberClaimSearchCriteria.getClaimDosStartDate(), commonMemberClaimSearchCriteria.getClaimDosEndDate());
+>     final DateValue toDate = setDateRangeToDate(commonMemberClaimSearchCriteria.getClaimDosStartDate(), commonMemberClaimSearchCriteria.getClaimDosEndDate());
+>     final boolean includeClaimHistory = commonMemberClaimSearchCriteria.getIncludeClaimHistory();
+>     
+>     // for each subscriber (coverage)
+637,640c647
+<       if (inquiryClaimSubscriber == null) {
+<         continue;
+<       }
+<       List<InquiryClaim> inquiryClaimList = new ArrayList<InquiryClaim>();
+---
+>       
+642c649
+<       InquiryClaimPatient claimPatient = null;
+---
+>       InquiryClaimPatient requestedClaimPatient = null;
+648c655
+<         claimPatient = findPatientsForSubscriber(commonMemberClaimSearchCriteria, inquiryClaimSubscriber);
+---
+>         requestedClaimPatient = findPatientsForSubscriber(commonMemberClaimSearchCriteria, inquiryClaimSubscriber);
+650,674c657,662
+<       List<InquiryClaim> inquiryPatientClaimList = new ArrayList<InquiryClaim>();
+<       if (claimPatient != null) { // If we have a matching Patient, get all of their claims
+<         inquiryPatientClaimList = ddsCommonDAO.getClaimsByPatient(claimPatient.getPatientKey(), fromDate, toDate);
+<        Collections.sort(inquiryPatientClaimList, new Comparator<InquiryClaim>() {
+<           @Override
+<           public int compare(final InquiryClaim object1, final InquiryClaim object2) {
+<             return object1.getClaimNumber().compareTo(object2.getClaimNumber());
+<           }
+<         });
+<         String previousClaimNumber = null;
+<         for (InquiryClaim inquiryClaim : inquiryPatientClaimList) {
+<           String claimNumber = inquiryClaim.getClaimNumber();
+<           if ((previousClaimNumber == null) || (claimNumber.compareTo(previousClaimNumber) != 0)) {
+<             if (commonMemberClaimSearchCriteria.getIncludeClaimHistory()) {
+<               inquiryClaimList.addAll(ddsCommonDAO.getAllClaimVersions(claimNumber));
+<             } else {
+<               InquiryClaim latestClaimVersion = ddsCommonDAO.getLatestClaimVersion(claimNumber);
+<               if (latestClaimVersion != null) {
+<                 inquiryClaimList.add(latestClaimVersion);
+<               }
+<             }
+<             previousClaimNumber = claimNumber;
+<           }
+<         }
+<       } else { // If we have no matching Patient, return all claims for that Subscriber
+---
+>       
+>       if (requestedClaimPatient != null) { 
+>         // Return the claims of one patient only
+>         inquiryClaimList.addAll(getClaimsByPatient(fromDate, toDate, requestedClaimPatient, includeClaimHistory));
+>       } else { 
+>         // Return the claims for Subscriber and all of their dependents
+676,709c664,666
+<         if ((patientList != null) && (patientList.size() > 0)) {
+<           for (InquiryClaimPatient inquiryClaimPatient : patientList) {
+<             if ((inquiryClaimPatient != null) && (inquiryClaimPatient.getPatientKey() != null)) {
+<               List<InquiryClaim> patientClaimList = ddsCommonDAO
+<                   .getClaimsByPatient(inquiryClaimPatient.getPatientKey(), fromDate, toDate);
+<               if ((patientClaimList != null) && (patientClaimList.size() > 0)) {
+<                 Collections.sort(patientClaimList, new Comparator<InquiryClaim>() {
+<                   @Override
+<                   public int compare(final InquiryClaim object1, final InquiryClaim object2) {
+<                     return object1.getClaimNumber().compareTo(object2.getClaimNumber());
+<                   }
+<                 });
+<                 String previousClaimNumber = null;
+<                 for (InquiryClaim inquiryClaim : patientClaimList) {
+<                   String claimNumber = inquiryClaim.getClaimNumber();
+<                   if ((previousClaimNumber == null) || (claimNumber.compareTo(previousClaimNumber) != 0)) {
+<                     if (commonMemberClaimSearchCriteria.getIncludeClaimHistory()) {
+<                       inquiryClaimList.addAll(ddsCommonDAO.getAllClaimVersions(claimNumber));
+<                     } else {
+<                       InquiryClaim latestClaimVersion = ddsCommonDAO.getLatestClaimVersion(claimNumber);
+<                       if (latestClaimVersion != null) {
+<                         inquiryClaimList.add(latestClaimVersion);
+<                       }
+<                     }
+<                     previousClaimNumber = claimNumber;
+<                   }
+<                 }
+<               }
+<             }
+<           }
+<         }
+<       }
+<       if ((inquiryClaimList != null) && (inquiryClaimList.size() > 0)) {
+<         inquirySubscriberClaimList.addAll(inquiryClaimList);
+---
+>        for (InquiryClaimPatient claimPatient : patientList) {
+>          inquiryClaimList.addAll(getClaimsByPatient(fromDate, toDate, claimPatient, includeClaimHistory));
+>        }
+714c671
+<       LOG.debug("getInquiryClaimsBySubscriber size={}, timeTaken={}ms", inquiryClaimSubscriberList.size(),
+---
+>       LOG.debug("getInquiryClaimsBySubscriber size={}, timeTaken={}ms", inquiryClaimList.size(),
+718c675,724
+<     return inquirySubscriberClaimList;
+---
+>     return inquiryClaimList;
+>   }
+> 
+>   private List<InquiryClaim> getClaimsByPatient(DateValue fromDate, DateValue toDate, InquiryClaimPatient claimPatient,
+>       final boolean includeClaimHistory) {
+>     List<InquiryClaim> patientClaimList = ddsCommonDAO.getClaimsByPatient(claimPatient.getPatientKey(), fromDate, toDate);
+>     if (!includeClaimHistory) {
+>       // The list returned by the DAO contains all claim versions, which we don't want
+>       patientClaimList = getLatestClaimVersions(patientClaimList);
+>     }
+>     Collections.sort(patientClaimList, new Comparator<InquiryClaim>() {
+>       @Override
+>       public int compare(final InquiryClaim object1, final InquiryClaim object2) {
+>         return object1.getClaimNumber().compareTo(object2.getClaimNumber());
+>       }
+>     });
+>     return patientClaimList;
+>   }
+> 
+>   private List<InquiryClaim> getLatestClaimVersions(List<InquiryClaim> inquiryPatientClaimList) {
+>     List<InquiryClaim> results = new ArrayList<InquiryClaim>();
+>     
+>     // break the original list into lists by claim number
+>     Map<String, List<InquiryClaim>> claimVersionsMap = new HashMap<String, List<InquiryClaim>>();
+>     
+>     // Step 1: Construct map
+>     for (InquiryClaim inquiryClaim : inquiryPatientClaimList) {
+>       String claimNumber = inquiryClaim.getClaimNumber();
+>       List<InquiryClaim> claimVersions = claimVersionsMap.get(claimNumber);
+>       if (claimVersions == null) {
+>         claimVersions = new ArrayList<InquiryClaim>();
+>         claimVersionsMap.put(claimNumber, claimVersions);
+>       }
+>       claimVersions.add(inquiryClaim);
+>     }
+>     
+>     // Step 2: Walk the map to find the highest version claim for each claim number
+>     for (String claimNumber : claimVersionsMap.keySet()) {
+>       List<InquiryClaim> claimVersions = claimVersionsMap.get(claimNumber);
+>       InquiryClaim highestFoundClaimVersion = null;
+>       for (InquiryClaim currentInquiryClaim : claimVersions) {
+>          Long currentVersion = currentInquiryClaim.getClaimVersion();
+>         if (highestFoundClaimVersion == null || currentVersion > highestFoundClaimVersion.getClaimVersion()) {
+>           highestFoundClaimVersion = currentInquiryClaim;
+>         }
+>       }
+>       results.add(highestFoundClaimVersion);
+>     }
+> 
+>     return results;

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %5p %c - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- <appender name="propertyAppender" class="org.apache.log4j.RollingFileAppender"> -->
+	<!-- 	<param name="file" value="./claimsapp.properties.out" /> -->
+	<!-- 	<param name="append" value="true" /> -->
+	<!-- 	<layout class="org.apache.log4j.PatternLayout"> -->
+	<!-- 		<param name="conversionPattern" value="%d-\-> %m%n" /> -->
+	<!-- 	</layout> -->
+	<!-- </appender> -->
+	<!-- <logger name="com.dds.util.spring"> -->
+    <!--     <level value="info"/> -->
+    <!--     <appender-ref ref="propertyAppender"/> -->
+    <!-- </logger> -->
+
+
+    <!-- <logger name="com.dds.util.remote"> -->
+    <!--     <level value="trace"/> -->
+    <!-- </logger> -->
+
+    <!-- <logger name="com.dds.claim"> -->
+    <!--     <level value="debug"/> -->
+    <!-- </logger> -->
+
+    <!-- <logger name="com.dds.vip"> -->
+    <!--     <level value="debug"/> -->
+    <!-- </logger> -->
+
+    <!-- <logger name="com.dds.workflow"> -->
+    <!--     <level value="debug"/> -->
+    <!-- </logger> -->
+
+    <!-- <logger name="com.dds.claim.accumulatorservice"> -->
+    <!--     <level value="info"/> -->
+    <!-- </logger> -->
+    
+    <!-- <logger name="org.springframework"> -->
+    <!--     <level value="warn"/> -->
+    <!-- </logger> -->
+
+	<!-- <logger name="com.documentum"> -->
+	<!-- 	<level value="warn" /> -->
+	<!-- </logger> -->
+
+    <!-- <logger name="com.opensymphony"> -->
+    <!--     <level value="warn"/> -->
+    <!-- </logger> -->
+
+    <root>
+        <level value="info"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</log4j:configuration>

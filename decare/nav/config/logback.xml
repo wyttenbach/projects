@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Add to setDomainEnv.cmd:
+-Dlogback.configurationFile=file:%PH%/config/logback.xml -Dlogback.debug=true
+-->
+
+<configuration>
+	<!-- enable next 3 lines while using the file appender -->
+	<property name="FILE_LOG_PATTERN" value="%d [%t] %5p %c - %m%n" />
+	<property name="FILETYPE" value="out" />
+	<property name="LOG_FILE" value="accesscontrolapp.properties.out" />
+	<!-- <property name="APPENDER_FILE_NAME" value="file" /> <property name="APPENDER_NAME" 
+		value="FILE" /> -->
+	<!-- Enable below two lines and hide above two lines for console appender -->
+	<property name="APPENDER_FILE_NAME" value="console" />
+	<property name="APPENDER_NAME" value="CONSOLE" />
+	<contextName>accesscontrolapp</contextName>
+    <jmxConfigurator/>
+    <logger name="com.dds.vip" level="debug" />
+	<logger name="com.dds.util.spring" level="info" />
+
+	<logger name="org.apache" level="info" />
+	<logger name="org.springframework" level="warn" />
+
+	<logger name="corporate.ldap" level="debug" />
+
+	<logger name="org.decare" level="debug" />
+    <logger name="org.decare.component.security.dto" level="info" />
+
+	<include resource="logback-resource-web.xml" />
+</configuration>

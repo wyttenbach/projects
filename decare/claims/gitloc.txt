@@ -1,0 +1,8 @@
+==== claim-api-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-api-parent
+==== claim-domain-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-domain-parent
+==== claim-test ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-test
+==== claim-web-parent ====
+ssh://git@bitbucket.decaresystems.ie:7999/ddsclaims/claim-web-parent

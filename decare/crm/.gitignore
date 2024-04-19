@@ -1,0 +1,17 @@
+*.out
+*.prev
+*.svn
+EXP_*/
+FB_*/
+PR_*/
+RB_*/
+XB_*/
+actordetails/
+audit/
+crm~master.bundle
+develop/
+prod/
+src
+svn/
+trunk/
+wl_domain/

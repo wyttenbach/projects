@@ -1,0 +1,2 @@
+==== provider-master-data-api ====
+ssh://git@bitbucket.decaresystems.ie:7999/antmprov/provider-master-data-api

@@ -1,0 +1,14 @@
+#!/bin/bash
+export MQHOMEDIR="$TOOLS/apache-activemq-5.5.1"
+export PATH="$PATH:$MQHOMEDIR/bin"
+
+function start-jms
+{
+    (cd $MQHOMEDIR/bin; ./activemq.bat)
+}
+
+function mq 
+{
+    chrome http://localhost:8161/admin/queues.jsp
+}
+

@@ -1,0 +1,27 @@
+app:
+  query:
+    max-rows: 1000
+  client:
+    identifier: specialty.provider.api
+    context: PROVIDER
+  tenant:
+    default: ANTHEM
+
+---
+spring:
+  profiles: uat
+
+security:
+  users:
+    - username: user
+      password: passw0rd
+      roles: USER
+    - username: providerfinder
+      password: Sd^^9jEZ7e9w%ubhaPT
+      roles: USER
+
+jdbc:
+  url: jdbc:oracle:thin:@va33dx13v1-scan1.wellpoint.com:1525/DNTLPRVU
+  username: SERVICE
+  password: Musk13s#8
+  defaultAccount: ZERO_PRIV

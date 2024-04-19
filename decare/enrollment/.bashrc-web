@@ -1,0 +1,28 @@
+#!/bin/bash
+
+## enrollmentweb
+export ENR_PROJECT=enrollment
+export WL_DOMAIN="$(cygpath -m $WL/domains/enrollment)"
+export WL_CONTEXT_ROOT=NOTSURE
+export JEE_URL="http://localhost:$WL_PORT/enrollmentweb/login.jsp?userName=dev1&password=Delta123"
+export WL_PORT=7789
+
+function deploy-build
+{
+	undeploy
+    (cd $SRC/enrollment/enrollmentweb-parent; deploy enrollmentapp/target/*.ear)
+}
+
+function go-edi
+{
+    local url="http://localhost:$WL_PORT/edi/login?appName=Enrollment&functionName=EDI"
+    echo $url
+    echo system/admin
+    ie "$url""$@"
+}
+
+edi_sub2="&subFunctionName=Rules/Mappings%20Search"
+edi_sub3="&subFunctionName=Rules"
+edi_sub4="&subFunctionName=Sub-Group%20Setup"
+edi_sub5="&subFunctionName=File%20Configuration"
+edi_sub6="&subFunctionName=Value%20Mapping"

@@ -1,0 +1,109 @@
+{
+  "StateMedicaidNo": null,
+  "CommonName": "Brian L Pierce DDS, PA",
+  "Comments": null,
+  "ContactName": "Vicki",
+  "PaymentContactName": null,
+  "UcrRegionCode": null,
+  "Services": {
+    "DiagnosticService": null,
+    "PreventiveService": null,
+    "RestorativeService": null,
+    "PeriodonticService": null,
+    "PedodonticService": null,
+    "EndodonticService": null,
+    "OrthodonticService": null,
+    "OralSurgeryService": null,
+    "ProsthodonticService": null,
+    "TmjService": null,
+    "Vision": {
+      "VisionServicesType": null
+    },
+    "Hearing": {
+      "HearingServicesType": null
+    },
+    "IntensiveTherapyUnit": {
+      "ITUClinicType": null
+    },
+    "MobilityServices": false,
+    "HIVServices": false,
+    "DevelopmentallyDisabledServices": false,
+    "NursingHomeVisits": null,
+    "ChildDisabilitySupported": false,
+    "AdultDisabilitySupported": false,
+    "SpecialAccommodations": null
+  },
+  "Staffing": {
+    "ProviderCount": null,
+    "HygienistCount": null,
+    "AssistantCount": null,
+    "SpecialistCount": null,
+    "CollaborativeHygienistCount": null,
+    "DentalTherapistCount": null,
+    "AdvancedDentalTherapistCount": null,
+    "AdvancedDentalHygienistCount": null
+  },
+  "ReimburseContinuedEducation": null,
+  "PracticeManagementSoftware": null,
+  "ElectronicClaimsSubmissionSupported": false,
+  "AlphabeticalSortBy": "PIERCE BRIAN L",
+  "MARating": null,
+  "EmailAddress": "blpdds@gmail.com",
+  "MemberEmailAddress": null,
+  "WebAddress": null,
+  "EssentialCommunityProvider": false,
+  "Patients": {
+    "AcceptsNewPatients": null,
+    "AcceptsNewMedicaidPatients": null,
+    "MedicaidPatientsConverted": null,
+    "UnderThrees": false,
+    "UnderEighteens": false,
+    "ProviderMonthlyPatients": null,
+    "HygienistMonthlyPatients": null,
+    "NewMedicaidPatientPolicy": null,
+    "MedicaidMonthlyPatients": null
+  },
+  "VisitedNursingHomes": null,
+  "ProfessionalReviewUnderway": null,
+  "Facilities": {
+    "Emergencies": {
+      "Instructions": false,
+      "Training": null,
+      "CPR": null,
+      "EmergencyKit": false
+    },
+    "WheelchairAccessible": null,
+    "HandicapAccess": null,
+    "PublicTransport": null,
+    "HandicappedParking": null
+  },
+  "OfficeCode": null,
+  "DeptHealthRulesCompliance": false,
+  "SharedProperty": false,
+  "GeneralInsurance": null,
+  "Effective": {
+    "From": "1997-01-01",
+    "To": null
+  },
+  "DataOwner": {
+    "Id": 7,
+    "Name": "DeCare"
+  },
+  "Links": [
+    {
+      "rel": "self",
+      "href": "/api/clinics/430720",
+      "entity": "clinic"
+    },
+    {
+      "rel": "self",
+      "href": "/api/metadata/dataowners/7",
+      "entity": "dataOwner"
+    }
+  ],
+  "Id": 430720,
+  "DhmoProcessingRequired": null,
+  "Hours": [],
+  "Diversified": false,
+  "CDCAndOSHARulesCompliance": null
+}

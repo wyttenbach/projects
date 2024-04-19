@@ -1,0 +1,565 @@
+Using CATALINA_BASE:   C:\projects\documentum\apache-tomcat-5.5.25
+Using CATALINA_HOME:   C:\projects\documentum\apache-tomcat-5.5.25
+Using CATALINA_TMPDIR: C:\projects\documentum\apache-tomcat-5.5.25\temp
+Using JRE_HOME:        C:\j2sdk1.4.2_14
+Created MBeanServer with ID: e3b895:1158a1af8a2:-8000:CNU7101PFB:1
+[GC 16188K->1107K(260160K), 0.0103119 secs]
+Oct 10, 2007 8:29:24 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\tools\Documentum\shared
+Oct 10, 2007 8:29:25 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 8:29:25 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 563 ms
+Oct 10, 2007 8:29:25 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 8:29:25 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.25
+Oct 10, 2007 8:29:25 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+[GC 17298K->2497K(260160K), 0.0143680 secs]
+[GC 18689K->4065K(260160K), 0.0167429 secs]
+[GC 20257K->6209K(260160K), 0.0170195 secs]
+[GC 22401K->8423K(260160K), 0.0178939 secs]
+[GC 24615K->10437K(260160K), 0.0170675 secs]
+[2007-10-10 08:29:26,935|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.util.Trace.ZIPARCHIVE set to false
+[2007-10-10 08:29:26,951|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.async.Trace.ASYNC_MGR set to false
+[2007-10-10 08:29:26,951|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.RESPONSE_COMPRESSION set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.ACS set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.FOLDERUTIL set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTDOCBASE set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.COOKIE set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMREQUEST set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.webtop.Trace.MESSAGING set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.ENVIRONMENT set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMRESPONSE set to false
+[2007-10-10 08:29:26,967|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.NESTOPERATION set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTSTEP set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSION set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.RESPONSE_HEADER_CONTROL set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.RECALLOPERATION set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONSYNC set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKMATCHING set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.GETCONTENT set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONENABLEDBYDEFAULT set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.TIMEOUTOPERATION set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMHISTORY set to false
+[2007-10-10 08:29:26,982|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.RECORDSMANAGER set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASEATTRLIST set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.REQUEST set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.DATABOUND set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.HOOK set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.COMBOCONTAINER set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKREQUEST set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTROL set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.CLIENTNETWORKLOCATION set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINK set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_STATUS_LISTENER set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.RETURNOPERATION set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.UCF_MANAGER set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMPROCESSORACTIONS set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CONFIGTHEMERESOLVER set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.HISTORYRELEASEDOPERATION set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.JUMPOPERATION set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.BRANDINGSERVICE set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.PAGEJUMPOPERATION set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONSTATE set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONHANDLE set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTSESSIONSTATE set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.VALIDATOR set to false
+[2007-10-10 08:29:27,014|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMINFOCOMMENTS set to false
+[Full GC 16460K->10811K(260160K), 0.0802222 secs]
+[2007-10-10 08:29:27,154|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMPROCESSOR set to false
+[2007-10-10 08:29:27,154|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.COLLABORATIONSERVICE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.REDIRECTOPERATION set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.LOCALESERVICE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTENV set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.PORTLETDISPATCHER set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.FORMAT_RESOLVER set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.FAILOVER_DIAGNOSTICS set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.THREADLOCALVARIABLE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONREFCOUNT set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.HTML_PAGE_PROCESSOR set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONTIMEOUTCONTROL set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.INCLUDEOPERATION set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.PERSISTENTOBJECTCACHE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTCASE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTAINMENT set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.OPTIMIZE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.webtop.Trace.APPCONTEXT set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.VIRTUALJS set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.VDMTREEGRID set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_EXEC_SERVICE set to false
+[2007-10-10 08:29:27,170|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.FAILOVER set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.COMPONENT set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMINCLUDETAG set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTRECORDER set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKCONTENT set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.PREFERENCES set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CONFIGSERVICE set to false
+[2007-10-10 08:29:27,186|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.FRAGMENTBUNDLESERVICE set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.WDK_API_TRACE set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASESCOPECONFIGSERVICE set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_STATUS_REPORT set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORM set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ROLESERVICE set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTROLTAG set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.HTTP_MANAGER set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ACTIONSERVICE set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ROLEPRECONDITION set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASEATTR set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMTAG set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIPBOARD set to false
+[2007-10-10 08:29:27,201|DEBUG|Thread-2              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CACHE set to false
+[GC 27003K->11428K(260160K), 0.0058516 secs]
+[GC 27620K->12879K(260160K), 0.0074496 secs]
+[GC 29071K->13475K(260160K), 0.0092657 secs]
+[GC 29664K->14000K(260160K), 0.0045095 secs]
+[GC 30186K->14482K(260160K), 0.0057999 secs]
+[GC 30674K->15301K(260160K), 0.0060133 secs]
+[GC 31490K->15782K(260160K), 0.0057999 secs]
+[GC 31973K->16385K(260160K), 0.0059996 secs]
+[GC 32577K->16880K(260160K), 0.0053135 secs]
+[GC 33072K->17601K(260160K), 0.0059555 secs]
+[GC 33793K->19073K(260160K), 0.0096099 secs]
+[GC 35265K->19778K(260160K), 0.0105120 secs]
+[GC 35970K->22271K(260160K), 0.0134190 secs]
+[2007-10-10 08:29:29,923|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.util.Trace.ZIPARCHIVE set to false
+[2007-10-10 08:29:29,938|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.async.Trace.ASYNC_MGR set to false
+[2007-10-10 08:29:29,938|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.RESPONSE_COMPRESSION set to false
+[2007-10-10 08:29:29,938|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.ACS set to false
+[2007-10-10 08:29:29,954|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.FOLDERUTIL set to false
+[2007-10-10 08:29:29,954|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTDOCBASE set to false
+[2007-10-10 08:29:29,954|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.COOKIE set to false
+[2007-10-10 08:29:29,954|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMREQUEST set to false
+[2007-10-10 08:29:29,954|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.webtop.Trace.MESSAGING set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.ENVIRONMENT set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMRESPONSE set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.NESTOPERATION set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTSTEP set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSION set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.RESPONSE_HEADER_CONTROL set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.RECALLOPERATION set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONSYNC set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKMATCHING set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.GETCONTENT set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONENABLEDBYDEFAULT set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.TIMEOUTOPERATION set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMHISTORY set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.RECORDSMANAGER set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASEATTRLIST set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.REQUEST set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.DATABOUND set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.HOOK set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.COMBOCONTAINER set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKREQUEST set to false
+[2007-10-10 08:29:29,970|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTROL set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.CLIENTNETWORKLOCATION set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINK set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_STATUS_LISTENER set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.RETURNOPERATION set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.UCF_MANAGER set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMPROCESSORACTIONS set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CONFIGTHEMERESOLVER set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.HISTORYRELEASEDOPERATION set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.JUMPOPERATION set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.BRANDINGSERVICE set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.PAGEJUMPOPERATION set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONSTATE set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONHANDLE set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTSESSIONSTATE set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.VALIDATOR set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMINFOCOMMENTS set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMPROCESSOR set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.COLLABORATIONSERVICE set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.REDIRECTOPERATION set to false
+[2007-10-10 08:29:30,064|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.LOCALESERVICE set to false
+[2007-10-10 08:29:30,079|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTENV set to false
+[2007-10-10 08:29:30,079|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.PORTLETDISPATCHER set to false
+[GC 38463K->23045K(260160K), 0.0107083 secs]
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.FORMAT_RESOLVER set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.FAILOVER_DIAGNOSTICS set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.THREADLOCALVARIABLE set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONREFCOUNT set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.HTML_PAGE_PROCESSOR set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONTIMEOUTCONTROL set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.INCLUDEOPERATION set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.PERSISTENTOBJECTCACHE set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTCASE set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTAINMENT set to false
+[2007-10-10 08:29:30,173|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.OPTIMIZE set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.webtop.Trace.APPCONTEXT set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.VIRTUALJS set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.VDMTREEGRID set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_EXEC_SERVICE set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.FAILOVER set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.COMPONENT set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMINCLUDETAG set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTRECORDER set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKCONTENT set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.PREFERENCES set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CONFIGSERVICE set to false
+[2007-10-10 08:29:30,189|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.FRAGMENTBUNDLESERVICE set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.WDK_API_TRACE set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASESCOPECONFIGSERVICE set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_STATUS_REPORT set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORM set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ROLESERVICE set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTROLTAG set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.HTTP_MANAGER set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ACTIONSERVICE set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ROLEPRECONDITION set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASEATTR set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMTAG set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIPBOARD set to false
+[2007-10-10 08:29:30,282|DEBUG|Thread-4              |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CACHE set to false
+[GC 39237K->24461K(260160K), 0.0079077 secs]
+[GC 40649K->25075K(260160K), 0.0089891 secs]
+[GC 41266K->25572K(260160K), 0.0039282 secs]
+[GC 41764K->26061K(260160K), 0.0051956 secs]
+[GC 42253K->26804K(260160K), 0.0057189 secs]
+[GC 42996K->27448K(260160K), 0.0057834 secs]
+[GC 43640K->27936K(260160K), 0.0060932 secs]
+[GC 44128K->28544K(260160K), 0.0053571 secs]
+[GC 44736K->29181K(260160K), 0.0059083 secs]
+[GC 45373K->30653K(260160K), 0.0095688 secs]
+[GC 46845K->31368K(260160K), 0.0102309 secs]
+Oct 10, 2007 8:29:32 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+[GC 47560K->32812K(260160K), 0.0116132 secs]
+Oct 10, 2007 8:29:32 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 8:29:32 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/31  config=null
+Oct 10, 2007 8:29:32 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Oct 10, 2007 8:29:32 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7335 ms
+[GC 49004K->33934K(260160K), 0.0165837 secs]
+[GC 50125K->34665K(260160K), 0.0202956 secs]
+[Full GC 35887K->34722K(260160K), 0.1860130 secs]
+[GC 50914K->35239K(260160K), 0.0117395 secs]
+[GC 51431K->36064K(260160K), 0.0080418 secs]
+[Full GC 41639K->35664K(260160K), 0.2006903 secs]
+[GC 51856K->35945K(260160K), 0.0057817 secs]
+[GC 52137K->36415K(260160K), 0.0034977 secs]
+[GC 52607K->37042K(260160K), 0.0062396 secs]
+[GC 53229K->37219K(260160K), 0.0078205 secs]
+[GC 53411K->39588K(260160K), 0.0131598 secs]
+[GC 55780K->40600K(260160K), 0.0275884 secs]
+[GC 56792K->41527K(260160K), 0.0144761 secs]
+[GC 57719K->41599K(260160K), 0.0078954 secs]
+[Full GC 54482K->38449K(260160K), 0.3283300 secs]
+[GC 54641K->39275K(260160K), 0.0220805 secs]
+[GC 55466K->40890K(260160K), 0.0231859 secs]
+[GC 57081K->41012K(260160K), 0.0187169 secs]
+[GC 57204K->41884K(260160K), 0.0065316 secs]
+[GC 58076K->43089K(260160K), 0.0101002 secs]
+[GC 59281K->43640K(260160K), 0.0119437 secs]
+[GC 59832K->44143K(260160K), 0.0046612 secs]
+[GC 60334K->44795K(260160K), 0.0115585 secs]
+[GC 60983K->45385K(260160K), 0.0114596 secs]
+[GC 61573K->46058K(260160K), 0.0132838 secs]
+[GC 62249K->46503K(260160K), 0.0114637 secs]
+[GC 62695K->47227K(260160K), 0.0069341 secs]
+[GC 63416K->48659K(260160K), 0.0138677 secs]
+[GC 64851K->49116K(260160K), 0.0139009 secs]
+[GC 65302K->49828K(260160K), 0.0097775 secs]
+[GC 66020K->51245K(260160K), 0.0175441 secs]
+[GC 67437K->51822K(260160K), 0.0191005 secs]
+[GC 68014K->52401K(260160K), 0.0084321 secs]
+[GC 68589K->52921K(260160K), 0.0114336 secs]
+[GC 69099K->53668K(260160K), 0.0127214 secs]
+[GC 69860K->54230K(260160K), 0.0116509 secs]
+[GC 70414K->54803K(260160K), 0.0131503 secs]
+[GC 70988K->55285K(260160K), 0.0111598 secs]
+[GC 71476K->56041K(260160K), 0.0125723 secs]
+[GC 72233K->57509K(260160K), 0.0191343 secs]
+[GC 73701K->57988K(260160K), 0.0227261 secs]
+[GC 74180K->58800K(260160K), 0.0062106 secs]
+[GC 74989K->60278K(260160K), 0.0105321 secs]
+[GC 76467K->60788K(260160K), 0.0095149 secs]
+[GC 76980K->61226K(260160K), 0.0041069 secs]
+[GC 77412K->61900K(260160K), 0.0060158 secs]
+[GC 78082K->62468K(260160K), 0.0065673 secs]
+[GC 78660K->63062K(260160K), 0.0064832 secs]
+[GC 79254K->63582K(260160K), 0.0061404 secs]
+[GC 79774K->64168K(260160K), 0.0061823 secs]
+[GC 80360K->65732K(260160K), 0.0103714 secs]
+[GC 81919K->66252K(260160K), 0.0104429 secs]
+[GC 82443K->66875K(260160K), 0.0107123 secs]
+[GC 83064K->67757K(260160K), 0.0081061 secs]
+[GC 83949K->69044K(260160K), 0.0191326 secs]
+[GC 85236K->69562K(260160K), 0.0099298 secs]
+[GC 85754K->69969K(260160K), 0.0041064 secs]
+[GC 86155K->70787K(260160K), 0.0122295 secs]
+[GC 86979K->71183K(260160K), 0.0113132 secs]
+[GC 87375K->71893K(260160K), 0.0264796 secs]
+[GC 88083K->72381K(260160K), 0.0058681 secs]
+[GC 88573K->73113K(260160K), 0.0072791 secs]
+[GC 89289K->74493K(260160K), 0.0213508 secs]
+[GC 90678K->75019K(260160K), 0.0134277 secs]
+[GC 91205K->75925K(260160K), 0.0068648 secs]
+[GC 92116K->77387K(260160K), 0.0112090 secs]
+[GC 93579K->77911K(260160K), 0.0719270 secs]
+[GC 94103K->78416K(260160K), 0.0050428 secs]
+[GC 94608K->78978K(260160K), 0.0059351 secs]
+[GC 95170K->79655K(260160K), 0.0152112 secs]
+[GC 95847K->80171K(260160K), 0.0068852 secs]
+[GC 96363K->80784K(260160K), 0.0067285 secs]
+[GC 96975K->81312K(260160K), 0.0646233 secs]
+[GC 97498K->82087K(260160K), 0.0067148 secs]
+[GC 98274K->83574K(260160K), 0.0107782 secs]
+[GC 99766K->84099K(260160K), 0.0617073 secs]
+[GC 100291K->85672K(260160K), 0.0182769 secs]
+[GC 101864K->87337K(260160K), 0.0589664 secs]
+[GC 103528K->87993K(260160K), 0.0659095 secs]
+[GC 104184K->88242K(260160K), 0.0127832 secs]
+[GC 104434K->88850K(260160K), 0.0078625 secs]
+[GC 105042K->89217K(260160K), 0.0177939 secs]
+[Full GC[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor2]
+[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor3]
+[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor1]
+ 91745K->79210K(260160K), 11.2005847 secs]
+[GC 95397K->79763K(260160K), 0.0094694 secs]
+Oct 10, 2007 9:40:38 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/Copy of webtop]
+[GC 95955K->80053K(260160K), 0.0114629 secs]
+Oct 10, 2007 9:40:39 AM org.apache.catalina.core.StandardContext start
+SEVERE: Error listenerStart
+Oct 10, 2007 9:40:39 AM org.apache.catalina.core.StandardContext start
+SEVERE: Context [/Copy of webtop] startup failed due to previous errors
+Oct 10, 2007 9:44:39 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/Copy of webtop]
+[GC 96245K->80607K(260160K), 0.0109581 secs]
+[2007-10-10 09:44:41,083|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.util.Trace.ZIPARCHIVE set to false
+[2007-10-10 09:44:41,162|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.async.Trace.ASYNC_MGR set to false
+[2007-10-10 09:44:41,162|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.RESPONSE_COMPRESSION set to false
+[2007-10-10 09:44:41,177|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.ACS set to false
+[2007-10-10 09:44:41,177|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.FOLDERUTIL set to false
+[2007-10-10 09:44:41,177|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTDOCBASE set to false
+[2007-10-10 09:44:41,177|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.COOKIE set to false
+[2007-10-10 09:44:41,208|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMREQUEST set to false
+[2007-10-10 09:44:41,224|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.webtop.Trace.MESSAGING set to false
+[2007-10-10 09:44:41,224|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.ENVIRONMENT set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMRESPONSE set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.NESTOPERATION set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTSTEP set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSION set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.RESPONSE_HEADER_CONTROL set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.RECALLOPERATION set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONSYNC set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKMATCHING set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.GETCONTENT set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONENABLEDBYDEFAULT set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.TIMEOUTOPERATION set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMHISTORY set to false
+[2007-10-10 09:44:41,240|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.RECORDSMANAGER set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASEATTRLIST set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.REQUEST set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.DATABOUND set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.HOOK set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.COMBOCONTAINER set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKREQUEST set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTROL set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.CLIENTNETWORKLOCATION set to false
+[2007-10-10 09:44:41,255|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINK set to false
+[2007-10-10 09:44:41,271|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_STATUS_LISTENER set to false
+[2007-10-10 09:44:41,271|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.RETURNOPERATION set to false
+[2007-10-10 09:44:41,271|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.UCF_MANAGER set to false
+[2007-10-10 09:44:41,271|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMPROCESSORACTIONS set to false
+[2007-10-10 09:44:41,271|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CONFIGTHEMERESOLVER set to false
+[2007-10-10 09:44:41,396|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.HISTORYRELEASEDOPERATION set to false
+[2007-10-10 09:44:41,396|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.JUMPOPERATION set to false
+[2007-10-10 09:44:41,396|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.BRANDINGSERVICE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.PAGEJUMPOPERATION set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.SESSIONSTATE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONHANDLE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTSESSIONSTATE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.VALIDATOR set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMINFOCOMMENTS set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMPROCESSOR set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.COLLABORATIONSERVICE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.REDIRECTOPERATION set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.LOCALESERVICE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIENTENV set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.PORTLETDISPATCHER set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.servlet.Trace.FORMAT_RESOLVER set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.FAILOVER_DIAGNOSTICS set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.THREADLOCALVARIABLE set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONREFCOUNT set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.HTML_PAGE_PROCESSOR set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.SESSIONTIMEOUTCONTROL set to false
+[2007-10-10 09:44:41,411|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.INCLUDEOPERATION set to false
+[2007-10-10 09:44:41,521|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.PERSISTENTOBJECTCACHE set to false
+[2007-10-10 09:44:41,521|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTCASE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTAINMENT set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.OPTIMIZE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.webtop.Trace.APPCONTEXT set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.VIRTUALJS set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.VDMTREEGRID set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_EXEC_SERVICE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.common.Trace.FAILOVER set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.COMPONENT set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMINCLUDETAG set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.test.Trace.TESTRECORDER set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.virtuallink.Trace.VIRTUALLINKCONTENT set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.PREFERENCES set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CONFIGSERVICE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.FRAGMENTBUNDLESERVICE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.env.Trace.WDK_API_TRACE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASESCOPECONFIGSERVICE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB_STATUS_REPORT set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORM set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ROLESERVICE set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.CONTROLTAG set to false
+[2007-10-10 09:44:41,552|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.contentxfer.Trace.HTTP_MANAGER set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ACTIONSERVICE set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.ROLEPRECONDITION set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.DOCBASEATTR set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.job.Trace.JOB set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.form.Trace.FORMTAG set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CLIPBOARD set to false
+[2007-10-10 09:44:41,630|DEBUG|Thread-77             |com.documentum.fc.common.DfLogger|debug|105 ] Trace initialisation: com.documentum.web.formext.Trace.CACHE set to false
+[GC 96799K->81454K(260160K), 0.0163311 secs]
+[GC 97646K->82882K(260160K), 0.0118409 secs]
+[GC 99074K->83399K(260160K), 0.0097208 secs]
+[GC 99591K->83978K(260160K), 0.0055985 secs]
+[GC 100170K->84467K(260160K), 0.0106726 secs]
+[GC 100653K->85285K(260160K), 0.0121605 secs]
+[GC 101469K->85730K(260160K), 0.0115484 secs]
+[GC 101918K->86379K(260160K), 0.0130709 secs]
+[GC 102569K->86927K(260160K), 0.0111813 secs]
+[GC 103119K->87612K(260160K), 0.0122407 secs]
+[GC 103800K->89098K(260160K), 0.0212153 secs]
+[GC 105290K->89545K(260160K), 0.0352274 secs]
+[GC 105737K->91116K(260160K), 0.0104944 secs]
+[GC 107308K->92164K(260160K), 0.0283813 secs]
+[GC 108356K->92005K(260160K), 0.0052294 secs]
+[GC 108197K->93130K(260160K), 0.0087712 secs]
+[GC 109322K->93493K(260160K), 0.0175031 secs]
+[GC 109685K->94688K(260160K), 0.3080112 secs]
+[GC 110880K->94140K(260160K), 0.0102661 secs]
+[GC 110023K->95648K(260160K), 0.0111349 secs]
+[GC 111806K->97747K(260160K), 0.0234253 secs]
+[GC 113939K->98043K(260160K), 0.0388753 secs]
+[GC 114235K->99462K(260160K), 0.0163496 secs]
+[GC 115654K->100095K(260160K), 0.0317082 secs]
+[GC 116285K->100697K(260160K), 0.0097236 secs]
+[GC 116889K->101146K(260160K), 0.0121334 secs]
+[GC 117338K->101929K(260160K), 0.0256524 secs]
+[GC 118121K->102412K(260160K), 0.0120571 secs]
+[GC 118604K->103118K(260160K), 0.0084396 secs]
+[GC 119310K->103551K(260160K), 0.0192181 secs]
+[GC 119743K->104302K(260160K), 0.0306818 secs]
+[GC 120494K->105907K(260160K), 0.0206490 secs]
+[GC 122099K->106388K(260160K), 0.0381479 secs]
+[GC 122576K->107092K(260160K), 0.0056733 secs]
+[GC 123280K->108570K(260160K), 0.0268369 secs]
+[GC 124762K->109089K(260160K), 0.0690185 secs]
+[GC 125281K->109600K(260160K), 0.0051710 secs]
+[GC 125790K->110138K(260160K), 0.0465366 secs]
+[GC 126325K->110904K(260160K), 0.0073241 secs]
+[GC 127096K->111423K(260160K), 0.0070397 secs]
+[GC 127615K->111964K(260160K), 0.0078172 secs]
+[GC 128156K->112498K(260160K), 0.0221229 secs]
+[GC 128689K->113206K(260160K), 0.0072372 secs]
+[GC 129398K->114673K(260160K), 0.0111956 secs]
+[GC 130865K->115307K(260160K), 0.0311487 secs]
+[GC 131499K->116720K(260160K), 0.0078443 secs]
+[GC 132912K->117095K(260160K), 0.0765826 secs]
+[GC 133287K->117354K(260160K), 0.0701991 secs]
+[GC 133546K->117873K(260160K), 0.0251845 secs]
+[Full GC[Unloading class sun.reflect.GeneratedMethodAccessor42]
+[Unloading class sun.reflect.GeneratedMethodAccessor8]
+[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor4]
+[Unloading class sun.reflect.GeneratedMethodAccessor10]
+[Unloading class sun.reflect.GeneratedMethodAccessor6]
+[Unloading class sun.reflect.GeneratedConstructorAccessor34]
+[Unloading class sun.reflect.GeneratedMethodAccessor3]
+[Unloading class sun.reflect.GeneratedMethodAccessor2]
+[Unloading class sun.reflect.GeneratedMethodAccessor30]
+[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor6]
+[Unloading class sun.reflect.GeneratedMethodAccessor41]
+[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor7]
+[Unloading class sun.reflect.GeneratedMethodAccessor43]
+[Unloading class sun.reflect.GeneratedMethodAccessor18]
+[Unloading class sun.reflect.GeneratedMethodAccessor22]
+[Unloading class sun.reflect.GeneratedMethodAccessor13]
+[Unloading class sun.reflect.GeneratedMethodAccessor24]
+[Unloading class sun.reflect.GeneratedMethodAccessor17]
+[Unloading class sun.reflect.GeneratedMethodAccessor44]
+[Unloading class sun.reflect.GeneratedMethodAccessor11]
+[Unloading class sun.reflect.GeneratedMethodAccessor15]
+[Unloading class sun.reflect.GeneratedMethodAccessor31]
+[Unloading class sun.reflect.GeneratedMethodAccessor27]
+[Unloading class sun.reflect.GeneratedMethodAccessor12]
+[Unloading class sun.reflect.GeneratedMethodAccessor16]
+[Unloading class sun.reflect.GeneratedSerializationConstructorAccessor5]
+[Unloading class sun.reflect.GeneratedMethodAccessor21]
+[Unloading class sun.reflect.GeneratedMethodAccessor7]
+[Unloading class sun.reflect.GeneratedMethodAccessor4]
+[Unloading class sun.reflect.GeneratedMethodAccessor5]
+[Unloading class sun.reflect.GeneratedMethodAccessor39]
+[Unloading class sun.reflect.GeneratedMethodAccessor45]
+[Unloading class sun.reflect.GeneratedMethodAccessor29]
+[Unloading class sun.reflect.GeneratedConstructorAccessor62]
+[Unloading class sun.reflect.GeneratedMethodAccessor40]
+[Unloading class sun.reflect.GeneratedMethodAccessor14]
+[Unloading class sun.reflect.GeneratedMethodAccessor38]
+ 129429K->112337K(260160K), 0.5341830 secs]
+[GC 128529K->113725K(260160K), 0.0191259 secs]
+[GC 129917K->114955K(260160K), 0.0115445 secs]
+[GC 131147K->115215K(260160K), 0.0117286 secs]
+[GC 131407K->115442K(260160K), 0.0099577 secs]
+[2007-10-10 10:27:05,159|DEBUG|http-8080-Processor23 |com.documentum.fc.common.DfLogger|debug|105 ] The following attribute doesnt exist: show_topic
+[GC 131634K->115846K(260160K), 0.0221657 secs]
+[GC 132037K->114271K(260160K), 0.0058491 secs]
+[GC 130463K->115296K(260160K), 0.0046626 secs]
+[GC 131487K->114486K(260160K), 0.0190625 secs]
+[GC 130678K->115316K(260160K), 0.0054968 secs]
+[GC 131508K->116680K(260160K), 0.0098630 secs]
+[GC 132865K->117298K(260160K), 0.0097697 secs]
+[GC 133490K->117693K(260160K), 0.0046120 secs]
+[GC 133885K->118315K(260160K), 0.0064927 secs]
+[GC 134507K->118916K(260160K), 0.0065944 secs]
+[GC 135108K->119531K(260160K), 0.0073230 secs]
+[GC 135723K->120050K(260160K), 0.0067732 secs]
+[GC 136242K->120715K(260160K), 0.0651569 secs]
+[GC 136907K->121884K(260160K), 0.0090590 secs]
+[GC 138075K->122699K(260160K), 0.0633525 secs]
+[GC 138891K->124203K(260160K), 0.0215634 secs]
+[2007-10-10 10:37:29,272|DEBUG|http-8080-Processor23 |com.documentum.fc.common.DfLogger|debug|105 ] The following attribute doesnt exist: show_topic
+[GC 140395K->124776K(260160K), 0.0717245 secs]
+[GC 140960K->126320K(260160K), 0.0098334 secs]
+[GC 142509K->126857K(260160K), 0.0141850 secs]
+[GC 143049K->127268K(260160K), 0.0046344 secs]
+[GC 143460K->127964K(260160K), 0.0066165 secs]
+[GC 144156K->128485K(260160K), 0.0073942 secs]
+[GC 144667K->129118K(260160K), 0.0070953 secs]
+[GC 145310K->129624K(260160K), 0.0067168 secs]
+[GC 145816K->130274K(260160K), 0.0070864 secs]
+[GC 146466K->131260K(260160K), 0.0721885 secs]
+[GC 147452K->132276K(260160K), 0.0107821 secs]
+[GC 148468K->134244K(260160K), 0.0395891 secs]
+[GC 150436K->133537K(260160K), 0.0144342 secs]
+[GC 149729K->134386K(260160K), 0.0138291 secs]
+[GC 150578K->135499K(260160K), 0.0323320 secs]
+[GC 151691K->134722K(260160K), 0.0087874 secs]
+Wed Oct 10 10:39:30 2007 677000 [DM_EXCEPTION_E_SYS_FATAL_ACCESS]error:  "A system exception (ACCESS_VIOLATION) occurred.  Code address: (66f45c8c). Attempt to write data at address 0."
+Wed Oct 10 10:39:31 2007 099000 [DM_EXCEPTION_E_SYS_FATAL_ACCESS]error:  "A system exception (ACCESS_VIOLATION) occurred.  Code address: (7c812a5b). Attempt to write data at address 0."
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x7c812a5b, pid=4176, tid=4384
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_14-b05 mixed mode)
+# Problematic frame:
+# C  [kernel32.dll+0x12a5b]
+#
+# An error report file with more information is saved as hs_err_pid4176.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#

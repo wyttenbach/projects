@@ -1,0 +1,3 @@
+Redwood job: WELLMARK_GROUP_CLAIM_HOLD
+
+Dir: \\ino\dds_efsp\edi\in\misc\ftp\wellmark_group_hold\archive_internal

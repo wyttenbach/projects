@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 51467,
+    "Effective": {
+      "From": "2009-03-04",
+      "To": null
+    },
+    "DataOwner": {
+      "Id": 7,
+      "Name": "DeCare"
+    },
+    "Network": {
+      "Name": "DDN - Expanded DDN",
+      "Id": 433,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/433",
+          "entity": "network"
+        }
+      ]
+    }
+  },
+  {
+    "Id": 3288689,
+    "Effective": {
+      "From": "1997-01-01",
+      "To": "2013-03-22"
+    },
+    "DataOwner": {
+      "Id": 10,
+      "Name": "WellPoint"
+    },
+    "Network": {
+      "Name": "WLP - Non-Participating",
+      "Id": 608,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/networks/608",
+          "entity": "network"
+        }
+      ]
+    }
+  }
+]

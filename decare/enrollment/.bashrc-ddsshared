@@ -1,0 +1,15 @@
+#!/bin/bash
+## ddssharedservices
+export ENR_PROJECT=dds-document-bins
+export WL_DOMAIN="$(cygpath -m $WL/domains/ddssharedservices)"
+export WL_CONTEXT_ROOT=
+export WL_PORT=7794
+function deploy-build
+{
+	undeploy
+# ----------------------- build-all doesn't build this --------------------
+    (cd $SRC/dds-document-bins; deploy dds-document-bins-web/target/*.war)
+}
+
+
+

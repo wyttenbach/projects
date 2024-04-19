@@ -1,0 +1,1 @@
+SDV-9821: BPRH API Call to return claim when Patient Name Blank with SubID

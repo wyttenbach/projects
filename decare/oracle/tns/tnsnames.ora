@@ -1,0 +1,773 @@
+#
+# See also oracle_technologies project 
+#
+
+PGA = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=TCP)(HOST=PGADUMMYHOST)(PORT=1570))
+                (CONNECT_DATA=(SID=PGA))
+                (HS=)
+            )
+
+
+DISCODEMO.decare.com = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=hyperion.decare.com)(PORT=1521))
+                (CONNECT_DATA=(SID=iasdb3.hyperion.decare.com))
+            )
+
+CAT11 = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cat11.decare.com)(PORT=1703))
+                (CONNECT_DATA=(SID=CAT11))
+            )
+
+BIBP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=acte.decare.com)(PORT=1702))
+                (CONNECT_DATA=(SID=BIBP))
+            )
+
+BIDP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=gorgo.decare.com)(PORT=1584))
+                (CONNECT_DATA=(SID=BIDP))
+            )
+
+BART = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=acte.decare.com)(PORT=1701))
+                (CONNECT_DATA=(SID=BART))
+            )
+
+BARTS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=barts.decare.com)(PORT=1641))
+                (CONNECT_DATA=(SID=BARTS))
+            )
+
+MART = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=gorgo.decare.com)(PORT=1525))
+                (CONNECT_DATA=(SID=MART))
+            )
+
+MARTH = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=saturn2.decare.com)(PORT=1662))
+                (CONNECT_DATA=(SID=MARTH))
+            )
+
+MARTS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=marts.decare.com)(PORT=1637))
+                (CONNECT_DATA=(SID=MARTS))
+            )
+
+PROD2 = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=zeus.decare.com)(PORT=1579))
+                (CONNECT_DATA=(SID=FINP))
+            )
+
+FINPRD= (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=finprd.decare.com)(PORT=1579))
+            (CONNECT_DATA= (SID=FINPRD))
+        )
+
+FINP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=finprd.decare.com)(PORT=1579))
+                (CONNECT_DATA=(SID=FINPRD))
+            )
+
+CUSP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cusp.decare.com)(PORT=1592))
+                (CONNECT_DATA=(SID=CUSP))
+            )
+
+OPSP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsp.decare.com)(PORT=1569))
+                (CONNECT_DATA=(SID=OPSP))
+            )
+
+OPSWLP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsp.decare.com)(PORT=1569))
+                (CONNECT_DATA=(SID=OPSP))
+            )
+
+WLPP = (DESCRIPTION= 
+    	        (ADDRESS=(PROTOCOL=tcp)(HOST=vahx0208.wellpoint.com)(PORT=1521))
+                (CONNECT_DATA=(SID=WLPP))
+            )
+
+EPPRD = (DESCRIPTION=
+       (ADDRESS=(PROTOCOL=tcp)(HOST=psftfsep-p-01.internal.das)(PORT=1525))
+       (CONNECT_DATA=(SERVICE_NAME=EPPRD))
+    )
+
+DWCNPRD1 = (DESCRIPTION=
+        (ADDRESS=(PROTOCOL=tcp)(HOST=30.128.140.15)(PORT=1521))
+         (CONNECT_DATA=(SID=DWCNPRD1))
+     )
+
+DNTLPRVD = (DESCRIPTION=
+       (ADDRESS=(PROTOCOL=tcp)(HOST=va33dx13v1-scan1.wellpoint.com)(PORT=1525))
+       (CONNECT_DATA=(SERVICE_NAME=DNTLPRVD))
+    )
+
+DNTLPRV2D = (DESCRIPTION=
+       (ADDRESS=(PROTOCOL=tcp)(HOST=va33dx13v1-scan1.wellpoint.com)(PORT=1525))
+       (CONNECT_DATA=(SERVICE_NAME=DNTLPRV2D))
+    )
+
+DNTLPRV3D = (DESCRIPTION=
+       (ADDRESS=(PROTOCOL=tcp)(HOST=va33dx13v1-scan1.wellpoint.com)(PORT=1525))
+       (CONNECT_DATA=(SERVICE_NAME=DNTLPRV3D))
+    )
+
+EDWP = (DESCRIPTION= 
+    	 (ADDRESS=(PROTOCOL=tcp)(HOST=30.130.37.232)(PORT=1521))
+       (CONNECT_DATA=(SID=EDWP))
+    )
+
+WDWP = (DESCRIPTION= 
+    	        (ADDRESS=(PROTOCOL=tcp)(HOST=10.224.12.134)(PORT=1521))
+                (CONNECT_DATA=(SID=WDWP))
+            )
+DWPROD1 = (DESCRIPTION= 
+    	        (ADDRESS=(PROTOCOL=tcp)(HOST=30.132.52.40)(PORT=1025))
+                (CONNECT_DATA=(SID=DWPROD1))
+            )
+
+DWPROD2 = (DESCRIPTION= 
+    	        (ADDRESS=(PROTOCOL=tcp)(HOST=30.128.223.28)(PORT=1025))
+                (CONNECT_DATA=(SID=DWPROD2))
+            )
+
+SPDENTP = (DESCRIPTION= 
+    	        (ADDRESS=(PROTOCOL=tcp)(HOST=30.128.60.33)(PORT=1521))
+                (CONNECT_DATA=(SID=SPDENTP))
+            )
+
+DOCP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=docp.decare.com)(PORT=1585))
+                (CONNECT_DATA=(SID=DOCP))
+            )
+
+REDWOOD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=redwood.decare.com)(PORT=1596))
+                (CONNECT_DATA=(SID=REDWOOD))
+            )
+
+REDWOODT = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=redwoodt.decare.com)(PORT=1594))
+                (CONNECT_DATA=(SID=REDWOODT))
+            )
+
+FINS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=fins.decare.com)(PORT=1572))
+                (CONNECT_DATA=(SID=FINS))
+            )
+
+CUSS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cuss.decare.com)(PORT=1590))
+                (CONNECT_DATA=(SID=CUSS))
+            )
+
+OPSS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opss.decare.com)(PORT=1562))
+                (CONNECT_DATA=(SID=OPSS))
+            )
+
+FINT = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=fint.decare.com)(PORT=1581))
+		(CONNECT_DATA=(SID=FINT))
+	    )
+
+FIND = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=find.decare.com)(PORT=1576))
+                (CONNECT_DATA=(SID=FIND))
+            )
+
+CUSA = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cusa.decare.com)(PORT=1643))
+                (CONNECT_DATA=(SID=CUSA))
+            )
+
+OPSA = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsa.decare.com)(PORT=1644))
+                (CONNECT_DATA=(SID=OPSA))
+            )
+
+CUSB = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=cusb.decare.com)(PORT=1652))
+		(CONNECT_DATA=(SID=CUSB))
+	    )
+
+OPSB = (DESCRIPTION=
+	        (ADDRESS=(PROTOCOL=tcp)(HOST=opsb.decare.com)(PORT=1653))
+	        (CONNECT_DATA=(SID=OPSB))
+	    )
+
+CUSD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cusd.decare.com)(PORT=1587))
+                (CONNECT_DATA=(SID=CUSD))
+            )
+
+OPSD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsd.decare.com)(PORT=1563))
+                (CONNECT_DATA=(SID=OPSD))
+            )
+
+BIBD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bibd.decare.com)(PORT=1577))
+                (CONNECT_DATA=(SID=BIBD))
+            )
+
+BIDD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bidd.decare.com)(PORT=1586))
+               (CONNECT_DATA=(SID=BIDD))
+            )
+
+BIBQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bibq.decare.com)(PORT=1578))
+                (CONNECT_DATA=(SID=BIBQ))
+            )
+
+BIDQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bidq.decare.com)(PORT=1601))
+                (CONNECT_DATA=(SID=BIDQ))
+            )
+
+BIBS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bibs.decare.com)(PORT=1640))
+                (CONNECT_DATA=(SID=BIBS))
+            )
+
+BIDL = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=mn02tlvorc001.decare.com)(PORT=1639))
+                (CONNECT_DATA=(SID=BIDL))
+            )
+
+BIDH = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=saturn.decare.com)(PORT=1663))
+                (CONNECT_DATA=(SID=BIDH))
+            )
+
+BIDS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bids.decare.com)(PORT=1639))
+                (CONNECT_DATA=(SID=BIDS))
+            )
+
+BIBU = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bibu.decare.com)(PORT=1638))
+                (CONNECT_DATA=(SID=BIBU))
+            )
+
+BIDU = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=bidu.decare.com)(PORT=1636))
+                (CONNECT_DATA=(SID=BIDU))
+            )
+
+WARMS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warms.decare.com)(PORT=1618))
+                (CONNECT_DATA=(SID=WARMS))
+            )
+
+WARMA = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warma.decare.com)(PORT=1645))
+                (CONNECT_DATA=(SID=WARMA))
+            )
+
+WARMB = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=warmb.decare.com)(PORT=1651))
+		(CONNECT_DATA=(SID=WARMB))
+	    )
+
+WARMD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warmd.decare.com)(PORT=1603))
+                (CONNECT_DATA=(SID=WARMD))
+            )
+
+WARMH = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warmh.decare.com)(PORT=1631))
+                (CONNECT_DATA=(SID=WARMH))
+            )
+
+WARMI = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warmi.decare.com)(PORT=1627))
+                (CONNECT_DATA=(SID=WARMI))
+            )
+
+WARMJ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warmj.decare.com)(PORT=1632))
+                (CONNECT_DATA=(SID=WARMJ))
+            )
+
+WARMQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warmq.decare.com)(PORT=1602))
+                (CONNECT_DATA=(SID=WARMQ))
+            )
+
+WARMU = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=warmu.decare.com)(PORT=1610))
+                (CONNECT_DATA=(SID=WARMU))
+            )
+
+DOCD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=docd.decare.com)(PORT=1582))
+                (CONNECT_DATA=(SID=DOCD))
+            )
+
+FINH = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=finh.decare.com)(PORT=1634))
+                (CONNECT_DATA=(SID=FINH))
+            )
+
+FINJ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=finj.decare.com)(PORT=1619))
+                (CONNECT_DATA=(SID=FINJ))
+            )
+
+CUSH = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=cush.decare.com)(PORT=1629))
+		(CONNECT_DATA=(SID=CUSH))
+	    )
+
+CUSI = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=cusi.decare.com)(PORT=1625))
+		(CONNECT_DATA=(SID=CUSI))
+	    )
+
+OPSH = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=opsh.decare.com)(PORT=1630))
+		(CONNECT_DATA=(SID=OPSH))
+	    )
+
+OPSI = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=opsi.decare.com)(PORT=1626))
+		(CONNECT_DATA=(SID=OPSI))
+	    )
+
+CUSJ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cusj.decare.com)(PORT=1622))
+                (CONNECT_DATA=(SID=CUSJ))
+            )
+
+OPSJ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsj.decare.com)(PORT=1623))
+                (CONNECT_DATA=(SID=OPSJ))
+            )
+
+CUSM = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=cusm.decare.com)(PORT=1647))
+		(CONNECT_DATA=(SID=CUSM))
+	    )
+
+OPSM = (DESCRIPTION=
+	        (ADDRESS=(PROTOCOL=tcp)(HOST=opsm.decare.com)(PORT=1648))
+	        (CONNECT_DATA=(SID=OPSM))
+	    )
+
+WARMM = (DESCRIPTION=
+		 (ADDRESS=(PROTOCOL=tcp)(HOST=warmm.decare.com)(PORT=1649))
+		 (CONNECT_DATA=(SID=WARMM))
+	     )
+
+WARMM1 = (DESCRIPTION=
+		  (ADDRESS=(PROTOCOL=tcp)(HOST=warmm1.decare.com)(PORT=1650))
+		  (CONNECT_DATA=(SID=WARMM1))
+	     )
+
+FINQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=finq.decare.com)(PORT=1574))
+                (CONNECT_DATA=(SID=FINQ))
+            )
+
+CUSQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cusq.decare.com)(PORT=1588))
+                (CONNECT_DATA=(SID=CUSQ))
+            )
+
+OPSQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsq.decare.com)(PORT=1564))
+                (CONNECT_DATA=(SID=OPSQ))
+            )
+
+FINU = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=finu.decare.com)(PORT=1575))
+                (CONNECT_DATA=(SID=FINU))
+            )
+
+CUSU = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cusu.decare.com)(PORT=1589))
+                (CONNECT_DATA=(SID=CUSU))
+            )
+
+OPSU = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opsu.decare.com)(PORT=1565))
+                (CONNECT_DATA=(SID=OPSU))
+            )
+
+CUST = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=cust.decare.com)(PORT=1591))
+                (CONNECT_DATA=(SID=CUST))
+            )
+
+OPST = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=opst.decare.com)(PORT=1571))
+                (CONNECT_DATA=(SID=OPST))
+            )
+
+GRIDD = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=gridd.decare.com)(PORT=1628))
+                (CONNECT_DATA=(SID=GRIDD))
+            )
+
+GRIDS = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=gridsu.decare.com)(PORT=1597))
+                (CONNECT_DATA=(SID=GRIDS))
+            )
+
+GRIDQ = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=gridq.decare.com)(PORT=1568))
+                (CONNECT_DATA=(SID=GRIDQ))
+            )
+
+GRIDP = (DESCRIPTION=
+                (ADDRESS=(PROTOCOL=tcp)(HOST=gridp.decare.com)(PORT=1605))
+                (CONNECT_DATA=(SID=GRIDP))
+            )
+
+DCTMP = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=dctmp.decare.com)(PORT=1606))
+		(CONNECT_DATA=(SID=DCTMP))
+	    )
+
+WARMP = (DESCRIPTION=
+                (ADDRESS = (PROTOCOL = TCP)(Host = warmp.decare.com)(Port = 1613))
+                (CONNECT_DATA = (SID=WARMP))
+            )
+
+OIFP = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=oifp.decare.com)(PORT=1614))
+				(CONNECT_DATA=(SID=OIFP))
+					  )
+
+ALDV = (DESCRIPTION =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vaathmr074.corp.anthem.com)(PORT = 1521))
+	  (CONNECT_DATA =
+		(SID = ALDV))
+      )
+
+ALDVVA = (DESCRIPTION =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vaathmr074.corp.anthem.com)(PORT = 1521))
+	  (CONNECT_DATA =
+		(SID = ALDVVA))
+      )
+
+ALPR = (DESCRIPTION =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = vaathmr073.corp.anthem.com)(PORT = 1521))
+	  (CONNECT_DATA =
+		(SID = ALPR))
+      )
+
+BARTP = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=dentalbart-p-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=BARTP))
+	    )
+
+BIBPP = (DESCRIPTION=
+		(ADDRESS=(PROTOCOL=tcp)(HOST=dentalbibp-p-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=BIBPP))
+	    )
+
+BIDDD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalbid-d-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=BIDDD))
+	    )
+
+BIDPP = (DESCRIPTION=
+        (ADDRESS=(PROTOCOL=tcp)(HOST=dentalbid-p-01.internal.das)(PORT=1525))
+        (CONNECT_DATA=(SERVICE_NAME=BIDPP))
+            )
+
+BIDQS = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalbid-s-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=BIDQS))
+	    )
+
+BIDSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalbid-f-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=BIDSF))
+	    )
+
+BIDUU = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalbid-u-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=BIDUU))
+	    )
+
+CUSAD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSAD))
+	    )
+
+CUSBD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-02.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSBD))
+	    )
+
+CUSDD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-03.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSDD))
+	    )
+
+CUSTD = (DESCRIPTION=
+	(ADTRESS=(PROTOCOL=tcp)(HOST=dentalcus-t-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSTD))
+	    )
+
+CUSHD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-04.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSHD))
+	    )
+
+CUSID = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-05.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSID))
+	    )
+
+CUSJD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-06.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSJD))
+	    )
+
+CUSLHD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33dlvorc321.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSLHD))
+	    )
+
+CUSMD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-d-07.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSMD))
+	    )
+
+CUSPP = (DESCRIPTION=
+        (ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-p-01.internal.das)(PORT=1525))
+        (CONNECT_DATA=(SERVICE_NAME=CUSPP))
+            )
+
+CUSQS = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-s-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSQS))
+	    )
+
+CUSSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-f-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSSF))
+	    )
+
+CUSTT = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-t-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSTT))
+	    )
+
+CUSUU = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalcus-u-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=CUSUU))
+	    )
+
+DCTMF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentaldctm-f-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=DCTMF))
+	    )
+
+DCTMPP = (DESCRIPTION=
+        (ADDRESS=(PROTOCOL=tcp)(HOST=dentaldctm-p-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SID=DCTMPP))
+	    )
+
+FINDD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33dlvorc305.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SID=FINDD))
+	    )
+
+FINPP = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va10plvorc303.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SID=FINPP))
+	    )
+
+FINSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33tlvorc301.decare.com)(PORT=1576))
+	(CONNECT_DATA=(SID=FINSF))
+	    )
+
+GRIDDD = (DESCRIPTION=
+         (ADDRESS=(PROTOCOL=tcp)(HOST=va33dlvorc304.decare.com)(PORT=1525))
+         (CONNECT_DATA=(SERVICE_NAME=GRIDDD))
+            )
+
+GRIDPP = (DESCRIPTION=
+         (ADDRESS=(PROTOCOL=tcp)(HOST=va10plvorc301.decare.com)(PORT=1525))
+         (CONNECT_DATA=(SERVICE_NAME=GRIDPP))
+            )
+
+GRIDQS = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33tlvora304.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=GRIDQS))
+	    )
+
+GRIDSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33tlvora001.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=GRIDSF))
+	    )
+
+GRIDUU = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33tlvorc308.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=GRIDUU))
+	    )
+
+MARTP = (DESCRIPTION=
+        (ADDRESS=(PROTOCOL=tcp)(HOST=dentalmart-p-01.internal.das)(PORT=1525))
+        (CONNECT_DATA=(SERVICE_NAME=MARTP))
+            )
+
+MARTSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalmart-f-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=MARTSF))
+	    )
+
+OPSAD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSAD))
+	    )
+
+OPSBD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-02.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSBD))
+	    )
+
+OPSDD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-03.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSDD))
+	    )
+
+OPSTD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-t-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSTD))
+	    )
+
+OPSHD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-04.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSHD))
+	    )
+
+OPSID = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-05.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSID))
+	    )
+
+OPSJD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-06.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSJD))
+	    )
+
+OPSLHD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33dlvorc321.decare.com)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSLHD))
+	    )
+
+OPSMD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-d-07.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSMD))
+	    )
+
+OPSPP = (DESCRIPTION=
+        (ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-p-01.internal.das)(PORT=1525))
+        (CONNECT_DATA=(SERVICE_NAME=OPSPP))
+            )
+
+OPSQS = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-s-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSQS))
+	    )
+
+OPSSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-f-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSSF))
+	    )
+
+OPSTT = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-t-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSTT))
+	    )
+
+OPSUU = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalops-u-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=OPSUU))
+	    )
+
+REDWDF = (DESCRIPTION =
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va33tlvorc306.decare.com)(PORT=1525))
+      	(CONNECT_DATA = (SID = REDWDF))
+	)
+
+REDWDP = (DESCRIPTION =
+	(ADDRESS=(PROTOCOL=tcp)(HOST=va10plvorc304.decare.com)(PORT=1525))
+      	(CONNECT_DATA = (SID = REDWDP))
+	)
+
+WARMAD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarm-d-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMAD))
+	    )
+
+WARMBD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmb-d-02.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMBD))
+	    )
+
+WARMDD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmd-d-03.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMDD))
+	    )
+
+WARMHD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmh-d-04.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMHD))
+	    )
+
+WARMID = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmi-d-05.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMID))
+	    )
+
+WARMJD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmj-d-06.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMJD))
+	    )
+
+WARMMD = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmm-d-07.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMMD))
+	    )
+
+WARMM1D = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmm1-d-08.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMM1D))
+	    )
+
+WARMPP = (DESCRIPTION=
+         (ADDRESS=(PROTOCOL=tcp)(Host=dentalwarm-p-01.internal.das)(Port=1525))
+         (CONNECT_DATA = (SERVICE_NAME=WARMPP))
+            )
+
+WARMQS = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmq-s-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMQS))
+	    )
+
+WARMSF = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarms-f-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMSF))
+	    )
+
+WARMTT = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmt-t-01.internal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMTT))
+	    )
+
+WARMUU = (DESCRIPTION=
+	(ADDRESS=(PROTOCOL=tcp)(HOST=dentalwarmu-u-01.interal.das)(PORT=1525))
+	(CONNECT_DATA=(SERVICE_NAME=WARMUU))
+	    )
+

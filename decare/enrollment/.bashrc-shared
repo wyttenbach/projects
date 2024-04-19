@@ -1,0 +1,13 @@
+#!/bin/bash
+## sharedservices
+export ENR_PROJECT=enrollment
+export WL_DOMAIN="$(cygpath -m $WL/domains/sharedservices)"
+export WL_CONTEXT_ROOT=
+export WL_PORT=7785
+
+function deploy-build
+{
+	undeploy
+    (cd $SRC/enrollment/enrollment-parent; deploy enrollmentsharedservicesapp/target/*.ear)
+}
+

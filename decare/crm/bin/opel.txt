@@ -1,0 +1,33 @@
+-Xms2G -Xmx2560M -XX:NewSize=448M -XX:MaxNewSize=448M -XX:SurvivorRatio=128 -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:MaxTenuringThreshold=0 -XX:CMSInitiatingOccupancyFraction=60 -Xss256k -XX:MaxPermSize=512M -XX:AppendRatio=3 
+-Dcrmweb.properties.file=file:/apps/WLS/domains/Dales/crmweb-opel.properties
+-Dcrmgroupsharedservices.properties.file=file:/apps/WLS/domains/Dales/crmgroupsharedservices-opel.properties
+-Ddsiframework.initial.context.factory=weblogic.jndi.WLInitialContextFactory
+-Ddsiframework.security.provider.url=t3://localhost:7782
+-Ddsiframework.security.principal=weblogic
+-Ddsiframework.security.credentials=weblogic1
+
+# 1pm monday
+-Ddsiframework.id=weblogic12c
+-Ddsiframework.environment=Weblogic_12c
+-Ddsiframework.bs.provider.url=t3://localhost:7783
+-Ddsiframework.crm.provider.url=t3://localhost:7783
+-Ddsiframework.dedicated.connection=true
+-Ddsiframework.provider.url=t3://localhost:7782
+-Ddsiframework.external.ldap.authorization.type=simple
+-Ddsiframework.external.ldap.base.dn=dc=testdecare,dc=com
+-Ddsiframework.external.ldap.credentials=9M3duia95uTd
+-Ddsiframework.external.ldap.initial.context.factory=com.sun.jndi.ldap.LdapCtxFactory
+-Ddsiframework.external.ldap.principal=smadmin
+-Ddsiframework.external.ldap.provider.url=ldap://cronos.decare.com:389
+-Ddsiframework.external.ldap.search.base.dn=
+-Ddsiframework.ldap.authorization.type=simple
+-Ddsiframework.ldap.base.dn=dc=testdecare,dc=com
+-Ddsiframework.ldap.credentials=9M3duia95uTd
+-Ddsiframework.ldap.grp.search.base.dn=ou=siteminder,ou=dev,dc=testdecare,dc=com
+-Ddsiframework.ldap.initial.context.factory=com.sun.jndi.ldap.LdapCtxFactory
+-Ddsiframework.ldap.principal=smadmin
+-Ddsiframework.ldap.provider.url=ldap://cronos.decare.com:389
+-Ddsiframework.ldap.search.base.dn=
+
+# removed from code
+-Ddsiframework.accesscontrol.provider.url=t3://localhost:7782

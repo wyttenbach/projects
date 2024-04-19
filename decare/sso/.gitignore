@@ -1,0 +1,9 @@
+src
+workspace
+oc4j_standalone
+wl_domain
+*.log
+FB_*
+RB_*
+develop/
+svn/

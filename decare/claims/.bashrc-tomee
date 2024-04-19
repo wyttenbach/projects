@@ -1,0 +1,67 @@
+#!/bin/bash
+export TOMCAT_HOME="$PROJECT_HOME/apache-tomee-plus-1.0.0-beta-1"
+export CATALINA_HOME="$TOMCAT_HOME"
+export JEE_HOME="$TOMCAT_HOME"
+export JEE_DEPLOY="$TOMCAT_HOME/webapps"
+export JEE_CONTEXT_ROOT=claimsui-0.16-SNAPSHOT
+export JEE_APP=$SRC/claimsweb/target/*.war
+export JEE_WEB=$JEE_DEPLOY/claimsweb
+export JEE_PORT=8080
+
+function jee-start
+{
+    export CATALINA_OPTS="-server -Xmx512m -XX:MaxPermSize=256m"
+    export CATALINA_OPTS="$CATALINA_OPTS -ea"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote"
+    export CATALINA_OPTS="$CATALINA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=4000"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.port=22222"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.ssl=false"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.authenticate=false"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dopenejb.validation.output.level=VERBOSE"
+
+    export CATALINA_OPTS="$CATALINA_OPTS -Ddefault.flavour=dummy"
+#    export CATALINA_OPTS="$CATALINA_OPTS -Ddctm.docbase=docd -Ddctm.localpath=c:\Documentum\temp"
+#    export CATALINA_OPTS="$CATALINA_OPTS -Xbootclasspath/a:c:\Documentum\config"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dview.style=dev"
+    export CATALINA_OPTS="$CATALINA_OPTS -Ddctm.docbase=docd -Ddctm.localpath=c:\Documentum\temp"
+    export CATALINA_OPTS="$CATALINA_OPTS -Xbootclasspath/a:c:\Documentum\config"
+    export CATALINA_OPTS="$CATALINA_OPTS -Dclaim.message.brokerURL=vm://localhost?broker.persistent=false"
+#    export CATALINA_OPTS="$CATALINA_OPTS -Dclaim.message.brokerURL=tcp://localhost:61616"
+
+    export CATALINA_OPTS="$CATALINA_OPTS -Denr.naming.provider.url=ormi://localhost:3231/enrollmentsharedservicesapp"
+    export CATALINA_OPTS="$CATALINA_OPTS -Denr.naming.security.credentials=welcome"
+    echo DEV security
+    export CATALINA_OPTS="$CATALINA_OPTS -Dsecurity.flavour=dev"
+
+    echo $CATALINA_OPTS
+# also modified catalina.bat to not use "start" command 
+# when invoking java
+    (cd $TOMCAT_HOME/bin; ./startup.bat)
+}
+
+function jee-stop
+{
+    (cd $TOMCAT_HOME/bin; ./shutdown.bat)
+}
+
+# function deploy
+# {
+#     do_cmd install $SRC/claimsweb/claimsweb/target/*.war $JEE_DEPLOY
+# }
+
+function undeploy
+{
+    (cd $JEE_DEPLOY; 
+        for i in *.ear; do 
+            app=`basename $i .ear`
+            rm -rf $i $app 
+        done
+    )
+}
+
+# function go
+# {
+#     local url=http://localhost:8080/$JEE_CONTEXT_ROOT
+#     echo $url
+#     ie $url
+# }

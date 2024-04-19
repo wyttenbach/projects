@@ -1,0 +1,54 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:out="http://www.hbcbsnj.com/integration/services/utility/LoggingServiceV1_0">
+    <SOAP-ENV:Header>
+        <hdrns:ApiSoapHeader xmlns:hdrns="http://horizon.bcbsnj.com/eai/mom/webservices/">
+            <hdrns:X-HZN-Api>dentalclaims
+            </hdrns:X-HZN-Api>
+            <hdrns:X-HZN-ClientName>Zipari
+            </hdrns:X-HZN-ClientName>
+            <hdrns:X-HZN-RootId>rrt-0e3ae31f6f020b785-d-ea-1889-11952738-1
+            </hdrns:X-HZN-RootId>
+        </hdrns:ApiSoapHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns3:getClaim xmlns:ns3="http://ws.service.member.portal.dds.com/">
+            <UserName>MOMAPI
+            </UserName>
+            <SourceSystem>DECARE
+            </SourceSystem>
+            <ClientSubmitDateTime>2022-01-18T21:34:01.963Z
+            </ClientSubmitDateTime>
+            <Timeout>55
+            </Timeout>
+            <ClaimSearchCriteria>
+                <MaxRowsToReturn>200
+                </MaxRowsToReturn>
+                <SubscriberId>3HZN55056600
+                </SubscriberId>
+                <ClaimPatientFirstName>PAUL
+                </ClaimPatientFirstName>
+                <ClaimPatientLastName>GOLDEN
+                </ClaimPatientLastName>
+                <ClaimPatientPatientDOB>1963-01-16
+                </ClaimPatientPatientDOB>
+                <ClaimDosStartDate>2020-01-18Z
+                </ClaimDosStartDate>
+                <ClaimDosEndDate>2022-01-18Z
+                </ClaimDosEndDate>
+                <IncludeAggregatedAmountFromLines>true
+                </IncludeAggregatedAmountFromLines>
+                <IncludeClaimPayment>true
+                </IncludeClaimPayment>
+                <IncludeClaimHistory>false
+                </IncludeClaimHistory>
+                <IncludeClaimProviderAddress>false
+                </IncludeClaimProviderAddress>
+                <IncludeClaimMessageText>true
+                </IncludeClaimMessageText>
+                <IncludeClaimPatientDetail>true
+                </IncludeClaimPatientDetail>
+                <IncludeSubsGroup>false
+                </IncludeSubsGroup>
+            </ClaimSearchCriteria>
+        </ns3:getClaim>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+export ENR_ENV=${ENR_ENV:=web}
+if [ -f "$PROJECT_HOME/.bashrc-$ENR_ENV" ]; then
+    . $PROJECT_HOME/.bashrc-$ENR_ENV
+else
+    echo "WARNING: .bashrc-$ENR_ENV not found!"
+fi
+
+export WL_JDWP_PORT=$(expr $WL_PORT + 1000)
+
+. $HOME/.bashrc-weblogic
+
+function jee-start
+{
+    wlstart
+}
+
+function jee-stop
+{
+    wlstop
+}
+
+function lsd {
+    wll
+}
+
+function undeploy
+{
+    wlundeploy
+}

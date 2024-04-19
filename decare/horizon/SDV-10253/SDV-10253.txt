@@ -1,0 +1,1 @@
+SDV-10253: Horizon Member Portal API is unable to see Dental claims

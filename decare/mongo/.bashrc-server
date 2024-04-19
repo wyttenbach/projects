@@ -1,0 +1,14 @@
+function jee-start {
+    if [ -f $MONGO_LOCK ]; then
+        echo "$MONGO_LOCK exists, is the MongoDB windows service running?"
+        ps -W | grep -i mongod
+        return
+    fi
+    do_echo mongod --config $MONGO_HOME/mongod.cfg "$@"
+}
+
+function repair {
+    /bin/rm -f "$MONGO_LOCK"
+    jee-start --repair
+}
+

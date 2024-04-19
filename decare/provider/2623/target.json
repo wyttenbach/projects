@@ -1,0 +1,97 @@
+[
+  {
+    "Effective": {
+      "From": "1997-01-01",
+      "To": null
+    },
+    "Id": 430720,
+    "Tin": "411706150",
+    "IRSName": "Brian L Pierce DDS, PA",
+    "CommonName": "Brian L Pierce DDS, PA",
+    "DirectoryAddress": {
+      "Line1": "969 Old Hwy 8 NW",
+      "Line2": "Ste 200",
+      "Line3": null,
+      "City": "New Brighton",
+      "State": "MN",
+      "ZIPCode": "55112",
+      "County": "RAMSEY",
+      "Country": "USA",
+      "Province": null,
+      "Latitude": null,
+      "Longitude": null,
+      "DataOwner": null,
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720/addresses/4585",
+          "entity": "clinic.address"
+        }
+      ],
+      "Id": 4585,
+      "Type": "D"
+    },
+    "PrimaryPhoneNumber": {
+      "Type": "P",
+      "CountryCode": null,
+      "CityCode": null,
+      "AreaCode": "651",
+      "AccessCode": null,
+      "Number": "6398445",
+      "Extension": null,
+      "Id": 4585,
+      "Display": "(651)639-8445",
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720",
+          "entity": "clinic"
+        },
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720/phoneContacts/4585",
+          "entity": "clinic.phoneContact"
+        }
+      ]
+    },
+    "FaxNumber": {
+      "Type": "F",
+      "CountryCode": null,
+      "CityCode": null,
+      "AreaCode": "651",
+      "AccessCode": null,
+      "Number": "6331707",
+      "Extension": null,
+      "Id": 57865,
+      "Display": "(651)633-1707",
+      "Links": [
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720",
+          "entity": "clinic"
+        },
+        {
+          "rel": "self",
+          "href": "/api/clinics/430720/phoneContacts/57865",
+          "entity": "clinic.phoneContact"
+        }
+      ]
+    },
+    "Npis": {
+      "ClinicNPI": [
+        {
+          "Id": 511,
+          "NPI": "1477659050"
+        }
+      ],
+      "CorporateNPI": null
+    },
+    "OfficeNumber": null,
+    "Diversified": false,
+    "DelegatedCredentialing": false,
+    "SharingSpace": false,
+    "LargeGroupName": null,
+    "HasPDOHmoNetwork": false,
+    "DhmoProcessingRequired": false
+  }
+]

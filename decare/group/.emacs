@@ -1,0 +1,5 @@
+;; (home)
+;; (goto-char (point-max))
+;; (if (getenv "GROUP_SEGMENT")
+;;     (insert (getenv "GROUP_SEGMENT"))
+;;     (insert "GROUP_SEGMENT not set"))

@@ -1,0 +1,48 @@
+[
+  {
+    "op": "correlate",
+    "value": "TRN-58118-TEST"
+  },
+  {
+    "op": "add",
+    "path": "/api/providers",
+    "label": "providertemp",
+    "value": {
+      "NamePrefix": "DDS",
+      "SpecialtySchool": "",
+      "SpecialtyGradYear": "",
+      "DataOwnerId": "1",
+      "FirstName": "Perry",
+      "MiddleName": "",
+      "Effective": {
+        "From": "2020-01-01"
+      },
+      "GraduationYear": "1988",
+      "Tin": "",
+      "NameSuffix": "",
+      "LastName": "Ellis",
+      "SchoolOfDentistry": "ODU",
+      "BirthDate": ""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/specialties",
+    "value": {
+      "Specialty": {
+        "Type": "Primary",
+        "Code": "000"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/api/providers/{providertemp}/specialties",
+    "value": {
+      "Specialty": {
+        "Type": "Primary",
+        "Code": "000"
+      }
+    }
+  }
+]

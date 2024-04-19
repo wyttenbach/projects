@@ -1,0 +1,45 @@
+#!/bin/bash
+. $HOME/.bashrc-weblogic
+
+export WL_PORT=7783
+export WL_DOMAIN="$(cygpath -m $WL/domains/crm)"
+export WL_JDWP_PORT=$JEE_JDWP_PORT
+export WL_DUMMY=$WL_DEPLOY/dummy
+export JEE_DEPLOY="$WL_DEPLOY"
+export JEE_PORT="$WL_PORT"
+
+function pre-wlstart {
+    wlds
+    grep t3: $WL/properties/crmapp.properties 
+    grep ^_PROVIDER_URL= $WL/properties/dsiframework.properties
+    dsi-check || die
+
+    local crmapp=$WL_DEPLOY/crmapp-*.ear
+    cmp $SRC/crm-parent/*/*/*.ear $crmapp;
+    if [ $? -eq 0 ]; then
+        patch-ear $crmapp;
+        echo "CRM ear patched for $CRM_SEGMENT";
+    fi;
+    echo EXT_PRE_CLASSPATH=$EXT_PRE_CLASSPATH
+}
+
+function jee-check {
+    checkstatus localhost $WL_PORT fs/status/check.html
+}
+
+function go
+{
+    host="localhost"
+    port=$WL_PORT
+    if [ $# -gt 0 ]; then
+        host=$(lookup $1)
+        shift
+    fi
+    if [ $# -gt 0 ]; then
+        port=$1
+        shift
+    fi
+    url="http://$host:$port/fs/generateNavigation.do?appName=CRM&userName=dev1&password=Delta123"
+    echo $url
+    $DDS_BROWSER "$url"
+}

@@ -1,0 +1,14 @@
+
+keystore=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/security/cacerts
+ls -l $keystore
+
+cert=$(echo ~/Desktop/*.cer)
+ls -l $cert
+
+file=$(basename $cert)
+echo $file
+
+alias=${file%%.*}
+echo $alias
+
+sudo keytool -import -alias $alias -keystore $keystore -file "$cert"

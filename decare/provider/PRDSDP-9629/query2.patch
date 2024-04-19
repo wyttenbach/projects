@@ -1,0 +1,100 @@
+Index: datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java b/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java
+--- a/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java	(revision 408051a998eae8bb26d489bd3b09891f1b3afab4)
++++ b/datalayer/src/main/java/com/anthem/specialty/provider/datalayer/services/SqlStatements.java	(date 1640632330709)
+@@ -1166,57 +1166,45 @@
+             "       cp.ID                                                      as CLINIC_PROVIDER_ID,\n" +
+             "       cp.IN_DIRECTORY                                            as IN_DIRECTORY,\n" +
+             "       cp.PROVIDER_RELATIONSHIP                                   as PROVIDER_RELATIONSHIP,\n" +
+-            "       CAST(provider_status.in_limbo(p.ID, cp.CLINIC_ID) AS CHAR) as IN_LIMBO,\n" +
+-            "       P.FIRST_NAME                                               as FIRST_NAME,\n" +
+-            "       P.MIDDLE_NAME                                              as MIDDLE_NAME,\n" +
+-            "       P.LAST_NAME                                                as LAST_NAME,\n" +
+-            "       NPI.NPI                                                    as NPI,\n" +
+-            "       PL.LICENSE_NO                                              as LICENSE_NO,\n" +
+-            "       PL.ISSUING_STATE                                           as ISSUING_STATE,\n" +
+-            "       PL.EFFECTIVE_FROM                                          as LICENSE_EFFECTIVE_FROM,\n" +
+-            "       PL.EFFECTIVE_TO                                            as LICENSE_EFFECTIVE_TO,\n" +
+-            "       PL.ON_HOLD                                                 as LICENSE_ON_HOLD,\n" +
+-            "       PL.TERMINATED                                              as LICENSE_TERMINATED,\n" +
+-            "       PL.DEA_NUMBER                                              as LICENSE_DEA_NUMBER,\n" +
+-            "       PL.DEA_NUMBER_EXPIRES                                      as LICENSE_DEA_NUMBER_EXPIRES,\n" +
+-            "       nvl(s.DESCRIPTION, gd.DESCRIPTION)                         as SPECIALTY_DESCRIPTION,\n" +
+-            "       nvl(ps.SPECIALTY_CODE, gd.CODE)                            as SPECIALTY_CODE,\n" +
+-            "       nvl(ps.SPECIALTY_TYPE, 'P')                                as SPECIALTY_TYPE,\n" +
+-            "       sdo.ID                                                     as SPECIALTY_DATA_OWNER_ID,\n" +
+-            "       sdo.DISPLAY_NAME                                           as SPECIALTY_DATA_OWNER_NAME,\n" +
+-            "       FA.ID                                                      as FEE_ASSIGNMENT_ID,\n" +
+-            "       FA.FEE_TYPE                                                as FEE_TYPE,\n" +
+-            "       FA.EFFECTIVE_FROM                                          as FEE_EFFECTIVE_FROM,\n" +
+-            "       FA.EFFECTIVE_TO                                            as FEE_EFFECTIVE_TO,\n" +
+-            "       FA.PANEL_NUMBER                                            as FEE_PANEL_NUMBER,\n" +
+-            "       FA.FEE_SCHEDULE                                            as FEE_SCHEDULE,\n" +
+-            "       FA.DATA_OWNER_ID                                           as FA_DATA_OWNER_ID,\n" +
+-            "       del.ID                                                     as DIRECTORY_EXIT_LOG_ID,\n" +
+-            "       del.EXIT_REASON_ID                                         as EXIT_REASON_ID,\n" +
+-            "       der.REASON                                                 as EXIT_REASON,\n" +
+-            "       del.EXIT_DATE                                              as EXIT_DATE,\n" +
+-            "       del.EXIT_SESSION_USER                                      as EXIT_SESSION_USER,\n" +
+-            "       del.RETURN_REASON_ID                                       as RETURN_REASON_ID,\n" +
+-            "       drr.REASON                                                 as RETURN_REASON,\n" +
+-            "       del.RETURN_DATE                                            as RETURN_DATE,\n" +
+-            "       del.RETURN_SESSION_USER                                    as RETURN_SESSION_USER\n" +
++            "       null as IN_LIMBO,\n" +
++            "       null                                               as FIRST_NAME,\n" +
++            "       null                                              as MIDDLE_NAME,\n" +
++            "       null                                                as LAST_NAME,\n" +
++            "       null as NPI,\n" +
++            "       null                                              as LICENSE_NO,\n" +
++            "       null                                           as ISSUING_STATE,\n" +
++            "       null                                          as LICENSE_EFFECTIVE_FROM,\n" +
++            "       null                                            as LICENSE_EFFECTIVE_TO,\n" +
++            "       null                                                 as LICENSE_ON_HOLD,\n" +
++            "       null                                              as LICENSE_TERMINATED,\n" +
++            "       null                                              as LICENSE_DEA_NUMBER,\n" +
++            "       null                                     as LICENSE_DEA_NUMBER_EXPIRES,\n" +
++            "       null                         as SPECIALTY_DESCRIPTION,\n" +
++            "       null                            as SPECIALTY_CODE,\n" +
++            "       null                                as SPECIALTY_TYPE,\n" +
++            "       null                                                     as SPECIALTY_DATA_OWNER_ID,\n" +
++            "       null                                           as SPECIALTY_DATA_OWNER_NAME,\n" +
++            "       null as FEE_ASSIGNMENT_ID,\n" +
++            "       null                                                as FEE_TYPE,\n" +
++            "       null                                          as FEE_EFFECTIVE_FROM,\n" +
++            "       null                                            as FEE_EFFECTIVE_TO,\n" +
++            "       null                                            as FEE_PANEL_NUMBER,\n" +
++            "       null                                            as FEE_SCHEDULE,\n" +
++            "       null                                           as FA_DATA_OWNER_ID,\n" +
++            "       null as DIRECTORY_EXIT_LOG_ID,\n" +
++            "       null                                         as EXIT_REASON_ID,\n" +
++            "       null as EXIT_REASON,\n" +
++            "       null                                              as EXIT_DATE,\n" +
++            "       null                                      as EXIT_SESSION_USER,\n" +
++            "       null                                       as RETURN_REASON_ID,\n" +
++            "       null           as RETURN_REASON,\n" +
++            "       null                                            as RETURN_DATE,\n" +
++            "       null                                    as RETURN_SESSION_USER\n" +
+             "from NETWORK_CLINIC NC\n" +
+             "         join NETWORK N on NC.NETWORK_ID = N.ID\n" +
+             "         left join CORE.DATA_OWNER NDO ON N.DATA_OWNER_ID = NDO.ID\n" +
+             "         left join NETWORK_CLINIC_PROVIDER NCP on N.ID = NCP.NETWORK_ID and NC.CLINIC_ID = NCP.CLINIC_ID\n" +
+             "         left join CLINIC_PROVIDER cp on cp.CLINIC_ID = ncp.CLINIC_ID and cp.PROVIDER_ID = NCP.PROVIDER_ID\n" +
+-            "         left join PROVIDER P on NCP.PROVIDER_ID = P.ID\n" +
+-            "         left join NPI_PROVIDER NP on P.ID = NP.PROVIDER_ID\n" +
+-            "         left join NPI NPI on NP.NPI_ID = NPI.ID\n" +
+-            "         left join PROVIDER_LICENSE PL on PL.PROVIDER_ID = P.ID\n" +
+-            "         left join PROVIDER_SPECIALTY_VIEW ps ON p.id = ps.PROVIDER_ID\n" +
+-            "         left join CORE.SPECIALTY s on s.CODE = ps.SPECIALTY_CODE\n" +
+-            "         left join core.SPECIALTY gd on gd.CODE = '000'\n" +
+-            "         left join core.data_owner sdo on sdo.id = ps.DATA_OWNER_ID\n" +
+-            "         left join FEE_ASSIGNMENT FA on N.ID = FA.NETWORK_ID and P.ID = FA.PROVIDER_ID and FA.CLINIC_ID = cp.CLINIC_ID\n" +
+-            "         left join DIRECTORY_EXIT_LOG del on del.CLINIC_PROVIDER_ID = cp.ID\n" +
+-            "         left join CORE.DIRECTORY_EXIT_REASONS der on del.EXIT_REASON_ID = der.ID\n" +
+-            "         left join CORE.DIRECTORY_RETURN_REASONS drr on del.RETURN_REASON_ID = drr.ID\n" +
+             "         left join CLINIC_ADDRESS CA on NC.CLINIC_ID = CA.CLINIC_ID and CA.TYPE = 'D'\n" +
+             "         left join NETWORK_GRID NG on CA.STATE = NG.STATE\n" +
+             "         left join NETWORK_GRID_DATA NGD on N.ID = NGD.NETWORK_ID and NG.ID = NGD.NETWORK_GRID_ID\n" +

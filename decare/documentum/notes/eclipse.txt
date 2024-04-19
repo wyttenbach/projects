@@ -1,0 +1,17 @@
+# Define DCTM_SHARED classpath variable, C:\Program Files\Documentum\Shared
+# File->New Java Project
+# Copy contents of ...webapps/webtop into the new Eclipse project 
+// I don't like this, too bloated: searching takes too long, etc
+# Move the src folder into custom  
+// I don't like this, it doesn't belong there
+# Project properties, Java Build Path
+## Source
+### Remove src
+### Add custom/src
+## Libraries
+### Add Variable
+#### Select DCTM_SHARED
+#### Click Extend...
+#### Select all jars with ^A
+#### OK
+### OK
