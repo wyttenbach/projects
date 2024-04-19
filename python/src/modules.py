@@ -8,4 +8,17 @@ def makePlayer(name, age, **dict):
         player[k] = v
     return player
 
-print(makePlayer(name='JONES', age=29, drink='bourbon'))
+player = makePlayer(name='JONES', age=29, drink='bourbon')
+players=[player]
+
+def findPlayer(name, players):
+    for player in players:
+        if player['name'] == name:
+            return player
+    return None
+
+player = findPlayer('SMITH', players)
+print(player)
+
+player = findPlayer('JONES', players)
+print(player)
