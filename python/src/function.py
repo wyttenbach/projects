@@ -7,7 +7,13 @@
 # # returnedValue = multiply(2, 3)
 # print(multiply())
 
-def printName(firstname='Dale', lastname='Evans'):
-    print(firstname.title(), lastname.title())
+# def printName(firstname='Dale', lastname='Evans'):
+#     print(firstname.title(), lastname.title())
 
-printName(lastname='JONES')
+# printName(lastname='JONES')
+
+def printList(*args):
+    for i in args:
+        print(i)
+
+printList('JONES', 'MISTER')
