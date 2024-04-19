@@ -7,5 +7,7 @@ player = {
     'position': 'Forward'
 };
 
+print(player)
+
 for k, v in player.items():
     print(k, v)
