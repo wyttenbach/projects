@@ -12,8 +12,13 @@
 
 # printName(lastname='JONES')
 
-def printList(*args):
-    for i in args:
-        print(i)
+# def printList(*args):
+#     for i in args:
+#         print(i)
 
-printList('JONES', 'MISTER', -1, 3.14159265, None)
+# printList('JONES', 'MISTER', -1, 3.14159265, None)def printList(*args):
+
+def printDict(**dict):
+    print(dict)
+
+printDict(name='JONES', title='MISTER', hopes=None)
