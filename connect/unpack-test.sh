@@ -4,3 +4,4 @@ if [ $# -gt 0 ]; then
     file="$1"
 fi
 /bin/rm -rf BAR_IMAGE BAR-META-INF bar.properties && unpack.sh $file
+return $?
