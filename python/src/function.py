@@ -16,4 +16,4 @@ def printList(*args):
     for i in args:
         print(i)
 
-printList('JONES', 'MISTER')
+printList('JONES', 'MISTER', -1, 3.14159265, None)
