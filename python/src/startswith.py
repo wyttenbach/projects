@@ -6,9 +6,14 @@ defaultTargets = [line.strip() for line in open("target.properties", 'r')]
 print(defaultTargets)
 for elem in defaultTargets:
     print(elem)
-    print(len(elem))
-    print(elem.startswith('a'))
+    # print(len(elem))
+    # print(elem.startswith('a'))
     print(elem.startswith('#'))
     if elem.startswith("#"):
-        defaultTargets.remove(elem)
-print(defaultTargets)
+        got = defaultTargets.remove(elem)
+print(got)
+
+got = defaultTargets.pop()
+print(got)
+
+print(defaultTargets.length)
