@@ -1,0 +1,4 @@
+VIER-3976 Test in Sandbox
+
+Draft scripts have been created.  Need to test them on one of the
+available sandbox servers.
