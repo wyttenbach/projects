@@ -1,5 +1,0 @@
-VIER-4284 Need a process for BAR file update
-Bug fixes that require a BAR file update are problematic right now
-because of a limited ability to update them. We need a script to
-automate the process.
-
