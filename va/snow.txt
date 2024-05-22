@@ -1,0 +1,11 @@
+Cory and Susmitha generally should do this, but if they are not around:
+https://yourit.va.gov/va
+Activate "Technical Catalog" with the slider button on the left
+Select "General Request" on the extreme lower right
+
+Request Assignment Group:
+IO.PS.FF.SERVERS.UNIX.LINUX.VBA - SERGE
+IO.SS.FF.CENTRIFY = ROSS
+IO.SS.FF.MIDDLEWARE.TEAM1 - VENU
+IO.SS.FF.MIDDLEWARE.TEAM2 - MURALI
+Monitoring Veterans Experience - OM AND DURGA
