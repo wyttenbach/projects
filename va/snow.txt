@@ -9,3 +9,7 @@ IO.SS.FF.CENTRIFY = ROSS
 IO.SS.FF.MIDDLEWARE.TEAM1 - VENU
 IO.SS.FF.MIDDLEWARE.TEAM2 - MURALI
 Monitoring Veterans Experience - OM AND DURGA
+
+6/4/24 - Fred says the Devops Tools team can answer question about programmatic access to email
+
+6/4/24 - Fred says Venkat (Profile team) regarding CodeQL
