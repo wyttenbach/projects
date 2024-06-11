@@ -1,5 +1,5 @@
 Cory and Susmitha generally should do this, but if they are not around:
-https://yourit.va.gov/va
+https://yourit.va.gov/va "Submit Request"
 Activate "Technical Catalog" with the slider button on the left
 Select "General Request" on the extreme lower right
 
