@@ -4,6 +4,7 @@ Activate "Technical Catalog" with the slider button on the left
 Select "General Request" on the extreme lower right
 
 Request Assignment Group:
+IO.SS.FO.ActiveDirectory.Team2
 IO.PS.FF.SERVERS.UNIX.LINUX.VBA - SERGE
 IO.SS.FF.CENTRIFY = ROSS
 IO.SS.FF.MIDDLEWARE.TEAM1 - VENU
