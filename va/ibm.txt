@@ -1,0 +1,26 @@
+Passport Advantage Online for Site Number: 0007089283
+
+https://www.ibm.com/support/pages/node/7148755
+
+
+[mqm@vaausvrsapp90 ace-12.0.12.1.0]$ cd server/bin
+[mqm@vaausvrsapp90 bin]$ . ./mqsiprofile
+
+MQSI 12.0.12.1.0
+/u01/ace12/files/ace/ace-12.0.12.1.0/server
+
+[mqm@vaausvrsapp90 bin]$  ./mqsilist
+BIP1284I: Integration node 'ViersACAINode' with default queue manager 'vrm.viers.aca.queue' and administration URI 'http://vaausvrsapp90.aac.va.gov:4416' is running.
+BIP1284I: Integration node 'ONEVAPINODE' with default queue manager 'onevap.queue.manager' and administration URI 'http://vaausvrsapp90.aac.va.gov:4415' is running.
+BIP1284I: Integration node 'VIERSINODE' with default queue manager 'vrm.queue.manager' and administration URI 'http://vaausvrsapp90.aac.va.gov:4434' is running.
+BIP8071I: Successful command completion.
+
+[mqm@vaausvrsapp90 bin]$  ./mqsistop ViersACAINode
+BIP8071I: Successful command completion.
+
+[mqm@vaausvrsapp90 bin]$  ./mqsistop ONEVAPINODE
+BIP8071I: Successful command completion.
+
+[mqm@vaausvrsapp90 bin]$  ./mqsistop VIERSINODE
+BIP8071I: Successful command completion.
+
