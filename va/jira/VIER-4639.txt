@@ -1,1 +1,1 @@
-VIER-4636 Create process to check out, diff versioned config, and log differences
+VIER-4639 Create process to check out, diff versioned config, and log differences
