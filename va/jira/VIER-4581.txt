@@ -1,3 +1,7 @@
 VIER-4581 SPIKE: Relay Alert Email to Slack
 
 https://www.hidglobal.com/drivers/17004
+
+https://github.com/OfficeDev/ews-java-api
+
+https://github.com/microsoftgraph/msgraph-sdk-java
