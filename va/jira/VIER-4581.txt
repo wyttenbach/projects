@@ -1,4 +1,4 @@
-VIER-4581 SPIKE: Relay Alert Email to Slack
+VIER-4581 SPIKE: Relay Splunk Alert to Slack
 
 https://www.hidglobal.com/drivers/17004
 
