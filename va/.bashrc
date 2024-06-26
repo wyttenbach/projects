@@ -8,6 +8,11 @@ function up
     curl http://localhost:8080/sba/health
 }
 
+function swagger
+{
+    browse http://localhost:8080/
+}
+
 function hello
 {
     curl http://localhost:8080/vaprofilesplunkforwarder/v1/
