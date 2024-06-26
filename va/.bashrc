@@ -1,3 +1,8 @@
+function vsf
+{
+    (cd $SRC/vaprofile-splunk-forwarder; ./run.sh) &
+}
+
 function refresh { 
     pre-refresh;
     local out=$SRC/refresh.out;
