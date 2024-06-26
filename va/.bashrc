@@ -34,11 +34,8 @@ function another
 
 function json
 {
-  # --request POST /
-    exe $CURL \
-    --header "Content-Type: application/json" \
-             --data '{"name":"Dale Wyttenbach","title":"Wizard"}' \
-             http://$VSF_HOST:8080/another/v1/
+    exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr."}' \
+        http://$VSF_HOST:8080/another/v1/
 }
 
 function refresh { 
