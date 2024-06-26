@@ -1,8 +1,12 @@
 export VSF_HOST=${VSF_HOST:=localhost}
+export VSF_HOME=$SRC/vaprofile-splunk-forwarder/vaprofile-splunk-forwarder-server
+export VSF_VER=1.0.0-SNAPSHOT
+export VSF_JAR=$VSF_HOME/target/*-$VSF_VER.jar
 
 function vsf
 {
-    (cd $SRC/vaprofile-splunk-forwarder; ./run.sh) &
+    ls -l $VSF_JAR &&
+    (cd $VSF_HOME; java -jar $VSF_JAR) &
 }
 
 function up
