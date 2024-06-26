@@ -29,7 +29,7 @@ function hello
 
 function another
 {
-    exe $CURL http://$VSF_HOST:8080/another/v1/
+    exe $CURL http://$VSF_HOST:8080/another/v1/ -d name="Dale Wyttenbach"
 }
 
 function refresh { 
