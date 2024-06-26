@@ -10,7 +10,7 @@ function vsf
     (cd $VSF_HOME; java -jar $VSF_JAR 2>&1 | tee $VSF_LOG) &
 }
 
-function up
+function health
 {
     exe $CURL http://$VSF_HOST:8080/sba/health
 }
