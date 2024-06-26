@@ -1,3 +1,5 @@
+export VSF_HOST=${VSF_HOST:=localhost}
+
 function vsf
 {
     (cd $SRC/vaprofile-splunk-forwarder; ./run.sh) &
@@ -5,17 +7,17 @@ function vsf
 
 function up
 {
-    curl http://localhost:8080/sba/health
+    curl http://$VSF_HOST:8080/sba/health
 }
 
 function swagger
 {
-    browse http://localhost:8080/
+    browse http://$VSF_HOST:8080/
 }
 
 function hello
 {
-    curl http://localhost:8080/vaprofilesplunkforwarder/v1/
+    curl http://$VSF_HOST:8080/vaprofilesplunkforwarder/v1/
 }
 
 function refresh { 
