@@ -3,7 +3,7 @@ export VSF_HOME=$SRC/vaprofile-splunk-forwarder/vaprofile-splunk-forwarder-serve
 export VSF_VER=1.0.0-SNAPSHOT
 export VSF_JAR=$VSF_HOME/target/*-$VSF_VER.jar
 export VSF_LOG=$VSF_HOME/vsf.log
-
+export CURL=${CURL:=curl -s}
 function vsf
 {
     ls -l $VSF_JAR &&
@@ -12,7 +12,7 @@ function vsf
 
 function up
 {
-    curl http://$VSF_HOST:8080/sba/health
+    exe $CURL http://$VSF_HOST:8080/sba/health
 }
 
 function swagger
@@ -22,7 +22,12 @@ function swagger
 
 function hello
 {
-    curl http://$VSF_HOST:8080/vaprofilesplunkforwarder/v1/
+    exe $CURL http://$VSF_HOST:8080/vaprofilesplunkforwarder/v1/
+}
+
+function another
+{
+    exe $CURL http://$VSF_HOST:8080/another/v1/
 }
 
 function refresh { 
