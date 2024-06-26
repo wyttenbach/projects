@@ -4,8 +4,10 @@ export VSF_VER=1.0.0-SNAPSHOT
 export VSF_JAR=$VSF_HOME/target/*-$VSF_VER.jar
 export VSF_LOG=$VSF_HOME/vsf.log
 export CURL=${CURL:=curl -s}
+
 function vsf
 {
+    roll $VSF_LOG &&
     ls -l $VSF_JAR &&
     (cd $VSF_HOME; java -jar $VSF_JAR 2>&1 | tee $VSF_LOG) &
 }
