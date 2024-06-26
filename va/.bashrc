@@ -19,7 +19,7 @@ function health
 
 function swagger
 {
-    browse http://$VSF_HOST:8080/
+    exe $BROWSER http://$VSF_HOST:8080/
 }
 
 function hello
@@ -29,7 +29,16 @@ function hello
 
 function another
 {
-    exe $CURL http://$VSF_HOST:8080/another/v1/ -d name="Dale Wyttenbach"
+    exe $CURL http://$VSF_HOST:8080/another/v1/ -d name="Dale Wyttenbach" -d title=Wizard
+}
+
+function json
+{
+  # --request POST /
+    exe $CURL \
+    --header "Content-Type: application/json" \
+             --data '{"name":"Dale Wyttenbach","title":"Wizard"}' \
+             http://$VSF_HOST:8080/another/v1/
 }
 
 function refresh { 
