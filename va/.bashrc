@@ -27,14 +27,23 @@ function hello
     exe $CURL http://$VSF_HOST:8080/vaprofilesplunkforwarder/v1/
 }
 
-function another
+function another-old
 {
     exe $CURL http://$VSF_HOST:8080/another/v1/ -d name="Dale Wyttenbach" -d title=Wizard
 }
 
-function json
+function another
 {
     exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr."}' \
+        http://$VSF_HOST:8080/another/v1/
+}
+
+function json
+{
+    exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr.","result": {
+		"sourcetype" : "mongod",
+		"count" : "8"
+}}' \
         http://$VSF_HOST:8080/another/v1/
 }
 
