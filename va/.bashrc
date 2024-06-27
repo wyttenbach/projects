@@ -29,13 +29,13 @@ function hello
 
 function another-old
 {
-    exe $CURL http://$VSF_HOST:8080/another/v1/ -d name="Dale Wyttenbach" -d title=Wizard
+    exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr."}' \
+        http://$VSF_HOST:8080/another/v1/
 }
 
 function another
 {
-    exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr."}' \
-        http://$VSF_HOST:8080/another/v1/
+    exe $CURL --json @splunk.json http://$VSF_HOST:8080/another/v1/
 }
 
 function json
