@@ -1,4 +1,6 @@
 export VSF_HOST=${VSF_HOST:=localhost}
+export VSF_PORT=${VSF_PORT:=8080}
+export VSF_SOCKET=$VSF_HOST:$VSF_PORT
 export VSF_HOME=$SRC/vaprofile-splunk-forwarder/vaprofile-splunk-forwarder-server
 export VSF_VER=1.0.0-SNAPSHOT
 export VSF_JAR=$VSF_HOME/target/*-$VSF_VER.jar
@@ -14,37 +16,22 @@ function vsf
 
 function health
 {
-    exe $CURL http://$VSF_HOST:8080/sba/health
+    exe $CURL http://$VSF_SOCKET/sba/health
 }
 
 function swagger
 {
-    exe $BROWSER http://$VSF_HOST:8080/
+    exe $BROWSER http://$VSF_SOCKET/
 }
 
 function hello
 {
-    exe $CURL http://$VSF_HOST:8080/vaprofilesplunkforwarder/v1/
-}
-
-function another-old
-{
-    exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr."}' \
-        http://$VSF_HOST:8080/another/v1/
+    exe $CURL http://$VSF_SOCKET/vaprofilesplunkforwarder/v1/
 }
 
 function another
 {
-    exe $CURL --json @splunk.json http://$VSF_HOST:8080/another/v1/
-}
-
-function json
-{
-    exe $CURL --json '{"name":"Dale Wyttenbach","title":"Mr.","result": {
-		"sourcetype" : "mongod",
-		"count" : "8"
-}}' \
-        http://$VSF_HOST:8080/another/v1/
+    exe $CURL --json @splunk.json http://$VSF_SOCKET/vaprofilesplunkforwarder/v1/another
 }
 
 function refresh { 
